@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<!--Title-->
+<title>QAProjects</title>
+
+<!-- hiden input file loader -->
+<input type="file" id="fileLoader" name="files" title="Load File" />
+<!-- css files -->
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="{{url_for('static',filename='./css/initial_page.css')}}">
+
+<!-- script files -->
+	<!-- settings -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+<script src="{{url_for('static',filename='./javascript/initialize_setting.js')}}"></script>
+<script src="{{url_for('static',filename='./javascript/common_variables.js')}}"></script>
+
+</head>
+
+
+<body onload = "initialize_setting.create_initial_page()">
+
+<div id="main_frame">
+	<div id="title_frame">
+		QA framework
+    </div>
+	<div id="projects_container">
+		<button type="button">Load Project</button>
+		<button type="button">Add New Project</button>
+	</div>
+</div>
+
+</body>
+
+</html>
