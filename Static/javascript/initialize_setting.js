@@ -3,18 +3,22 @@ var initialize_setting = ( function(){
         console.log("create initial page, frames");
         console.log("add setting files")
         console.log("load exist projects")
+        localStorage.clear();
     };
     var create_new_project = function(){
         // in this function
         //create new botton for project
         console.log("add new botton for new project")
-        generate_new_empty_project();
+        project_ID = generate_new_empty_project();
         //console.log("create project folder")
         console.log("create setting file")
 
-        // redirect to project page
+
+        //save the information to local variable
         //save project ID
-        
+        localStorage.setItem('current_project_ID', project_ID)
+        // redirect to project page
+        window.location.href='./project_page';
     }
     var load_projects = function(){
         console.log("load setting files, to add old porject")
@@ -26,12 +30,15 @@ var initialize_setting = ( function(){
     function generate_new_empty_project(){
         //generate project ID
         console.log("generate a new project ID and folders");
-        new_project_ID = create_project_ID();
+        c = create_project_ID();
         //crate empty project
+        new_project_ID = "test_project_001";
+
         let new_project = new project(new_project_ID)
         //create folder for projects
         console.log("create project folder")
         create_folder_through_python(new_project_ID)
+
         
         return new_project_ID;
     }

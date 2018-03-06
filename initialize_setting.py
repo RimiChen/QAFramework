@@ -39,10 +39,32 @@ def render_index():
     return render_template(
         'Index.html')
 
+####R project project page
+@app.route("/project_page")
+def render_project_page():
+    return render_template(
+        'project_page.html')
+        
+####R project project page
+@app.route("/test_page")
+def render_test_page():
+    return render_template(
+        'test_page.html')
+
+
 ####R project file path
 @app.route("/<path:path>")
 def root_folder_file(path):
     return send_from_directory('/', path)
+
+
+@app.route("/projects/test_project_001/input/<path:path>")
+def send_input_file(path):
+    return send_from_directory("projects/test_project_001/input", path)
+
+@app.route("/projects/test_project_001/output/<path:path>")
+def send_ooutput_file(path):
+    return send_from_directory("projects/test_project_001/output", path)    
 
 ####R POST: chosen text file
 @app.route('/folder_operation', methods = ['POST'])

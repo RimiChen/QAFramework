@@ -3,6 +3,7 @@ var setting_variables = {
 	window_width: 768
 }
 var file_variables ={
+	project_ID: "",
 	input_path : "",
 	output_path: "",
 	algorithm_path: ""
