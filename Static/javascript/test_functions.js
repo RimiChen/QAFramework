@@ -1,3 +1,5 @@
+var question_answer_list={};
+var question_count = 0;
 var test_functions= ( function(){
     var create_initial_page = function(){
         console.log("project_ID: "+file_variables.project_ID)
@@ -11,8 +13,25 @@ var test_functions= ( function(){
         file_variables.output_path = localStorage.getItem("project_detail_output");;
         file_variables.algorithm_path = localStorage.getItem("project_detail_algorithm");;
 
+
+        filePath = file_variables.output_path+"1_1.json";
+        console.log("processing json")
+
         //load text to right side
+        $.getJSON( filePath, function( data ) {
+            var items = [];
+            $.each( data, function( key ) {
+                console.log(data[key]['0']);
+                question_answer_list[key] = data[key]['0'];
+            });
+            question_count = 1;
+            $("#question_content").html( question_answer_list[question_count]["question"]);
+            $("#answer_content").html( question_answer_list[question_count]["answer"]);
+        });
+
         $(document).ready(function() {
+
+    
             $.ajax({
                 url : file_variables.input_path+"1_1.txt",
                 success : function (data) {
@@ -20,10 +39,14 @@ var test_functions= ( function(){
                 }
             });
 
+
+
+
+/*
             $.ajax({
                 url : file_variables.output_path+"Q_1_1.txt",
                 success : function (data) {
-                    $("#right_question").html(data);
+                    $("#question_content").html(data);
                 }
             });
             $.ajax({
@@ -32,17 +55,29 @@ var test_functions= ( function(){
                     $("#answer_content").html(data);
                 }
             });
+*/
 
         }); 
     };
+    var get_next = function(){
+        console.log("show next quesiton and andswer")
+
+        var keys = Object.keys(question_answer_list);
+        var len = keys.length;
+        question_count = question_count +1;
+        if(question_count <= len ){
+            $("#question_content").html( question_answer_list[question_count]["question"]);
+            $("#answer_content").html( question_answer_list[question_count]["answer"]);
+        }        
+    }
     var postToGoogle = function () {
         console.log("send data to google spreadsheet");
-        /*
+/*
         var field1 = $("input[type='radio'][name='qs1']:checked").val();
-        var field2 = $('#feed').val();
+        var field2 = question_count;
      
         $.ajax({
-          url: "https://docs.google.com/forms/d/e/1FAIpQLSdjOTKRb7YiWi8OGPq6M6CRL0TpuAsUKacKp2XgruMbIp4wzg/formResponse",
+          url: "https://docs.google.com/spreadsheets/d/1_TihxgGg5dFG9jJLNeeZbZyxWwbe1ivGlvdjSdBQoMY",
           data: {
             "entry.924752166": field1,
             "entry.997497831": field2
@@ -58,10 +93,11 @@ var test_functions= ( function(){
             }
           }
         });
-        */
-      }
+  */
+    }
     return {
         create_initial_page:create_initial_page,
-        postToGoogle:postToGoogle
+        postToGoogle:postToGoogle,
+        get_next: get_next
     }
 })();
