@@ -16,6 +16,7 @@
 import sys
 import os
 from flask import Flask, flash, redirect, render_template, request, session, abort, send_file, send_from_directory
+from file_functions import *
 
 app = Flask(__name__)
 
@@ -38,6 +39,19 @@ def render_index():
     return render_template(
         'Index.html')
 
+####R project file path
+@app.route("/<path:path>")
+def root_folder_file(path):
+    return send_from_directory('/', path)
+
+####R POST: chosen text file
+@app.route('/folder_operation', methods = ['POST'])
+def get_post_javascript_data():
+    jsdata = request.form['javascript_data']
+    input_file = jsdata
+    file_function(jsdata)
+
+    return jsdata    
 
 ####R app starts from here
 if __name__ == "__main__":
