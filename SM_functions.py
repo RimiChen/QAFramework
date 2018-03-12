@@ -1,5 +1,7 @@
 ####R this file contains semantic processing functions
 import re
+from SM_datastructures import *
+from SM_map import *
 
 def SM_parse_semantic(semantic_sentences):
     #### examples:
@@ -11,7 +13,9 @@ def SM_parse_semantic(semantic_sentences):
     pattern = re.compile(r'\s+')
     semantic_sentences = re.sub(pattern, '', semantic_sentences)
 
+    semantic_tree_list =[]
     stack_layer = 0
+    
     current_SM_node = None
     parent_SM_node = None
     ## if number of "("
@@ -34,10 +38,30 @@ def SM_parse_semantic(semantic_sentences):
                     for item in sub_string_list:
                         if not item.strip() == "":
                             print("layer = "+ str(stack_layer)+", string = "+item)
+                            if stack_layer == 0:
+                                ## create a root node
+                                parent_SM_node = None
+                                current_SM_node = SM_node("", item, parent_SM_node)
+                                semantic_tree_list.append(current_SM_node)
+                                print("parent = None, current = "+current_SM_node.name)
+                            else:
+                                current_SM_node = SM_node("", item, parent_SM_node)
+                                print("parent ="+parent_SM_node.name+", current = "+current_SM_node.name)
+
                 else:
                     print("layer = "+ str(stack_layer)+", string = "+sub_semantic_string)
+                    if stack_layer == 0:
+                        ## create a root node
+                        parent_SM_node = None
+                        current_SM_node = SM_node("", sub_semantic_string, parent_SM_node)
+                        semantic_tree_list.append(current_SM_node)
+                        print("parent = None, current = "+current_SM_node.name)
+                    else:
+                        current_SM_node = SM_node("", sub_semantic_string, parent_SM_node)
+                        print("parent ="+parent_SM_node.name+", current = "+current_SM_node.name)
 
             stack_layer = stack_layer +1
+            parent_SM_node = current_SM_node
             semantic_sentences = semantic_sentences[left+1:]
         elif (right >= 0 and left >= 0) and right < left:
             sub_semantic_string = semantic_sentences[:right]
@@ -47,10 +71,31 @@ def SM_parse_semantic(semantic_sentences):
                     for item in sub_string_list:
                         if not item.strip() == "":
                             print("layer = "+ str(stack_layer)+", string = "+item)
+                            if stack_layer == 0:
+                                ## create a root node
+                                parent_SM_node = None
+                                current_SM_node = SM_node("", item, parent_SM_node)
+                                semantic_tree_list.append(current_SM_node)
+                                print("parent = None, current = "+current_SM_node.name)
+                            else:
+                                current_SM_node = SM_node("", item, parent_SM_node)
+                                print("parent ="+parent_SM_node.name+", current = "+current_SM_node.name)                            
+                      
                 else:
                     print("layer = "+ str(stack_layer)+", string = "+sub_semantic_string)
+                    if stack_layer == 0:
+                        ## create a root node
+                        parent_SM_node = None
+                        current_SM_node = SM_node("", sub_semantic_string, parent_SM_node)
+                        semantic_tree_list.append(current_SM_node)
+                        print("parent = None, current = "+current_SM_node.name)
+                    else:
+                        current_SM_node = SM_node("", sub_semantic_string, parent_SM_node)
+                        print("parent ="+parent_SM_node.name+", current = "+current_SM_node.name)
+
 
             stack_layer = stack_layer -1
+            parent_SM_node = current_SM_node.parent_node.parent_node
             semantic_sentences = semantic_sentences[right+1:]
 
         elif (right >= 0 and left < 0):
@@ -61,11 +106,37 @@ def SM_parse_semantic(semantic_sentences):
                     for item in sub_string_list:
                         if not item.strip() == "":
                             print("layer = "+ str(stack_layer)+", string = "+item)
+                            if stack_layer == 0:
+                                ## create a root node
+                                parent_SM_node = None
+                                current_SM_node = SM_node("", item, parent_SM_node)
+                                semantic_tree_list.append(current_SM_node)
+                                print("parent = None, current = "+current_SM_node.name)
+                            else:
+                                current_SM_node = SM_node("", item, parent_SM_node)
+                                print("parent ="+parent_SM_node.name+", current = "+current_SM_node.name)                            
                 else:
                     print("layer = "+ str(stack_layer)+", string = "+sub_semantic_string)
+                    if stack_layer == 0:
+                        ## create a root node
+                        parent_SM_node = None
+                        current_SM_node = SM_node("", sub_semantic_string, parent_SM_node)
+                        semantic_tree_list.append(current_SM_node)
+                        print("parent = None, current = "+current_SM_node.name)
+                    else:
+                        current_SM_node = SM_node("", sub_semantic_string, parent_SM_node)
+                        print("parent ="+parent_SM_node.name+", current = "+current_SM_node.name)                    
 
             stack_layer = stack_layer -1
+            parent_SM_node = current_SM_node.parent_node.parent_node
             semantic_sentences = semantic_sentences[right+1:]
-            
+    
+    return semantic_tree_list
+
+def add_to_map(verb, semantic_list):
+    semantic_map[verb] = semantic_list
+
+#def SM_print_semantic_tree(list_of_semantic_tree):
+
 
 

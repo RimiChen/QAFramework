@@ -1,7 +1,7 @@
 ####R this file contains data structures of sematics
 
-class SM_nodes:
-    def _init_(self, SM_type, SM_name, parent_node):
+class SM_node:
+    def __init__(self, SM_type, SM_name, parent_node):
         self.type = SM_type
         self.name = SM_name
         self.verb_link_list = {}
@@ -15,4 +15,5 @@ class SM_nodes:
 
     def add_verb_link(self, verb_link_name, other_SM_nodes):
         self.verb_link_list[verb_link_name] = other_SM_nodes
+
     

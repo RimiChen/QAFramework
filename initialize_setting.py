@@ -22,6 +22,7 @@
 # 5. Semantic: SM_<classname>
 # 6. Word verb, noun, adjactive: WV_<classname>, WN_<classname>, WA_<classname>
 # 7. Syntax: SY_<classname>
+# 8. TextProcessing: TP_<classname>
 ####
 
 
