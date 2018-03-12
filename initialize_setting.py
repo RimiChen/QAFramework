@@ -9,6 +9,19 @@
 #    which contains variables to control interface can project paths
 # 2. 
 #
+#
+####
+
+####R Varialbe names
+#
+# Class
+# 1. Whole text: T_<classname>
+# 2. Paragraph: P_<classname>
+# 3. Sentence: S_<classname>
+# 4. Word: W_<classname>
+# 5. Semantic: SM_<classname>
+# 6. Word verb, noun, adjactive: WV_<classname>, WN_<classname>, WA_<classname>
+# 7. Syntax: SY_<classname>
 ####
 
 
