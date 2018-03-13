@@ -3,250 +3,29 @@ This file provides fast, simple extraction of Rensa assertions from natural text
 
 Advanced users may want to look into more thorough extractors (e.g. Fader et al., 2011: "Identifying relations for open information extraction") or build their own.
 '''
-import sys
-import os
-import json
-import pprint
+
 import en
-#import regular expression
-import re
 from Entity import *
 
 # Returns a list of story assertions gleaned from the string s.
-actor_gender = {};
-##didn't use it
-def test_concept_extracter():
-    print("successfullly import rensa functions")
-    
+def test_rensa_functions():
+    print("Successfully import rensa functinos")
+
 def extract_story_concepts(s):
     actors, assertions = [], []
-    # s in here is the target sentence
     extractActors = extract_actors(assertions, s)
     actors = extractActors[0]
     assertions = extractActors[1]
-    new_assertions = extractActors[1];
-
-    showups = extractActors[2]
-    #here are all for actors
-    #print("test1: ")
-    #print(extractActors[0])
-    #print("test2: ")
-    #print(extractActors[1])
-    
     sentences = split_sentences(s)
-    
-    now_actor_name = "Unknown"
-    new = 1;
-    old_assertions = [];
     for sp,e in enumerate(sentences):
-        #assertions = [];
-        print("\n01:"+str(sp)+", "+str(sentences))
         assertions = extract_basic_properties(assertions, e, sp)
-        #new_assertions = extract_basic_properties(assertions, e, sp)
-        
-        ##should return two variables
-        
-        if new == 1:
-            ## this line replace pronoun by nouns
-            #old_assertions = new_assertions;
-            [new_assertions, now_actor_name, e, sp, current_actor] = link_basic_properties_to_actor(new_assertions, actors, e, sp, now_actor_name)
-        #print("\n   "+now_actor_name+"   \n")
-        #print(e)
-            print("==============")
-            print(current_actor)
-            #print(old_assertions)
-            print("-------------------------")
-            print(str(len(new_assertions))+", "+str(len(old_assertions)))
-            #diff_dict = [x for x in  new_assertions if x not in old_assertions]
-            #print(diff_dict)
-            #print(new_assertions)
-            result = []
-            #old_assertions.extend(newAssertions)
-            for myDict in new_assertions:
-                if myDict not in old_assertions:
-                    result.append(myDict)
-            print result
-            
-            old_assertions.extend(result)
-
-            
-            #old_assertions.extend(new_assertions)
-            #print(old_assertions)
-        
-        #print(sp)
-        
         assertions = extract_actor_actions(assertions, actors, e, sp)
-        assertions = extract_actor_properties(assertions, showups, e, sp)
-
-    #print(assertions)
-    #print(new_assertions)
-    #print(actor_gender)
-
-    #return new_assertions
-    if new == 1:
-        return new_assertions
-    else:
-        return assertions
-
-##didn't use it
-def extract_story_concepts_no_print(s):
-    actors, assertions = [], []
-    # s in here is the target sentence
-    extractActors = extract_actors(assertions, s)
-    actors = extractActors[0]
-    assertions = extractActors[1]
-    new_assertions = extractActors[1];
-
-    showups = extractActors[2]
-    #here are all for actors
-    #print("test1: ")
-    #print(extractActors[0])
-    #print("test2: ")
-    #print(extractActors[1])
-    
-    sentences = split_sentences(s)
-    
-    now_actor_name = "Unknown"
-    new = 1;
-    old_assertions = [];
-    for sp,e in enumerate(sentences):
-        #assertions = [];
-        assertions = extract_basic_properties(assertions, e, sp)
-        print("\n02:"+str(sp)+", "+str(sentences))
-        #new_assertions = extract_basic_properties(assertions, e, sp)
-        
-        ##should return two variables
-        
-        if new == 1:
-            ## this line replace pronoun by nouns
-            #old_assertions = new_assertions;
-            [new_assertions, now_actor_name, e, sp, current_actor] = link_basic_properties_to_actor(new_assertions, actors, e, sp, now_actor_name)
-        #print("\n   "+now_actor_name+"   \n")
-        #print(e)
-            #print("==============")
-            #print(current_actor)
-            #print(old_assertions)
-            #print("-------------------------")
-            #print(str(len(new_assertions))+", "+str(len(old_assertions)))
-            #diff_dict = [x for x in  new_assertions if x not in old_assertions]
-            #print(diff_dict)
-            #print(new_assertions)
-            result = []
-            #old_assertions.extend(newAssertions)
-            for myDict in new_assertions:
-                if myDict not in old_assertions:
-                    result.append(myDict)
-            #print result
-            
-            old_assertions.extend(result)
-
-            
-            #old_assertions.extend(new_assertions)
-            #print(old_assertions)
-        
-        #print(sp)
-        
-        assertions = extract_actor_actions(assertions, actors, e, sp)
-        assertions = extract_actor_properties(assertions, showups, e, sp)
-
-    #print(assertions)
-    #print(new_assertions)
-    #print(actor_gender)
-
-    #return new_assertions
-    if new == 1:
-        return new_assertions
-    else:
-        return assertions
-  
-def extract_story_concepts_separate(s):
-    actors, assertions = [], []
-    # s in here is the target sentence
-    extractActors = extract_actors(assertions, s)
-    actors = extractActors[0]
-    assertions = extractActors[1]
-    new_assertions = extractActors[1];
-    
-    actor_assertions = dict();
-
-    showups = extractActors[2]
-    #here are all for actors
-    #print("test1: ")
-    #print(extractActors[0])
-    #print("test2: ")
-    #print(extractActors[1])
-    
-    sentences = split_sentences(s)
-    
-    now_actor_name = "Unknown"
-    new = 1;
-    old_assertions = [];
-    #target = open('story_point.json', 'w')
-    # empty dictionary
-    story_points = {}    
-    for sp,e in enumerate(sentences):
-        #assertions = [];
-        story_points[str(sp)] = str(e.replace('\n', ' ').replace('\r', ''))
-        #print("\n")
-        #print("\n 03:"+str(sp)+", "+str(e))
-        assertions = extract_basic_properties(assertions, e, sp)
-        #new_assertions = extract_basic_properties(assertions, e, sp)
-        
-        ##should return two variables
-        
-        if new == 1:
-            ## this line replace pronoun by nouns
-            #old_assertions = new_assertions;
-            [new_assertions, now_actor_name, e, sp, current_actor] = link_basic_properties_to_actor(new_assertions, actors, e, sp, now_actor_name)
-        #print("\n   "+now_actor_name+"   \n")
-        #print(e)
-            #print("==============")
-            #print(current_actor)
-            #print(old_assertions)
-            #print("-------------------------")
-            #print(str(len(new_assertions))+", "+str(len(old_assertions)))
-            #diff_dict = [x for x in  new_assertions if x not in old_assertions]
-            #print(diff_dict)
-            #print(new_assertions)
-            result = []
-            #old_assertions.extend(newAssertions)
-            for myDict in new_assertions:
-                if myDict not in old_assertions:
-                    result.append(myDict)
-            #print result
-            
-            if len(result) >0 :
-                if current_actor not in actor_assertions:
-                    actor_assertions[current_actor] = []
-                    actor_assertions[current_actor].append(result)
-                else:
-                    actor_assertions[current_actor].append(result)
-            
-                old_assertions.extend(result)
-
-            
-            #old_assertions.extend(new_assertions)
-            #print(old_assertions)
-        
-        #print(sp)
-        
-        assertions = extract_actor_actions(assertions, actors, e, sp)
-        assertions = extract_actor_properties(assertions, showups, e, sp)
-
-    target = open('story_point.json', 'w')
-    target = target.write(json.dumps(story_points, ensure_ascii=False, indent = 4))
-    #target.close()
-    #print(assertions)
-    #print(new_assertions)
-    #print(actor_gender)
-
-    #return new_assertions
-    return actor_assertions
+        assertions = extract_actor_properties(assertions, actors, e, sp)
+    return assertions
 
 # Determine the actors present in the story.
 def extract_actors(assertions, s):
     actors = []
-    showups = []
     # First, check for nouns that have specified genders.
     matches1 = en.sentence.find(s, "NN is female")
     matches1 += en.sentence.find(s, "NN is male")
@@ -263,7 +42,6 @@ def extract_actors(assertions, s):
                 {"l":[name], "relation":"instance_of","r":["actor"]},
                 {"l":[name], "relation":"has_gender","r":[gender]}
             ]
-            actor_gender.append({name: gender})
             assertions.extend([x for x in newAssertions if x not in assertions])
 
     # Check for general nouns that are known names.
@@ -271,10 +49,6 @@ def extract_actors(assertions, s):
     for match in matches:
         name = match[0][0]
         if baby_names.__contains__(name):
-            showups.append(match[0][0])
-            #print("current actor:  "+match[0][0])
-            #extract basic property
-            
             if name not in actors:
                 actors.append(name)
                 gender = guess_gender(name)
@@ -282,12 +56,8 @@ def extract_actors(assertions, s):
                     {"l":[name], "relation":"instance_of","r":["actor"]},
                     {"l":[name], "relation":"has_gender","r":[gender]}
                 ]
-                ## in here, record genders and names
-                actor_gender[name] =  gender
-
-                
-            #no matter contain or not, add to showup
-    return [actors, assertions, showups]
+                assertions.extend([x for x in newAssertions if x not in assertions])
+    return [actors, assertions]
 
 # Examples:
 # The sea was unpredictable.
@@ -302,62 +72,6 @@ def extract_basic_properties(assertions, s, sp):
                 assertions.append(assertion)
     return assertions
 
-def link_basic_properties_to_actor(assertions, showups, s, sp, now_actor_name):
-    #for actor in actors:
-        #print(actor)
-        #matches += en.sentence.find(s, actor + " is (DT) (RB) JJ")
-        #matches += en.sentence.find(s, actor + " was (DT) (RB) JJ")
-        #matches += en.sentence.find(s, actor + " looked (RB) JJ")
-    ##matches = en.sentence.find(s, "JJ NN")
-    
-    match_names = en.sentence.find(s, "NN")
-    for match_name in match_names:
-        name = match_name[0][0]
-        if baby_names.__contains__(name):
-            now_actor_name = name
-
-    #print("\n----"+now_actor_name+"----\n")
-    ##old text
-    #print(s)
-    #print("===========================")
-    ##modified text
-    ##replace all pronoun
-    ## find if this actor is male: replace he. if female: replace she
-    if now_actor_name in actor_gender:
-        #print(actor_gender[now_actor_name])
-        if actor_gender[now_actor_name] == 'female':
-            #print("==>female: replace she")
-            #re_exp = re.compile("she ", re.IGNORECASE)
-            new_string = " "+now_actor_name+" "
-            s = re.sub(r'(\s)she \w+', new_string, s)
-            s = re.sub(r'(\s)She \w+', new_string, s)
-        else:
-            #print(("==>male: replace he"))
-            #re_exp = re.compile(, re.IGNORECASE)
-            new_string = " "+now_actor_name+" "
-            s = re.sub(r'(\s)he \w+', new_string, s)
-            s = re.sub(r'(\s)He \w+', new_string, s)
-
-            #s = re.sub(r'(\s)he \w+', new_string, s)
-    #print(s)
-    
-    ## find new assertions with new text
-    matches = en.sentence.find(s, "JJ NN")    
-    
-    #print(matches)
-    #print("\n\n")
-    
-    newly_added = [];
-
-    for match in matches:
-        noun = match[1][0]
-        adj  = match[0][0]
-        if noun!="" and adj!="":
-            assertion = {"l":[noun], "relation":"has_property","r":[adj],"storypoints":[{"at":sp}]}
-            if assertion not in assertions:
-                assertions.append(assertion)
-                newly_added.append(assertion)
-    return [assertions, now_actor_name, s, sp, now_actor_name]
 # Examples:
 # Harry looked ill.
 # Ariel was really happy.

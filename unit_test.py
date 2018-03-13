@@ -11,7 +11,7 @@ from ConceptExtractor import *
 
 if __name__ == "__main__":
     
-    #test_concept_extracter()
+    test_rensa_functions()
     
     ####R test results of small functions
     print("Testing function: parse semantic input sentences")
@@ -24,5 +24,8 @@ if __name__ == "__main__":
     #### apply Rensa to input data
     # feed input text, and get assertions
 
-    # analyze assertions
-    
+    ####R analyze assertions
+    # analyze actors
+    # analyze items
+    # analyze locations
+    # analyze verbs
