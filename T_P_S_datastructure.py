@@ -1,10 +1,14 @@
 
 class S_scene:
-    def __init__(self):
+    def __init__(self, paragraph_index, sentence_index):
+        self.paragraph_index = paragraph_index
+        self.sentence_index = sentence_index
         self.location = ""
         self.time = ""
         self.entity_list = [] 
         self.relation_list = []
+        ## some actions happen in this scene
+        self.action_list = []
 
 
 class S_relation:

@@ -23,6 +23,11 @@
 # 6. Word verb, noun, adjactive: WV_<classname>, WN_<classname>, WA_<classname>
 # 7. Syntax: SY_<classname>
 # 8. TextProcessing: TP_<classname>
+# 9. Entities (objects in the world, including people, items, animals etc.): ET_<classname>
+# 10. Location: L_<classname>
+# 11. Actions: A_<classname>
+# 12. Event: EV_<classname>
+# 13. Relation: R_<classname>
 ####
 
 
