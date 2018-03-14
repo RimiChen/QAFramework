@@ -12,6 +12,8 @@ from ET_functions import *
 from ET_datastructure import *
 from shared_information import *
 from TP_functions import *
+from R_map import *
+from R_datastructure import *
 
 ####R rensa
 
