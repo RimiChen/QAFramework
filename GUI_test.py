@@ -117,10 +117,7 @@ if __name__ == "__main__":
         for name in entity_map:
             #if entity_category[name] == "actor":
                 #print("-----"+name +", "+ str(entity_map[name].current_location))
-            #print("Actor: "+name)
-            #print(entity_map[name].linked_group)
             for relation in entity_map[name].relation_group:
                 print("    type: "+str(relation.type) +", Aug1: "+str(relation.main_entity) +", Aug2: "+str(relation.related_item))
-
         
         print("\n========================================\n")

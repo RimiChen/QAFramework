@@ -100,9 +100,9 @@ def extract_location(assertions, s):
 
 ####R get entities in the story.
 def extract_actions(assertions, s, entities):
-    print(en.sentence.tag(s))
+    #print(en.sentence.tag(s))
     entity_actions = []
-    print(entities)
+    #print(entities)
     # Check for general nouns that are known names.
     #matches = en.sentence.find(s, "NN")
     
@@ -113,7 +113,7 @@ def extract_actions(assertions, s, entities):
     matches += en.sentence.find(s, "NN VBD")
     matches += en.sentence.find(s, "NN JJ")
     ####R
-    print(matches)
+    #print(matches)
     for match in matches:
         name = match[0][0]
         relation = match[1][0]
@@ -124,6 +124,27 @@ def extract_actions(assertions, s, entities):
             ]
             assertions.extend([x for x in newAssertions if x not in assertions])
     return [entity_actions, assertions]
+
+
+####R get entities in the story.
+def extract_where_questions(assertions, s):
+    #print(en.sentence.tag(s))
+
+    # Check for general nouns that are known names.
+    #matches = en.sentence.find(s, "NN")
+    
+    ####R name is in NNP
+    matches = en.sentence.find(s, "Where VBZ (DT) NN")
+    ####R
+    #print(matches)
+    for match in matches:
+        name = match[3][0]
+        newAssertions = [
+            {"l":[name], "type":"where","r":[""]}
+        ]
+        assertions.extend([x for x in newAssertions if x not in assertions])
+  
+    return [assertions]
 
 # Examples:
 # The sea was unpredictable.

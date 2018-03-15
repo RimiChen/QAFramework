@@ -1,4 +1,5 @@
 import sys
+import copy
 sys.path.insert(0, './src/src/')
 
 from ConceptExtractor_new import *
@@ -43,9 +44,13 @@ if __name__ == "__main__":
     paragraph_index = 0
     sentence_index = 0
 
+    #information in one sentence
     scene_list = []
+    #information of world
+    entity_map_list =[]
 
     for sentence_text in  whole_text.paragraph_list[paragraph_index].sentence_list:
+        
         #print(sentence_text.text)
         #print(sentence_text.id)
         sentence_index = sentence_text.id
@@ -87,9 +92,9 @@ if __name__ == "__main__":
         #print(question_assertions)
 
 
-        print("\n========================================\n")
-        print("In paragraph "+str(paragraph_index)+", sentence "+str(sentence_index)+" we have:\n")
-        print("Origianl text = "+whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+        ##print("\n========================================\n")
+        ##print("In paragraph "+str(paragraph_index)+", sentence "+str(sentence_index)+" we have:\n")
+        ##print("Origianl text = "+whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
         #print("entities: ")
         #print(new_sentence_scene.entity_list)
         #print("location: ")
@@ -100,8 +105,8 @@ if __name__ == "__main__":
 
         if len(question_assertions) > 0:
             #print(question_assertions[0]['l'])
-            print("question type: "+str(question_assertions[0]["type"])+", question target: "+str(question_assertions[0]["l"][0]))
-            print("Answer = \n")
+            ##print("question type: "+str(question_assertions[0]["type"])+", question target: "+str(question_assertions[0]["l"][0]))
+            ##print("Answer = \n")
             target_name = question_assertions[0]["l"][0]
             for relation in entity_map[target_name].relation_group:
                 if relation.type == "at":
@@ -112,15 +117,26 @@ if __name__ == "__main__":
         scene_list.append(new_sentence_scene)
 
         
-        print("\n----------------------------------------\n")
+        ##print("\n----------------------------------------\n")
 
-        for name in entity_map:
+        ##for name in entity_map:
             #if entity_category[name] == "actor":
                 #print("-----"+name +", "+ str(entity_map[name].current_location))
-            #print("Actor: "+name)
-            #print(entity_map[name].linked_group)
-            for relation in entity_map[name].relation_group:
-                print("    type: "+str(relation.type) +", Aug1: "+str(relation.main_entity) +", Aug2: "+str(relation.related_item))
-
+            ##for relation in entity_map[name].relation_group:
+                ##print("    type: "+str(relation.type) +", Aug1: "+str(relation.main_entity) +", Aug2: "+str(relation.related_item))
         
-        print("\n========================================\n")
+        ##print("\n========================================\n")
+
+        #make a copy for 
+        copy_of_current_entity_map = copy.deepcopy(entity_map)
+        entity_map_list.append(copy_of_current_entity_map)
+
+    
+    for world_info in entity_map_list:
+        ##print(scene_info)
+        print("==============================")
+        for name in world_info:
+            #if entity_category[name] == "actor":
+                #print("-----"+name +", "+ str(entity_map[name].current_location))
+            for relation in world_info[name].relation_group:
+                print("    type: "+str(relation.type) +", Aug1: "+str(relation.main_entity) +", Aug2: "+str(relation.related_item))
