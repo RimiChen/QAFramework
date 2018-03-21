@@ -9,6 +9,8 @@ class S_scene:
         self.relation_list = []
         ## some actions happen in this scene
         self.action_list = []
+        self.negative_flag = False
+        self.indefinite_flag = False
 
 
 class S_relation:

@@ -43,7 +43,7 @@ if __name__ == "__main__":
     # feed input text, and get assertions
 
     ####R analyze assertions, add information to sentence scene
-    paragraph_index = 1
+    paragraph_index = 0
     sentence_index = 0
 
     scene_list = []
@@ -94,6 +94,23 @@ if __name__ == "__main__":
         new_sentence_scene.action_list.extend(entity_actions)
         #print(new_sentence_scene.action_list)
 
+        # get possibility
+        extract_possibility
+        possible_assertions =[]
+        [possible_assertions] = extract_possibility(possible_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text, entities)
+        if len(possible_assertions) > 0:
+            new_sentence_scene.indefinite_flag = True
+        else:
+            new_sentence_scene.indefinite_flag = False
+        print(possible_assertions)
+        #for action in entity_actions:
+            #print(action)
+            #if str(action["S"][0]).isdigit() == True:
+            #    print("AAAAAAAAAAAAAAAAA " +str(action))
+            #else:
+            #    new_sentence_scene.action_list.extend(entity_actions)
+        new_sentence_scene.action_list.extend(entity_actions)
+
         # get questions
         question_assertions = []
         #[question_assertions] = extract_where_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
@@ -111,6 +128,8 @@ if __name__ == "__main__":
         print(new_sentence_scene.location)  
         print("actions: ")
         print(new_sentence_scene.action_list)  
+        print("indefinite: ")
+        print(new_sentence_scene.indefinite_flag)  
 
 
         if len(question_assertions) > 0:
