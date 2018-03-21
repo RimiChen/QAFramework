@@ -30,17 +30,20 @@ if __name__ == "__main__":
     add_to_map("run", temp_semantic_list)
     
     simple_verb_case()
+    initial_entity_category()
+    initial_preserved_locaiton_words()
 
     print(semantic_map)
     
     ####R get input test data
 
     whole_text = separate_text("./data/tasks_1-20_v1-2/en/qa2_two-supporting-facts_test.txt", 15)
+    #whole_text = separate_text("./data/tasks_1-20_v1-2/en/qa10_indefinite-knowledge_train.txt", 0)
     #### apply Rensa to input data
     # feed input text, and get assertions
 
     ####R analyze assertions, add information to sentence scene
-    paragraph_index = 0
+    paragraph_index = 1
     sentence_index = 0
 
     scene_list = []
@@ -58,6 +61,8 @@ if __name__ == "__main__":
         new_sentence_scene.entity_list.extend(actors)
         for item in actors:
             entity_category[item] = "actor"
+            if item not in  entity_category["actor"]:
+                entity_category["actor"].append(item)
         #print(new_sentence_scene.entity_list)
         
         # analyze items
@@ -66,7 +71,9 @@ if __name__ == "__main__":
         new_sentence_scene.entity_list.extend(entities)
         for item in entities:
             if item not in entity_category.keys():
-                entity_category[item] = "other"
+                entity_category[item] = "item"
+                if item not in  entity_category["item"]:
+                    entity_category["item"].append(item)
         #print(new_sentence_scene.entity_list)
 
         # analyze locations
@@ -84,6 +91,8 @@ if __name__ == "__main__":
         # get questions
         question_assertions = []
         [question_assertions] = extract_where_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+        #[question_assertions] = extract_yes_no_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+        
         #print(question_assertions)
 
 
@@ -124,3 +133,7 @@ if __name__ == "__main__":
 
         
         print("\n========================================\n")
+    
+    print_location()
+    print_actor()
+    print_item()

@@ -5,12 +5,8 @@ class ET_entity:
         self.path = []
         self.current_location = "Unknown"
         self.linked_group = {}
-        # relation index, related list
-        self.relation_map = {
-            "at":"Unknown",
-            "has":{}
-        }
         self.relation_group = []
+        #self.not_equal_same_type = []
     
     def print_linked_things(self):
         for item in linked_group:

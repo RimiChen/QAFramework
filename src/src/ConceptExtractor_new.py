@@ -44,24 +44,26 @@ def extract_entities(assertions, s):
     #print(matches)
     for match in matches:
         name = match[0][0]
-        if name not in items and not name.isdigit():
-            items.append(name)
-            newAssertions = [
-                {"l":[name], "relation":"instance_of","r":["entity"]}
-            ]
-            assertions.extend([x for x in newAssertions if x not in assertions])
+        if not baby_names.__contains__(name):
+            if name not in items and not name.isdigit():
+                items.append(name)
+                newAssertions = [
+                    {"l":[name], "relation":"instance_of","r":["entity"]}
+                ]
+                assertions.extend([x for x in newAssertions if x not in assertions])
     return [items, assertions]
 
 
 # Determine the actors present in the story.
 def extract_actors(assertions, s):
-    ####print(en.sentence.tag(s))
+    print(en.sentence.tag(s))
     actors = []
   
     ####R name is in NNP
     matches = en.sentence.find(s, "NNP")
+
     ####R
-    #print(matches)
+    print(matches)
     for match in matches:
         name = match[0][0]
         if baby_names.__contains__(name):
@@ -77,7 +79,7 @@ def extract_actors(assertions, s):
 
 ####R get entities in the story.
 def extract_location(assertions, s):
-    #print(en.sentence.tag("on the room"))
+    #print(en.sentence.tag("from the room, here, there"))
     locations = []
     # Check for general nouns that are known names.
     #matches = en.sentence.find(s, "NN")
@@ -85,6 +87,7 @@ def extract_location(assertions, s):
     ####R name is in NNP
     matches = en.sentence.find(s, "IN (DT) NN")
     matches += en.sentence.find(s, "TO (DT) NN")
+    #matches += 
     ####R
     #print(matches)
     for match in matches:
@@ -96,11 +99,48 @@ def extract_location(assertions, s):
                 {"l":[name], "relation":relation,"r":["location"]}
             ]
             assertions.extend([x for x in newAssertions if x not in assertions])
+
+
+    matches = en.sentence.find(s, "IN NN")
+    matches += en.sentence.find(s, "TO NN")
+    ## add here and there
+    matches += en.sentence.find(s, "IN EX")
+    matches += en.sentence.find(s, "TO EX")
+    matches += en.sentence.find(s, "IN RB")
+    matches += en.sentence.find(s, "TO RB")
+    #matches += 
+    ####R
+    #print(matches)
+    for match in matches:
+        name = match[1][0]
+        relation = match[0][0]
+        if name not in locations :
+            locations.append(name)
+            newAssertions = [
+                {"l":[name], "relation":relation,"r":["location"]}
+            ]
+            assertions.extend([x for x in newAssertions if x not in assertions])
+
+    matches = en.sentence.find(s, "EX")
+    matches += en.sentence.find(s, "RB")
+    #matches += 
+    ####R
+    #print(matches)
+    for match in matches:
+        name = match[0][0]
+        if name not in locations :
+            locations.append(name)
+            newAssertions = [
+                {"l":[name], "relation":"unknown","r":["location"]}
+            ]
+            assertions.extend([x for x in newAssertions if x not in assertions])
+
+
     return [locations, assertions]
 
 ####R get entities in the story.
 def extract_actions(assertions, s, entities):
-    #print(en.sentence.tag(s))
+    #print(en.sentence.tag("Fredy is in the school"))
     entity_actions = []
     #print(entities)
     # Check for general nouns that are known names.
@@ -112,6 +152,8 @@ def extract_actions(assertions, s, entities):
     #matches += en.sentence.find(s, "NN VBZ VBG")
     matches += en.sentence.find(s, "NN VBD")
     matches += en.sentence.find(s, "NN JJ")
+    #matches += en.sentence.find(s, "VBN JJ")
+    #matches += en.sentence.find(s, "VBN VBD")
     ####R
     #print(matches)
     for match in matches:
@@ -123,6 +165,11 @@ def extract_actions(assertions, s, entities):
                 {"l":[name], "action":relation,"r":[""]}
             ]
             assertions.extend([x for x in newAssertions if x not in assertions])
+    
+    
+    
+    
+    
     return [entity_actions, assertions]
 
 
@@ -145,7 +192,28 @@ def extract_where_questions(assertions, s):
         assertions.extend([x for x in newAssertions if x not in assertions])
   
     return [assertions]
+####R get entities in the story.
+def extract_yes_no_questions(assertions, s):
+    #print(en.sentence.tag("? no yes from this there where Is Mary in the office "))
 
+    # Check for general nouns that are known names.
+    #matches = en.sentence.find(s, "NN")
+    
+    ####R name is in NNP
+    matches = en.sentence.find(s, "VBZ NNP IN DT NN")
+    matches += en.sentence.find(s, "VBZ NN IN DT NN")
+    ####R
+    #print(matches)
+    for match in matches:
+        #print("QQQQQQ "+s)
+        name = match[1][0]
+        location = match[4][0]
+        newAssertions = [
+            {"target":[name], "type":"question","location":[location]}
+        ]
+        assertions.extend([x for x in newAssertions if x not in assertions])
+  
+    return [assertions]
 # Examples:
 # The sea was unpredictable.
 def extract_basic_properties(assertions, s, sp):

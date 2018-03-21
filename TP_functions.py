@@ -21,7 +21,7 @@ def separate_text(text_path, line_number):
         next_number = 2
 
         iter = 0
-        if paragraph_count < 10:
+        if paragraph_count < 20:
             while not next_number < current_number:
                 #print(iter)
                 new_sentence = S_sentence(iter)
