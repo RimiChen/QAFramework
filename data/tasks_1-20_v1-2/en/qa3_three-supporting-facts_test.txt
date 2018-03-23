@@ -5,11 +5,17 @@
 5 John got the football.
 6 John journeyed to the garden.
 7 Mary left the milk.
+Where is Mary? 
+
 8 John left the football.
+
 9 Daniel moved to the garden.
+
 10 Daniel grabbed the football.
+
 11 Mary moved to the hallway.
 12 Mary went to the kitchen.
+
 13 John put down the apple there.
 14 John picked up the apple.
 15 Sandra moved to the hallway.
@@ -22,6 +28,7 @@
 22 John went to the office.
 23 Sandra went back to the bedroom.
 24 Sandra took the milk.
+Where is Mary? 
 25 John journeyed to the bathroom.
 26 John travelled to the office.
 27 Sandra left the milk.

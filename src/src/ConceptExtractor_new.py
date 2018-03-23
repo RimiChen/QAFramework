@@ -56,14 +56,14 @@ def extract_entities(assertions, s):
 
 # Determine the actors present in the story.
 def extract_actors(assertions, s):
-    print(en.sentence.tag(s))
+    #print(en.sentence.tag(s))
     actors = []
   
     ####R name is in NNP
     matches = en.sentence.find(s, "NNP")
 
     ####R
-    print(matches)
+    #print(matches)
     for match in matches:
         name = match[0][0]
         if baby_names.__contains__(name):
