@@ -14,6 +14,7 @@
 # 11. Actions: A_<classname>
 # 12. Event: EV_<classname>
 # 13. Relation: R_<classname>
+# 14. GUI: G_<classname>
 ####
 
 ####R
