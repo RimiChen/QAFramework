@@ -7,6 +7,10 @@ paragraph_map = {}
 
 preserved_location_word = {}
 
+
+#scene_list = []
+
+
 def initial_entity_category():
     entity_category["location"] = []
     entity_category["actor"] = []

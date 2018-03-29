@@ -4,13 +4,13 @@ sys.path.insert(0, './src/src/')
 from ConceptExtractor_new import *
 from Brain import *
 
+from shared_information import *
 from SM_functions import *
 from SM_map import *
 from V_map import *
 from ET_map import *
 from ET_functions import *
 from ET_datastructure import *
-from shared_information import *
 from TP_functions import *
 from R_map import *
 from R_datastructure import *
@@ -32,6 +32,7 @@ if __name__ == "__main__":
     simple_verb_case()
     initial_entity_category()
     initial_preserved_locaiton_words()
+    scene_list = []
 
     #print(semantic_map)
     
@@ -48,7 +49,7 @@ if __name__ == "__main__":
     paragraph_index = 0
     sentence_index = 0
 
-    scene_list = []
+
 
     for sentence_text in  whole_text.paragraph_list[paragraph_index].sentence_list:
         #print(sentence_text.text)
@@ -120,53 +121,87 @@ if __name__ == "__main__":
             #    new_sentence_scene.action_list.extend(entity_actions)
         new_sentence_scene.action_list.extend(entity_actions)
 
+
+        # print("entities: ")
+        # print(new_sentence_scene.entity_list)
+        # print("location: ")
+        # print(new_sentence_scene.location)  
+        # print("actions: ")
+        # print(new_sentence_scene.action_list)  
+        # print("indefinite: ")
+        # print(new_sentence_scene.indefinite_flag)  
+
+
+
+        ####R processing questions:
         # get questions
         question_assertions = []
-        #[question_assertions] = extract_where_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
-        [question_assertions] = extract_yes_no_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
-        
-        #print(question_assertions)
-
-
-
-        print("entities: ")
-        print(new_sentence_scene.entity_list)
-        print("location: ")
-        print(new_sentence_scene.location)  
-        print("actions: ")
-        print(new_sentence_scene.action_list)  
-        print("indefinite: ")
-        print(new_sentence_scene.indefinite_flag)  
-
-
+        [question_assertions] = extract_where_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+        #[question_assertions] = extract_yes_no_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
         if len(question_assertions) > 0:
-            #print(question_assertions[0]['l'])
-            print("question target: "+str(question_assertions[0]["target"][0])+", questioning locaiton: "+str(question_assertions[0]["location"][0]))
+            #print("$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+            print(question_assertions[0]['target'][0])
+            #print("question target: "+str(question_assertions[0]["target"][0])+", questioning locaiton: "+str(question_assertions[0]["location"][0]))
             print("Answer = \n")
             target_name = question_assertions[0]["target"][0]
             if target_name in entity_map.keys():
                 for relation in entity_map[target_name].relation_group:
                     if relation.type == "at":
-                        print(str(relation.type) +"( "+str(relation.main_entity) +", "+str(relation.related_item)+")")            
+                        print(str(relation.type) +"( "+str(relation.main_entity) +", "+str(relation.related_item)+")")
+                        ## if we have a certain place
+                        if not relation.related_item == "Unknown":
+                            print("### "+str(relation.main_entity)+" is in "+ relation.related_item)
+                        else:
+                            ####R we current don't have enough information to answer this
+                            # trace back to find and answer
+                            print("###### we don't know but possible solutions are " )
+                            #print(entity_category["location"])
+                            if len(entity_map[target_name].owned_history) > 0:
+                                # trace location according to what this actor owned
+                                print("reference: " )
+                                print(entity_map[target_name].owned_history)
+                                possible_list = []
+                                for item in entity_map[target_name].owned_history:
+                                    if not entity_map[item].current_location == "Unknown":
+                                        possible_list.append(entity_map[item].current_location)
 
-        update_entity_with_information(new_sentence_scene)  
-
-        scene_list.append(new_sentence_scene)
+                                if len(possible_list) > 0:
+                                    print(possible_list)
+                                else:
+                                    print(entity_category["location"])
 
         
+        
+        
+        
+        ####R save all scene information
+        scene_list = update_entity_with_information(new_sentence_scene, scene_list)  
+
+        #scene_list.append(new_sentence_scene)
+        #print(len(scene_list))
+        
+        ####R DEBUG information
         print("\n----------------------------------------\n")
 
         for name in entity_map:
-            #if entity_category[name] == "actor":
-                #print("-----"+name +", "+ str(entity_map[name].current_location))
-            #print("Actor: "+name)
-            #print(entity_map[name].linked_group)
+            ####R print relations
             for relation in entity_map[name].relation_group:
                 print("    type: "+str(relation.type) +", Aug1: "+str(relation.main_entity) +", Aug2: "+str(relation.related_item))
 
-        
+        # print("\n----------------------------------------\n")
+
+        # for name in entity_map:
+        #     ###R print relations
+        #     print("     Name: "+ name)
+        #     print(entity_map[name].owned_history)
+
+
+
         print("\n========================================\n")
+
     
+
+
     print_location()
     print_actor()
     print_item()

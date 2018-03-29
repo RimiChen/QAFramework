@@ -12,7 +12,7 @@ def print_all_entity_status():
     for item in entity_map:
         print(item)
 
-def update_entity_with_information(new_sentence_scene):
+def update_entity_with_information(new_sentence_scene, scene_list):
     ## check entity in this scene
     for entity in new_sentence_scene.entity_list:
         
@@ -64,8 +64,46 @@ def update_entity_with_information(new_sentence_scene):
     ####R update things inequality
 
 
+
+
     ## check action in this scene
     for entity in new_sentence_scene.entity_list:
+        if len(new_sentence_scene.location) > 0:
+                    # a location for this action
+            entity_map[entity].current_location = new_sentence_scene.location[0]
+            for thing in  new_sentence_scene.entity_list:
+                if not thing == entity:
+                    entity_map[thing].relation_group = del_type_of_relations(entity_map[thing].relation_group, ["at"])
+                            # change to new location
+                    entity_map[thing].current_location = entity_map[entity].current_location
+                    new_location_relation = R_relation("at", thing, entity_map[entity].current_location)
+                    entity_map[thing].relation_group.append(new_location_relation)
+
+        else:
+                    # if we don't know the location
+                    # we have two entities in this scene
+                    # search previous scene to see who appear in closest sentence
+            index_list = []
+            for entity_in_this in new_sentence_scene.entity_list:
+                start_index = len(scene_list)
+                while start_index > 0 and entity_in_this not in scene_list[start_index-1].entity_list:
+                            
+                    start_index = start_index -1
+                index_list.append(start_index)
+                    
+            print(index_list)
+            reference_index = index_list.index(max(index_list))
+            print("should referecne "+str(new_sentence_scene.entity_list[reference_index]))
+            refer_name = new_sentence_scene.entity_list[reference_index]
+            
+            for entity_in_this in new_sentence_scene.entity_list:
+                entity_map[entity_in_this].current_location =  entity_map[refer_name].current_location
+                entity_map[entity_in_this].relation_group = del_type_of_relations(entity_map[entity_in_this].relation_group, ["at"])
+                new_location_relation = R_relation("at", entity_in_this, entity_map[entity_in_this].current_location)
+                entity_map[entity_in_this].relation_group.append(new_location_relation)
+
+
+
         if entity in entity_category.keys():
             ## if this entity is an actor
             if entity_category[entity] == "actor":
@@ -82,20 +120,6 @@ def update_entity_with_information(new_sentence_scene):
                                     ####R indicate this scene has some usure things
                                     # remove old
                                     entity_map[entity].relation_group = del_type_of_relations(entity_map[entity].relation_group, ["at", "poss_at"])
-                                    # new_temp_relation_list = []
-                                    # for item in entity_map[entity].relation_group:
-                                    #     #print(item)   
-                                    #     if item.type == "at":
-                                    #         #entity_map[entity].relation_group.remove(item)
-                                    #         print(item.type)
-                                    #     elif item.type == "poss_at":
-                                    #         #entity_map[entity].relation_group.remove(item)
-                                    #         print(item.type)
-                                    #     else:
-                                    #         new_temp_relation_list.append(item) 
-                                    # initial the relation group
-                                    # entity_map[entity].relation_group = []
-                                    # entity_map[entity].relation_group.extend(new_temp_relation_list)
 
                                     ####R if from uknowen place, such as there, here update the location to last location
                                     if new_sentence_scene.location[0] in preserved_location_word:
@@ -120,20 +144,6 @@ def update_entity_with_information(new_sentence_scene):
                                     for item in entity_map[entity].linked_group.keys():
                                         new_location_relation = R_relation("at", item, entity_map[entity].current_location)
                                         # remove old
-                                        # new_temp_relation_list = []
-                                        # for relation in entity_map[item].relation_group:
-                                        #     #print(item)   
-                                        #     if relation.type == "at":
-                                        #         #entity_map[entity].relation_group.remove(item)
-                                        #         print(relation.type)
-                                        #     elif relation.type == "poss_at":
-                                        #         #entity_map[entity].relation_group.remove(item)
-                                        #         print(relation.type)
-                                        #     else:
-                                        #         new_temp_relation_list.append(relation) 
-                                        # # initial the relation group
-                                        # entity_map[item].relation_group = []
-                                        # entity_map[item].relation_group.extend(new_temp_relation_list)
                                         entity_map[item].relation_group = del_type_of_relations(entity_map[item].relation_group, ["at", "poss_at"])
                                             # add new
                                         entity_map[item].current_location = entity_map[entity].current_location
@@ -143,20 +153,6 @@ def update_entity_with_information(new_sentence_scene):
                                 
                                 else:
                                     # remove old
-                                    # new_temp_relation_list = []
-                                    # for item in entity_map[entity].relation_group:
-                                    #     #print(item)   
-                                    #     if item.type == "at":
-                                    #         #entity_map[entity].relation_group.remove(item)
-                                    #         print(item.type)
-                                    #     elif item.type == "poss_at":
-                                    #         #entity_map[entity].relation_group.remove(item)
-                                    #         print(item.type)
-                                    #     else:
-                                    #         new_temp_relation_list.append(item) 
-                                    # # initial the relation group
-                                    # entity_map[entity].relation_group = []
-                                    # entity_map[entity].relation_group.extend(new_temp_relation_list)
                                     entity_map[entity].relation_group = del_type_of_relations(entity_map[entity].relation_group, ["at", "poss_at"])
 
 
@@ -167,20 +163,6 @@ def update_entity_with_information(new_sentence_scene):
                                         for item in entity_map[entity].linked_group.keys():
                                             new_location_relation = R_relation("poss_at", item, entity_map[entity].current_location)
                                             
-                                            # new_temp_relation_list = []
-                                            # for relation in entity_map[item].relation_group:
-                                            #     #print(item)   
-                                            #     if relation.type == "at":
-                                            #         #entity_map[entity].relation_group.remove(item)
-                                            #         print(relation.type)
-                                            #     elif relation.type == "poss_at":
-                                            #         #entity_map[entity].relation_group.remove(item)
-                                            #         print(relation.type)
-                                            #     else:
-                                            #         new_temp_relation_list.append(relation) 
-                                            # # initial the relation group
-                                            # entity_map[item].relation_group = []
-                                            # entity_map[item].relation_group.extend(new_temp_relation_list)
                                             entity_map[item].relation_group = del_type_of_relations(entity_map[item].relation_group, ["at", "poss_at"])
                                                 # add new
                                             entity_map[item].current_location = entity_map[entity].current_location
@@ -191,6 +173,14 @@ def update_entity_with_information(new_sentence_scene):
 
                                 
                             elif verb_categories[new_sentence_scene.action_list[0]["action"]] == "link":
+                                
+                                ####R consider item locaiton first
+                                # if item location unknown, link to actor location
+                                # if actor location unknown, link to item locaiton
+                                # if both unknown just link the two together
+
+
+
                                 # link entity to a group
                                 new_relation_list = []
                                 for thing in  new_sentence_scene.entity_list:
@@ -203,18 +193,15 @@ def update_entity_with_information(new_sentence_scene):
                                         new_relation = R_relation("has", entity, thing)
                                         new_relation_list.append(new_relation)
                                         # add "at" relation to thing
-                                        new_location_relation = R_relation("at", thing, entity_map[entity].current_location)
+                                        #new_location_relation = R_relation("at", thing, entity_map[entity].current_location)
                                         # remove old
-                                        for item in entity_map[thing].relation_group:
-                                            if item.type == "at":
-                                                entity_map[thing].relation_group.remove(item)
+                                        #entity_map[thing].relation_group = del_type_of_relations(entity_map[thing].relation_group, ["at"])
                                         # add new
-                                        entity_map[thing].current_location = entity_map[entity].current_location
-                                        entity_map[thing].relation_group.append(new_location_relation)
+                                        #entity_map[thing].current_location = entity_map[entity].current_location
+                                        #entity_map[thing].relation_group.append(new_location_relation)
                                         #print("$$$$$ "+ entity+", with "+thing+" in "+entity_map[thing].current_location)
 
                                 entity_map[entity].relation_group.extend(new_relation_list)
-                                                            # remove old
 
                             elif verb_categories[new_sentence_scene.action_list[0]["action"]] == "cut":
                                 new_relation_list = []
@@ -223,12 +210,14 @@ def update_entity_with_information(new_sentence_scene):
                                     if not thing == entity:
                                         # not itself
                                         if thing in entity_map[entity].linked_group.keys():
+                                            # add to owned history
+                                            entity_map[entity].owned_history.append(thing)
+                                            # delete from lined group
                                             del entity_map[entity].linked_group[thing]
 
                                         # delete "has" relation to main entity
-                                        for relation in entity_map[entity].relation_group:
-                                            if relation.type == "has" and relation.related_item == thing:
-                                                entity_map[entity].relation_group.remove(relation) 
-
-                                    
-    ## update entity status
+                                        entity_map[entity].relation_group = del_type_of_relations(entity_map[entity].relation_group, ["has"])
+                                        ## update entity status
+        
+        scene_list.append(new_sentence_scene)
+        return scene_list

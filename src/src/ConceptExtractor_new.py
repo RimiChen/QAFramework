@@ -214,16 +214,26 @@ def extract_where_questions(assertions, s):
     #matches = en.sentence.find(s, "NN")
     
     ####R name is in NNP
-    matches = en.sentence.find(s, "Where VBZ (DT) NN")
+    matches = en.sentence.find(s, "Where VBZ DT NN")
     ####R
     #print(matches)
     for match in matches:
         name = match[3][0]
         newAssertions = [
-            {"l":[name], "type":"where","r":[""]}
+            {"target":[name], "type":"where","r":[""]}
         ]
         assertions.extend([x for x in newAssertions if x not in assertions])
-  
+
+    matches = en.sentence.find(s, "Where VBZ NNP")
+    ####R
+    #print(matches)
+    for match in matches:
+        name = match[2][0]
+        newAssertions = [
+            {"target":[name], "type":"where","r":[""]}
+        ]
+        assertions.extend([x for x in newAssertions if x not in assertions])
+
     return [assertions]
 ####R get entities in the story.
 def extract_yes_no_questions(assertions, s):
