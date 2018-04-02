@@ -5,11 +5,10 @@
 5 John got the football.
 6 John journeyed to the garden.
 7 Mary left the milk.
-  Where is Mary? 
 
 8 John left the football.
 
-9 Daniel moved to the garden.
+9 
 
 10 Daniel grabbed the football.
 

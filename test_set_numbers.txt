@@ -1,0 +1,19 @@
+1
+2
+3
+6
+8
+10
+12
+15
+16
+20
+
+
+benchmarking, count how many we get right
+do test data
+
+
+Note:
+*change the training data?
+*well defined tasks (1 or ?)
