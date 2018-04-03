@@ -1,9 +1,10 @@
-from shared_information import *
-from ET_map import *
-from ET_datastructure import *
-from V_map import *
-from R_datastructure import *
-from R_functions import *
+from SYS_initial_settings import *
+# from shared_information import *
+# from ET_map import *
+# from ET_datastructure import *
+# from V_map import *
+# from R_datastructure import *
+# from R_functions import *
 
 def track_entity_moving(name):
     print(name +" is now at: ")

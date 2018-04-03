@@ -1,19 +1,20 @@
-import sys
-sys.path.insert(0, './src/src/')
+from SYS_initial_settings import *
+# import sys
+# sys.path.insert(0, './src/src/')
 
-from ConceptExtractor_new import *
-from Brain import *
+# from ConceptExtractor_new import *
+# from Brain import *
 
-from shared_information import *
-from SM_functions import *
-from SM_map import *
-from V_map import *
-from ET_map import *
-from ET_functions import *
-from ET_datastructure import *
-from TP_functions import *
-from R_map import *
-from R_datastructure import *
+# from shared_information import *
+# from SM_functions import *
+# from SM_map import *
+# from V_map import *
+# from ET_map import *
+# from ET_functions import *
+# from ET_datastructure import *
+# from TP_functions import *
+# from R_map import *
+# from R_datastructure import *
 
 ####R rensa
 

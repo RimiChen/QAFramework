@@ -1,4 +1,4 @@
-from R_map import *
+from SYS_initial_settings import *
 
 
 class R_relation:

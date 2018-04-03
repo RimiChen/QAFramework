@@ -1,7 +1,8 @@
-####R this file contains semantic processing functions
-import re
-from SM_datastructures import *
-from SM_map import *
+from SYS_initial_settings import *
+# ####R this file contains semantic processing functions
+# import re
+# from SM_datastructures import *
+# from SM_map import *
 
 def SM_parse_semantic(semantic_sentences):
     #### examples:
