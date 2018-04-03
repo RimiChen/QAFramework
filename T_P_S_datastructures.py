@@ -15,7 +15,7 @@ class S_scene:
         self.original_text = ""
         self.isQuestion = False
         self.answer_text = ""
-        self.line_number = 
+        self.line_number = []
 
 
 class S_relation:

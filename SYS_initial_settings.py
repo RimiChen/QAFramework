@@ -17,6 +17,8 @@ from Brain import *
 from shared_information import *
 
 # Class
+# 0. System information: SYS_<classname>
+from SYS_function_map import *
 # 1. Whole text: T_<classname>
 # 2. Paragraph: P_<classname>
 # 3. Sentence: S_<classname>
@@ -48,6 +50,12 @@ from ET_functions import *
 #from G_mainscreen import *
 #from GUI_test import *
 # 15. TEST: TEST_<classname
+from TEST_evaluation_functions import *
 # 16. WEB_INTERFACE: WEB_<classname>
 # 
 ####
+
+def SYS_initialize_function():
+    print("SYS: Initialing the system.")
+    initial_entity_category()
+    initial_preserved_locaiton_words()

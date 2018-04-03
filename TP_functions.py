@@ -55,8 +55,8 @@ def separate_text(text_path, line_number):
                     line_number_array = line_number_text.split(" ")
                     new_sentence.answer_related_line.extend(line_number_array)
                     
-                    print("-----------------")
-                    print("//".join(new_sentence.answer_related_line))
+                    #print("-----------------")
+                    #print("//".join(new_sentence.answer_related_line))
                     #print("$question: "+question_text+" $answer: "+answer_text+" $linenumber: "+line_number_text)
             else:
                 new_sentence.text = sentence_list[0]

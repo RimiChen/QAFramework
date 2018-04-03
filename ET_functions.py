@@ -92,9 +92,9 @@ def update_entity_with_information(new_sentence_scene, scene_list):
                     start_index = start_index -1
                 index_list.append(start_index)
                     
-            print(index_list)
+            #print(index_list)
             reference_index = index_list.index(max(index_list))
-            print("should referecne "+str(new_sentence_scene.entity_list[reference_index]))
+            #print("should referecne "+str(new_sentence_scene.entity_list[reference_index]))
             refer_name = new_sentence_scene.entity_list[reference_index]
             
             for entity_in_this in new_sentence_scene.entity_list:
