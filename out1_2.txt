@@ -1,0 +1,3204 @@
+SYS: Initialing the system.
+./data/tasks_1-20_v1-2/en/qa1_single-supporting-fact_train.txt
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+0
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+1
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+2
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+3
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+4
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+5
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+6
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+7
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+8
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+9
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+10
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+11
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+12
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+13
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+14
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+15
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+16
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+17
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+18
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+19
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+20
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+21
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+22
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+23
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+24
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+25
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+26
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+27
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+28
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+29
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+30
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+31
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+32
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+33
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+34
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+35
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+36
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+37
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+38
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+39
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (garden, garden)
+40
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+41
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (office, office)
+42
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+43
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+44
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+45
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+46
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+47
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+48
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+49
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+50
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+51
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+52
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+53
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+54
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+55
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+56
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+57
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+58
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+59
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+60
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+61
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+62
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+63
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+64
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+65
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+66
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+67
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+68
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+69
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (office, office)
+70
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+71
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+72
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+73
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+74
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+75
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+76
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+77
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+78
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+79
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+80
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+81
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+82
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+83
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+84
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+85
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+86
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+87
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+88
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+89
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+90
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+91
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+92
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+93
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+94
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+95
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+96
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+97
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+98
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+99
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+100
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (garden, garden)
+101
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+102
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+103
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+104
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+105
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+106
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+107
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+108
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+109
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+110
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+111
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+112
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+113
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (garden, garden)
+114
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+115
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+116
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+117
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+118
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+119
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+120
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+121
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+122
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+123
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+124
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+125
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+126
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+127
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+128
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+129
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+130
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+131
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+132
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+133
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+134
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+135
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+136
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+137
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+138
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+139
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+140
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+141
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+142
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+143
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+144
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+145
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+146
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+147
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (office, office)
+148
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+149
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+150
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+151
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+152
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+153
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+154
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+155
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (office, office)
+156
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+157
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+158
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+159
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (garden, garden)
+160
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+161
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+162
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (office, office)
+163
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (office, office)
+164
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+165
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+166
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+167
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+168
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+169
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+170
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (office, office)
+171
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+172
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+173
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+174
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+175
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+176
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+177
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+178
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+179
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+180
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+181
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+182
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+183
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+184
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (office, office)
+185
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+186
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+187
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+188
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+189
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+190
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+191
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+192
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+193
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+194
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+195
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+196
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+197
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['Mary'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+198
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Sandra'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+[{'type': 'question', 'target': ['John'], 'location': []}]
+[{'type': 'question', 'target': ['Daniel'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+199
+correct: 5, total: 5
+Wrong: -------------------
+[]
+total correct: 1000, total question: 1000
+[]

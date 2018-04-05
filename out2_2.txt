@@ -1,0 +1,3204 @@
+SYS: Initialing the system.
+./data/tasks_1-20_v1-2/en/qa2_two-supporting-facts_train.txt
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+0
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+1
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+2
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+3
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+4
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+5
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+6
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+7
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+8
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+9
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+10
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+11
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (office, office)
+12
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (office, office)
+13
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+14
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+15
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+16
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+17
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+18
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+19
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+20
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+21
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+22
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+23
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+24
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+25
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+26
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+27
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+28
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+29
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (office, office)
+30
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+31
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+32
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+33
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+34
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+35
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+36
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+37
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+38
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+39
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+40
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+41
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+42
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+43
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+44
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+45
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+46
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+47
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+48
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+49
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+50
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+51
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+52
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+53
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+54
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+55
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+56
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+57
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+58
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+59
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+60
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+61
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+62
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+63
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+64
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+65
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+66
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+67
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+68
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+69
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+70
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+71
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+72
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+73
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+74
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+75
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+76
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+77
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+78
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+79
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+80
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+81
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+82
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+83
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+84
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+85
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+86
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+87
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+88
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+89
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+90
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+91
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+92
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+93
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+94
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+95
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+96
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+97
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+98
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+99
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+100
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+101
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (office, office)
+102
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+103
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+104
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+105
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+106
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+107
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+108
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+109
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+110
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+111
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+112
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+113
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (garden, garden)
+114
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (office, office)
+115
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+116
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+117
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+118
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+119
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+120
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+121
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+122
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+123
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+124
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+125
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (office, office)
+126
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+127
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (kitchen, kitchen)
+128
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+129
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+130
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+131
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+132
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+133
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+134
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+135
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+136
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+137
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+138
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+139
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+140
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+141
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+142
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+143
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+144
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+145
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (office, office)
+146
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+147
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+148
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+149
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+150
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+151
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+152
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+153
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+154
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+155
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+156
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+$$$$ (office, office)
+157
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+158
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+159
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+160
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+161
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+162
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (kitchen, kitchen)
+163
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+164
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+165
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+166
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+167
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (garden, garden)
+168
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+169
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+170
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+171
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+172
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (office, office)
+$$$$ (office, office)
+173
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+174
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+175
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (hallway, hallway)
+176
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+177
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+178
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+179
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+180
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+181
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (office, office)
+$$$$ (office, office)
+182
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+183
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (garden, garden)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (office, office)
+184
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+185
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+186
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+187
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+188
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+189
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+190
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+191
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (office, office)
+$$$$ (office, office)
+192
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (kitchen, kitchen)
+$$$$ (bathroom, bathroom)
+193
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+$$$$ (bathroom, bathroom)
+194
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+195
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+$$$$ (bedroom, bedroom)
+196
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['milk'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (bedroom, bedroom)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+$$$$ (hallway, hallway)
+197
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+[{'type': 'question', 'target': ['football'], 'location': []}]
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (hallway, hallway)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+198
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+[{'type': 'question', 'target': ['apple'], 'location': []}]
+Start comparing
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+$$$$ (office, office)
+199
+correct: 5, total: 5
+Wrong: -------------------
+[]
+total correct: 1000, total question: 1000
+[]

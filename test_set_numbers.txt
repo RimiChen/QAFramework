@@ -17,3 +17,47 @@ do test data
 Note:
 *change the training data?
 *well defined tasks (1 or ?)
+
+
+best sentence tagger?
+1. tags
+link verb to verbnet?
+
+** 
+get the assertion from verbnet (semantic structure)
+    #semantic_sentences = "motion(during(E), Theme) cause(Agent, E)"
+map frame from verbnet to our system?
+Fill in the parameter according to syntax of verbnet frame
+
+
+
+hypothesis of preconditions?
+
+QA side:
+from general question to query  (limited by representation of the nlp sources that we can reference)
+how hard?
+
+1. look at accurecy of the tool in pipline
+* wrong tags for certain words
+* get the best tools (taggers, verbnet tool)
+
+-2. bAbi tasks (unit test) to big challenge (overall), show not hard coding everything
+
+3. bAbi plus?
+limited close world assumption
+no loop between actions
+observed entity,  no obersation can be hypothesize about new entiry(?
+
+4. look at other QA task which tried to solve bAbi task?
+how accurrent that given a story, out system could get the states?
+
+* without action template we couldn't reasoning states 100% correct?
+* the way we cover the possible inputs? 
+
+paper: 
+Understanding Goal-Based Stories through Model Finding and Planning 
+
+@ how to extend actions? the blank or unknown parameters inside semantic? state tree match the semantic???
+
+
+
