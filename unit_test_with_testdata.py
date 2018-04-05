@@ -38,10 +38,14 @@ if __name__ == "__main__":
     scene_list = []
 
     #print(semantic_map)
+    initial_testcase()
+    initial_question_type()
     
     ####R get input test data
-
-    whole_text = separate_text("./data/tasks_1-20_v1-2/en/qa2_two-supporting-facts_test.txt", 15)
+    testcase_path = test_case_map[sys.argv[1]]
+    print(testcase_path)
+    whole_text = separate_text(testcase_path, 0)
+    #whole_text = separate_text("./data/fail.txt", 0)
     #whole_text = separate_text("./data/tasks_1-20_v1-2/en/qa10_indefinite-knowledge_train.txt", 0)
     #whole_text = separate_text("./data/tasks_1-20_v1-2/en/qa3_three-supporting-facts_test_modified.txt", 0)
     
@@ -52,191 +56,231 @@ if __name__ == "__main__":
     paragraph_index = 0
     sentence_index = 0
 
+    total_question = 0
+    total_correct = 0
+    for paragraph in whole_text.paragraph_list:
+        #print(paragraph)
+        SYS_initialize_function()
+        scene_list = []
+        entity_map = {}
+        # if len(entity_map) > 0:
+        #     print("start from non empty")
+        for sentence_text in  whole_text.paragraph_list[paragraph_index].sentence_list:
+            #print(sentence_text.text)
+            #print(sentence_text.id)
+            sentence_index = sentence_text.id
+
+            new_sentence_scene = S_scene(paragraph_index, sentence_index)
 
 
-    
-    for sentence_text in  whole_text.paragraph_list[paragraph_index].sentence_list:
-        #print(sentence_text.text)
-        #print(sentence_text.id)
-        sentence_index = sentence_text.id
+            #print("\n========================================\n")
+            #print("In paragraph "+str(paragraph_index)+", sentence "+str(sentence_index)+" we have:\n")
+            #print("Origianl text = "+whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
 
-        new_sentence_scene = S_scene(paragraph_index, sentence_index)
-
-
-        #print("\n========================================\n")
-        #print("In paragraph "+str(paragraph_index)+", sentence "+str(sentence_index)+" we have:\n")
-        #print("Origianl text = "+whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
-
-
-        
-        # analyze actors
-        actor_assertions = []
-        [actors, actor_assertions] = extract_actors(actor_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
-        new_sentence_scene.entity_list.extend(actors)
-        for item in actors:
-            entity_category[item] = "actor"
-            if item not in  entity_category["actor"]:
-                entity_category["actor"].append(item)
-        #print(new_sentence_scene.entity_list)
-        
-        # analyze items
-        noun_assertions =[]
-        [entities, noun_assertions] = extract_entities(noun_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
-        new_sentence_scene.entity_list.extend(entities)
-        for item in entities:
-            if item not in entity_category.keys():
-                entity_category[item] = "item"
-                if item not in  entity_category["item"]:
-                    entity_category["item"].append(item)
-        #print(new_sentence_scene.entity_list)
-
-        # analyze locations
-        location_assertions =[]
-        [location, location_assertions] = extract_location(location_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
-        new_sentence_scene.location = location
-        #print(new_sentence_scene.location)    
-        
-        # analyze verbs
-        action_assertions =[]
-        [entity_actions, action_assertions] = extract_actions(action_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text, entities)
-        #for action in entity_actions:
-            #print(action)
-            #if str(action["S"][0]).isdigit() == True:
-            #    print("AAAAAAAAAAAAAAAAA " +str(action))
-            #else:
-            #    new_sentence_scene.action_list.extend(entity_actions)
-        new_sentence_scene.action_list.extend(entity_actions)
-        #print(new_sentence_scene.action_list)
-
-        # get possibility
-        extract_possibility
-        possible_assertions =[]
-        [possible_assertions] = extract_possibility(possible_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text, entities)
-        if len(possible_assertions) > 0:
-            new_sentence_scene.indefinite_flag = True
-        else:
-            new_sentence_scene.indefinite_flag = False
-        #print(possible_assertions)
-        #for action in entity_actions:
-            #print(action)
-            #if str(action["S"][0]).isdigit() == True:
-            #    print("AAAAAAAAAAAAAAAAA " +str(action))
-            #else:
-            #    new_sentence_scene.action_list.extend(entity_actions)
-        new_sentence_scene.action_list.extend(entity_actions)
-
-
-        # print("entities: ")
-        # print(new_sentence_scene.entity_list)
-        # print("location: ")
-        # print(new_sentence_scene.location)  
-        # print("actions: ")
-        # print(new_sentence_scene.action_list)  
-        # print("indefinite: ")
-        # print(new_sentence_scene.indefinite_flag)  
-
-
-
-        ####R processing questions:
-        # get questions
-        question_assertions = []
-        [question_assertions] = extract_where_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
-        #[question_assertions] = extract_yes_no_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
-        if len(question_assertions) > 0:
-            #print("$$$$$$$$$$$$$$$$$$$$$$$$$$$")
-            print("\n========================================\n")
-            print("In paragraph "+str(paragraph_index)+", sentence "+str(sentence_index)+" we have:\n")
-            print("Origianl text = "+whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
-
-            print(question_assertions[0]['target'][0])
-            #print("question target: "+str(question_assertions[0]["target"][0])+", questioning locaiton: "+str(question_assertions[0]["location"][0]))
-            print("Answer = \n")
-            
-            ####R equal to parent if condition
-            #if whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].isQuestion == True:
-            #    print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
 
             
+            # analyze actors
+            actor_assertions = []
+            [actors, actor_assertions] = extract_actors(actor_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+            new_sentence_scene.entity_list.extend(actors)
+            for item in actors:
+                entity_category[item] = "actor"
+                if item not in  entity_category["actor"]:
+                    entity_category["actor"].append(item)
+            #print(new_sentence_scene.entity_list)
             
+            # analyze items
+            noun_assertions =[]
+            [entities, noun_assertions] = extract_entities(noun_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+            new_sentence_scene.entity_list.extend(entities)
+            for item in entities:
+                if item not in entity_category.keys():
+                    entity_category[item] = "item"
+                    if item not in  entity_category["item"]:
+                        entity_category["item"].append(item)
+            #print(new_sentence_scene.entity_list)
+
+            # analyze locations
+            location_assertions =[]
+            [location, location_assertions] = extract_location(location_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+            new_sentence_scene.location = location
+            #print(new_sentence_scene.location)    
             
-            ####R answer those question here
-            target_name = question_assertions[0]["target"][0]
-            if target_name in entity_map.keys():
-                for relation in entity_map[target_name].relation_group:
-                    if relation.type == "at":
-                        print(str(relation.type) +"( "+str(relation.main_entity) +", "+str(relation.related_item)+")")
-                        new_sentence_scene.isQuestion = True
-                        new_sentence_scene.answer_text =  str(relation.related_item)
+            # analyze verbs
+            action_assertions =[]
+            [entity_actions, action_assertions] = extract_actions(action_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text, entities)
+            #for action in entity_actions:
+                #print(action)
+                #if str(action["S"][0]).isdigit() == True:
+                #    print("AAAAAAAAAAAAAAAAA " +str(action))
+                #else:
+                #    new_sentence_scene.action_list.extend(entity_actions)
+            new_sentence_scene.action_list.extend(entity_actions)
+            #print(new_sentence_scene.action_list)
+
+            # get possibility
+            extract_possibility
+            possible_assertions =[]
+            [possible_assertions] = extract_possibility(possible_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text, entities)
+            if len(possible_assertions) > 0:
+                new_sentence_scene.indefinite_flag = True
+            else:
+                new_sentence_scene.indefinite_flag = False
+            #print(possible_assertions)
+            #for action in entity_actions:
+                #print(action)
+                #if str(action["S"][0]).isdigit() == True:
+                #    print("AAAAAAAAAAAAAAAAA " +str(action))
+                #else:
+                #    new_sentence_scene.action_list.extend(entity_actions)
+            new_sentence_scene.action_list.extend(entity_actions)
+
+
+            # print("entities: ")
+            # print(new_sentence_scene.entity_list)
+            # print("location: ")
+            # print(new_sentence_scene.location)  
+            # print("actions: ")
+            # print(new_sentence_scene.action_list)  
+            # print("indefinite: ")
+            # print(new_sentence_scene.indefinite_flag)  
+
+
+
+            ####R processing questions:
+            # get questions
+            #question_assertions = []
+            #[question_assertions] = extract_where_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+            question_assertions = []
+            [question_assertions] = extract_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text, question_type_map[sys.argv[1]])
+            #print(question_assertions)
+            #[question_assertions] = extract_yes_no_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+            if len(question_assertions) > 0:
+                print(question_assertions)
+                #print("$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+                # print("\n========================================\n")
+                # print("In paragraph "+str(paragraph_index)+", sentence "+str(sentence_index)+" we have:\n")
+                # print("Origianl text = "+whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+
+                # print(question_assertions[0]['target'][0])
+                # #print("question target: "+str(question_assertions[0]["target"][0])+", questioning locaiton: "+str(question_assertions[0]["location"][0]))
+                # print("Answer = \n")
+                
+                ####R equal to parent if condition
+                #if whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].isQuestion == True:
+                #    print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+
+                
+                
+                new_sentence_scene.isQuestion = True
+                ####R answer those question here
+                target_name = question_assertions[0]["target"][0]
+                if target_name in entity_map.keys():
+                    if len(question_assertions[0]["location"]) > 0:
+                        #print("ask previous")
+                        now_index = len(entity_map[target_name].path) -1
+                        while now_index >= 0 and entity_map[target_name].path[now_index] == entity_map[target_name].path[-1]:
+                            #print(entity_map[target_name].path[now_index])
+                            now_index = now_index -1
                         
-                        ## if we have a certain place
-                        if not relation.related_item == "Unknown":
-                            print("### "+str(relation.main_entity)+" is in "+ relation.related_item)
-                            new_sentence_scene.isQuestion = True
-                            new_sentence_scene.answer_text =  str(relation.related_item)
-                        
+                        if now_index < 0 :
+                            #print("Unknown")
+                            new_sentence_scene.answer_text = "Unknown"
                         else:
-                            ####R we current don't have enough information to answer this
-                            # trace back to find and answer
-                            print("###### we don't know but possible solutions are " )
-                            #print(entity_category["location"])
-                            if len(entity_map[target_name].owned_history) > 0:
-                                # trace location according to what this actor owned
-                                print("reference: " )
-                                print(entity_map[target_name].owned_history)
-                                possible_list = []
-                                for item in entity_map[target_name].owned_history:
-                                    if not entity_map[item].current_location == "Unknown":
-                                        possible_list.append(entity_map[item].current_location)
+                            #print(entity_map[target_name].path[now_index])
+                            new_sentence_scene.answer_text = entity_map[target_name].path[now_index]
 
-                                if len(possible_list) > 0:
-                                    print(possible_list)
-                                    new_sentence_scene.isQuestion = True
-                                    new_sentence_scene.answer_text =  str(possible_list[0])
-                        
-                                else:
-                                    print(entity_category["location"])
-                                    new_sentence_scene.isQuestion = True
+                    else:
+                        for relation in entity_map[target_name].relation_group:
+                            if relation.type == "at":
+                                #print(str(relation.type) +"( "+str(relation.main_entity) +", "+str(relation.related_item)+")")
+                                #new_sentence_scene.isQuestion = True
+                                new_sentence_scene.answer_text =  str(relation.related_item)
+                                
+                                ## if we have a certain place
+                                if not relation.related_item == "Unknown":
+                                    #print("### "+str(relation.main_entity)+" is in "+ relation.related_item)
+                                    #new_sentence_scene.isQuestion = True
                                     new_sentence_scene.answer_text =  str(relation.related_item)
-                        
+                                
+                                else:
+                                    ####R we current don't have enough information to answer this
+                                    # trace back to find and answer
+                                    #print("###### we don't know but possible solutions are " )
+                                    #print(entity_category["location"])
+                                    if len(entity_map[target_name].owned_history) > 0:
+                                        # trace location according to what this actor owned
+                                        #print("reference: " )
+                                        #print(entity_map[target_name].owned_history)
+                                        possible_list = []
+                                        for item in entity_map[target_name].owned_history:
+                                            if not entity_map[item].current_location == "Unknown":
+                                                possible_list.append(entity_map[item].current_location)
+
+                                        if len(possible_list) > 0:
+                                            #print(possible_list)
+                                            #new_sentence_scene.isQuestion = True
+                                            new_sentence_scene.answer_text =  str(possible_list[0])
+                                
+                                        else:
+                                            #print(entity_category["location"])
+                                            #new_sentence_scene.isQuestion = True
+                                            new_sentence_scene.answer_text =  str(relation.related_item)
+                                
+
+            
+            
+            
+            ####R save all scene information
+            [scene_list, entity_map] = update_entity_with_information(new_sentence_scene, scene_list, entity_map)  
+
+            #scene_list.append(new_sentence_scene)
+            #print(len(scene_list))
+            
+            # ####R DEBUG information
+
+
+            # if paragraph_index == 197:
+            #     print("\n----------------------------------------\n")
+            #     for name in entity_map:
+            #         ####R print relations
+            #         for relation in entity_map[name].relation_group:
+            #             print("    type: "+str(relation.type) +", Aug1: "+str(relation.main_entity) +", Aug2: "+str(relation.related_item))                
+            # print("\n----------------------------------------\n")
+            # for name in entity_map:
+            #     ####R print relations
+            #     for relation in entity_map[name].relation_group:
+            #         print("    type: "+str(relation.type) +", Aug1: "+str(relation.main_entity) +", Aug2: "+str(relation.related_item))
+
+            # print("\n----------------------------------------\n")
+
+            # for name in entity_map:
+            #     ###R print relations
+            #     print("     Name: "+ name)
+            #     print(entity_map[name].owned_history)
+
+
+
+            # print("\n========================================\n")
 
         
-        
-        
-        ####R save all scene information
-        scene_list = update_entity_with_information(new_sentence_scene, scene_list)  
-
-        #scene_list.append(new_sentence_scene)
-        #print(len(scene_list))
-        
-        # ####R DEBUG information
-        # print("\n----------------------------------------\n")
-
-        # for name in entity_map:
-        #     ####R print relations
-        #     for relation in entity_map[name].relation_group:
-        #         print("    type: "+str(relation.type) +", Aug1: "+str(relation.main_entity) +", Aug2: "+str(relation.related_item))
-
-        # # print("\n----------------------------------------\n")
-
-        # # for name in entity_map:
-        # #     ###R print relations
-        # #     print("     Name: "+ name)
-        # #     print(entity_map[name].owned_history)
+        # for scene in scene_list:
+        #     if scene.isQuestion == True:
+        #         print("$$$$ ("+str(scene.answer_text)+", "+str(whole_text.paragraph_list[paragraph_index].sentence_list[scene.sentence_index].answer_text)+")")
 
 
+        [question_count, correct_count, wrong_list] = evaluate_paragraph_correctness(whole_text.paragraph_list[paragraph_index].sentence_list, scene_list)
+        print(paragraph_index )
+        print("correct: "+str(correct_count)+", total: "+str(question_count))
+        print("Wrong: -------------------")
+        print(str(wrong_list))
 
-        # print("\n========================================\n")
-
+        total_question = total_question + question_count
+        total_correct = total_correct + correct_count
+        #print_location()
+        #print_actor()
+        #print_item()
+        paragraph_index = paragraph_index +1
+        sentence_index = 0
     
-    # for scene in scene_list:
-    #     if scene.isQuestion == True:
-    #         print("$$$$ ("+str(scene.answer_text)+", "+str(whole_text.paragraph_list[paragraph_index].sentence_list[scene.sentence_index].answer_text)+")")
-
-
-    [question_count, correct_count, wrong_list] = evaluate_paragraph_correctness(whole_text.paragraph_list[paragraph_index].sentence_list, scene_list)
-    print("correct: "+str(correct_count)+", total: "+str(question_count))
-    print("Wrong: -------------------")
-    print("\n".join(str(wrong_list)))
-    #print_location()
-    #print_actor()
-    #print_item()
+    print("total correct: "+ str(total_correct)+", total question: "+str(total_question) )

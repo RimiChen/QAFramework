@@ -79,7 +79,8 @@ def extract_actors(assertions, s):
 
 ####R get entities in the story.
 def extract_location(assertions, s):
-    #print(en.sentence.tag("from the room, here, there"))
+    #print(en.sentence.tag("from the room, here, there, down"))
+    #print(en.sentence.tag(s))
     locations = []
     # Check for general nouns that are known names.
     #matches = en.sentence.find(s, "NN")
@@ -93,26 +94,22 @@ def extract_location(assertions, s):
     for match in matches:
         name = match[2][0]
         relation = match[0][0]
-        if name not in locations :
-            locations.append(name)
-            newAssertions = [
-                {"l":[name], "relation":relation,"r":["location"]}
-            ]
-            assertions.extend([x for x in newAssertions if x not in assertions])
+        if not match[0][0] == "up" and not match[0][0] == "down":
+            ####R for cases like pick up(IN) the(DT) apple(NN)  
+            if name not in locations :
+                locations.append(name)
+                newAssertions = [
+                    {"l":[name], "relation":relation,"r":["location"]}
+                ]
+                assertions.extend([x for x in newAssertions if x not in assertions])
 
-
-    matches = en.sentence.find(s, "IN NN")
-    matches += en.sentence.find(s, "TO NN")
-    ## add here and there
-    matches += en.sentence.find(s, "IN EX")
-    matches += en.sentence.find(s, "TO EX")
-    matches += en.sentence.find(s, "IN RB")
-    matches += en.sentence.find(s, "TO RB")
+    matches = en.sentence.find(s, "(DT) NN EX")
+    matches += en.sentence.find(s, "(DT) NN EX")
     #matches += 
     ####R
     #print(matches)
     for match in matches:
-        name = match[1][0]
+        name = match[2][0]
         relation = match[0][0]
         if name not in locations :
             locations.append(name)
@@ -120,33 +117,52 @@ def extract_location(assertions, s):
                 {"l":[name], "relation":relation,"r":["location"]}
             ]
             assertions.extend([x for x in newAssertions if x not in assertions])
+    # matches = en.sentence.find(s, "IN NN")
+    # matches += en.sentence.find(s, "TO NN")
+    # ## add here and there
+    # matches += en.sentence.find(s, "IN EX")
+    # matches += en.sentence.find(s, "TO EX")
+    # # matches += en.sentence.find(s, "IN RB")
+    # # matches += en.sentence.find(s, "TO RB")
+    # #matches += 
+    # ####R
+    # #print(matches)
+    # for match in matches:
+    #     name = match[1][0]
+    #     relation = match[0][0]
+    #     if name not in locations :
+    #         locations.append(name)
+    #         newAssertions = [
+    #             {"l":[name], "relation":relation,"r":["location"]}
+    #         ]
+    #         assertions.extend([x for x in newAssertions if x not in assertions])
 
-    matches = en.sentence.find(s, "EX")
-    matches += en.sentence.find(s, "RB")
-    #matches += 
-    ####R
-    #print(matches)
-    for match in matches:
-        name = match[0][0]
-        if name not in locations :
-            locations.append(name)
-            newAssertions = [
-                {"l":[name], "relation":"unknown","r":["location"]}
-            ]
-            assertions.extend([x for x in newAssertions if x not in assertions])
+    # matches = en.sentence.find(s, "EX")
+    # matches += en.sentence.find(s, "RB")
+    # #matches += 
+    # ####R
+    # #print(matches)
+    # for match in matches:
+    #     name = match[0][0]
+    #     if name not in locations :
+    #         locations.append(name)
+    #         newAssertions = [
+    #             {"l":[name], "relation":"unknown","r":["location"]}
+    #         ]
+    #         assertions.extend([x for x in newAssertions if x not in assertions])
 
-    matches = en.sentence.find(s, "or (DT) NN")
-    #matches += 
-    ####R
-    #print(matches)
-    for match in matches:
-        name = match[2][0]
-        if name not in locations :
-            locations.append(name)
-            newAssertions = [
-                {"l":[name], "relation":"unknown","r":["location"]}
-            ]
-            assertions.extend([x for x in newAssertions if x not in assertions])
+    # matches = en.sentence.find(s, "or (DT) NN")
+    # #matches += 
+    # ####R
+    # #print(matches)
+    # for match in matches:
+    #     name = match[2][0]
+    #     if name not in locations :
+    #         locations.append(name)
+    #         newAssertions = [
+    #             {"l":[name], "relation":"unknown","r":["location"]}
+    #         ]
+    #         assertions.extend([x for x in newAssertions if x not in assertions])
 
     return [locations, assertions]
 
@@ -205,7 +221,49 @@ def extract_possibility(assertions, s, entities):
         assertions.extend([x for x in newAssertions if x not in assertions])
    
     return [assertions]
+
+def extract_questions(assertions, s, question_frame_list):
+    #print(type(question_frame_list))
+    # if s.find("?") > 0:
+    #     print(en.sentence.tag(s))
+
+    # Check for general nouns that are known names.
+    #matches = en.sentence.find(s, "NN")
     
+    ####R name is in NNP
+    matches = []
+    argument_list = []
+
+    for frame in question_frame_list:
+        #print(type(frame))
+        matches = []
+        for sub_frame in frame["frame"]:
+            #print(sub_frame)
+            #print(type(sub_frame))
+            matches += en.sentence.find(s, sub_frame)
+            ####R
+            #print(matches)
+            for match in matches:
+                #print("QQQQQQ "+s)
+                name = []
+                location = []
+                #print(frame["name"])
+                #print(frame["location"])
+                if frame["name"] >= 0:
+                    name = [match[int(frame["name"])][0]]
+                else:
+                    name = []
+
+                if frame["location"] >=0:
+                    location = [match[int(frame["location"])][0]]
+                else:
+                    location = []
+                newAssertions = [
+                    {"target":name, "type":"question","location":location}
+                ]
+                assertions.extend([x for x in newAssertions if x not in assertions])
+  
+    return [assertions]    
 ####R get entities in the story.
 def extract_where_questions(assertions, s):
     #print(en.sentence.tag(s))

@@ -38,7 +38,7 @@ from R_map import *
 from R_datastructures import *
 from R_functions import *
 # 9. Entities (objects in the world, including people, items, animals etc.): ET_<classname>
-from ET_map import *
+#from ET_map import *
 from ET_datastructures import *
 from ET_functions import *
 # 10. Location: L_<classname>
@@ -50,6 +50,7 @@ from ET_functions import *
 #from G_mainscreen import *
 #from GUI_test import *
 # 15. TEST: TEST_<classname
+from TEST_evaluation_map import *
 from TEST_evaluation_functions import *
 # 16. WEB_INTERFACE: WEB_<classname>
 # 
@@ -57,5 +58,10 @@ from TEST_evaluation_functions import *
 
 def SYS_initialize_function():
     print("SYS: Initialing the system.")
+    entity_map = {}
     initial_entity_category()
     initial_preserved_locaiton_words()
+
+def initail_everything():
+
+    initial_entity_category()
