@@ -1,0 +1,72 @@
+SYS: Initialing the system.
+./data/fail.txt
+SYS: Initialing the system.
+Start comparing
+0
+correct: 0, total: 0
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': ['bathroom']}]
+['Unknown', 'bedroom', 'bedroom', 'hallway', 'garden', 'bathroom', 'bathroom', 'bathroom']
+[{'type': 'question', 'target': ['milk'], 'location': ['office']}]
+['Unknown', 'Unknown', 'Unknown', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'kitchen', 'office', 'office', 'office']
+[{'type': 'question', 'target': ['apple'], 'location': ['office']}]
+['Unknown', 'bedroom', 'bedroom', 'hallway', 'garden', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'kitchen', 'office', 'office', 'office']
+[{'type': 'question', 'target': ['apple'], 'location': ['office']}]
+['Unknown', 'bedroom', 'bedroom', 'hallway', 'garden', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'kitchen', 'office', 'office', 'office']
+[{'type': 'question', 'target': ['apple'], 'location': ['office']}]
+['Unknown', 'bedroom', 'bedroom', 'hallway', 'garden', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'bathroom', 'kitchen', 'office', 'office', 'office', 'office', 'office', 'office', 'office', 'office', 'bedroom', 'office', 'office', 'office']
+Start comparing
+$$$$ (garden, garden)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (bedroom, bedroom)
+1
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['apple'], 'location': ['bedroom']}]
+['Unknown', 'kitchen', 'kitchen', 'office', 'garden', 'bedroom', 'bedroom', 'bedroom']
+[{'type': 'question', 'target': ['apple'], 'location': ['bedroom']}]
+['Unknown', 'kitchen', 'kitchen', 'office', 'garden', 'bedroom', 'bedroom', 'bedroom']
+[{'type': 'question', 'target': ['milk'], 'location': ['bathroom']}]
+['Unknown', 'garden', 'garden', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'garden', 'bathroom', 'bathroom', 'bathroom']
+[{'type': 'question', 'target': ['milk'], 'location': ['bathroom']}]
+['Unknown', 'garden', 'garden', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'garden', 'bathroom', 'bathroom', 'bathroom']
+[{'type': 'question', 'target': ['milk'], 'location': ['bathroom']}]
+['Unknown', 'garden', 'garden', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'bedroom', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'hallway', 'garden', 'bathroom', 'bathroom', 'bathroom']
+Start comparing
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+2
+correct: 5, total: 5
+Wrong: -------------------
+[]
+SYS: Initialing the system.
+[{'type': 'question', 'target': ['football'], 'location': ['garden']}]
+['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'bathroom', 'bathroom', 'kitchen', 'garden']
+[{'type': 'question', 'target': ['football'], 'location': ['garden']}]
+['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'bathroom', 'bathroom', 'kitchen', 'garden', 'bedroom']
+[{'type': 'question', 'target': ['milk'], 'location': ['bedroom']}]
+['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'bedroom', 'bedroom', 'garden', 'bedroom', 'bedroom', 'bedroom']
+[{'type': 'question', 'target': ['milk'], 'location': ['bedroom']}]
+['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'bedroom', 'bedroom', 'garden', 'bedroom', 'bedroom', 'bedroom']
+[{'type': 'question', 'target': ['football'], 'location': ['bathroom']}]
+['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'bathroom', 'bathroom', 'kitchen', 'garden', 'bedroom', 'garden', 'bedroom', 'bathroom', 'garden', 'office', 'office', 'office']
+Start comparing
+$$$$ (kitchen, kitchen)
+$$$$ (kitchen, kitchen)
+$$$$ (garden, garden)
+$$$$ (garden, garden)
+$$$$ (bedroom, bedroom)
+3
+correct: 5, total: 5
+Wrong: -------------------
+[]
+total correct: 15, total question: 15

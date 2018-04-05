@@ -56,8 +56,11 @@ if __name__ == "__main__":
     paragraph_index = 0
     sentence_index = 0
 
+    ####R test statistic variables
     total_question = 0
     total_correct = 0
+    wrong_paragraph = []
+    
     for paragraph in whole_text.paragraph_list:
         #print(paragraph)
         SYS_initialize_function()
@@ -177,18 +180,26 @@ if __name__ == "__main__":
                 target_name = question_assertions[0]["target"][0]
                 if target_name in entity_map.keys():
                     if len(question_assertions[0]["location"]) > 0:
+                        print(entity_map[target_name].path)
                         #print("ask previous")
                         now_index = len(entity_map[target_name].path) -1
-                        while now_index >= 0 and entity_map[target_name].path[now_index] == entity_map[target_name].path[-1]:
-                            #print(entity_map[target_name].path[now_index])
+                        while now_index >= 0 and entity_map[target_name].path[now_index] != question_assertions[0]["location"][0]:
+                            ####R first to find the last time which mention target location
                             now_index = now_index -1
-                        
-                        if now_index < 0 :
-                            #print("Unknown")
-                            new_sentence_scene.answer_text = "Unknown"
+
+                        if now_index < 0:
+                            "Unknown"
                         else:
-                            #print(entity_map[target_name].path[now_index])
-                            new_sentence_scene.answer_text = entity_map[target_name].path[now_index]
+                            while now_index >= 0 and entity_map[target_name].path[now_index] == question_assertions[0]["location"][0]:
+                                #print(entity_map[target_name].path[now_index])
+                                now_index = now_index -1
+                            
+                            if now_index < 0 :
+                                #print("Unknown")
+                                new_sentence_scene.answer_text = "Unknown"
+                            else:
+                                #print(entity_map[target_name].path[now_index])
+                                new_sentence_scene.answer_text = entity_map[target_name].path[now_index]
 
                     else:
                         for relation in entity_map[target_name].relation_group:
@@ -275,6 +286,9 @@ if __name__ == "__main__":
         print("Wrong: -------------------")
         print(str(wrong_list))
 
+        if correct_count != question_count:
+            wrong_paragraph.append(paragraph_index)
+
         total_question = total_question + question_count
         total_correct = total_correct + correct_count
         #print_location()
@@ -284,3 +298,4 @@ if __name__ == "__main__":
         sentence_index = 0
     
     print("total correct: "+ str(total_correct)+", total question: "+str(total_question) )
+    print(wrong_paragraph)

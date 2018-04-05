@@ -44,6 +44,11 @@ def initial_testcase():
     test_case_map["20_2"] = "./data/tasks_1-20_v1-2/en/qa20_agents-motivations_train.txt"
 
 def initial_question_type():
+    question_type_map["0"]=\
+    [
+        #129/NN Where/WRB was/VBD the/DT football/NN before/IN the/DT garden/NN ?/.
+        {"name": 3, "location": 6, "frame":["Where VBD DT NN before DT NN "]}
+    ]   
     question_type_map["1_1"] =\
     [
         {"name": 2, "location": -1, "frame":["Where VBZ NNP", "Where VBZ NN"]},
