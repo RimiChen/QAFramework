@@ -82,12 +82,28 @@ def initial_question_type():
     question_type_map["4_2"] =""
     question_type_map["5_1"] =""
     question_type_map["5_2"] =""
-    question_type_map["6_1"] =""
-    question_type_map["6_2"] =""
+    question_type_map["6_1"] =\
+    [
+        {"name": 1, "location": 4, "frame":["Is NNP in DT NN "]},
+        {"name": 1, "location": 4, "frame":["Is NN in DT NN "]}
+    ]
+    question_type_map["6_2"] =\
+    [
+        {"name": 1, "location": 4, "frame":["Is NNP in DT NN "]},
+        {"name": 1, "location": 4, "frame":["Is NN in DT NN "]}
+    ]
     question_type_map["7_1"] =""
     question_type_map["7_2"] =""
-    question_type_map["8_1"] =""
-    question_type_map["8_2"] =""
+    question_type_map["8_1"] =\
+    [
+        {"name": 2, "location": -1, "frame":["What is NNP carrying "]},
+        {"name": 2, "location": -1, "frame":["What is NN carrying "]}
+    ]
+    question_type_map["8_2"] =\
+    [
+        {"name": 2, "location": -1, "frame":["What is NNP carrying "]},
+        {"name": 2, "location": -1, "frame":["What is NN carrying "]}
+    ]
     question_type_map["9_1"] =""
     question_type_map["9_2"] =""
     question_type_map["10_1"] =""
