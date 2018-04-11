@@ -219,9 +219,19 @@ def update_entity_with_information(new_sentence_scene, scene_list, entity_map):
 
                             elif verb_categories[new_sentence_scene.action_list[0]["action"]] == "cut":
                                 new_relation_list = []
+                                #item_list = []
 
+                                
+                                
                                 for thing in  new_sentence_scene.entity_list:
                                     if not thing == entity:
+                                        item_list = []
+                                        for has_relation in entity_map[entity].relation_group:
+                                            if  has_relation.type == "has":
+                                                item_list.append(has_relation.related_item)
+                                        item_list.remove(thing)
+                                        #print(item_list)
+
                                         # not itself
                                         if thing in entity_map[entity].linked_group.keys():
                                             # add to owned history
@@ -230,7 +240,13 @@ def update_entity_with_information(new_sentence_scene, scene_list, entity_map):
                                             del entity_map[entity].linked_group[thing]
 
                                         # delete "has" relation to main entity
+                                        
                                         entity_map[entity].relation_group = del_type_of_relations(entity_map[entity].relation_group, ["has"])
+                                        if not item_list is None:
+                                            for new_item in item_list:
+                                                new_relation = R_relation("has", entity, new_item)
+                                                if not new_relation in entity_map[entity].relation_group:
+                                                    entity_map[entity].relation_group.append(new_relation)                                            
                                         ## update entity status
                                         new_location_relation = R_relation("at", thing, entity_map[entity].current_location)
                                         # remove old

@@ -65,3 +65,4 @@ def SYS_initialize_function():
 def initail_everything():
 
     initial_entity_category()
+

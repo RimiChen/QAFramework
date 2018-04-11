@@ -151,18 +151,18 @@ def extract_location(assertions, s):
     #         ]
     #         assertions.extend([x for x in newAssertions if x not in assertions])
 
-    # matches = en.sentence.find(s, "or (DT) NN")
-    # #matches += 
-    # ####R
-    # #print(matches)
-    # for match in matches:
-    #     name = match[2][0]
-    #     if name not in locations :
-    #         locations.append(name)
-    #         newAssertions = [
-    #             {"l":[name], "relation":"unknown","r":["location"]}
-    #         ]
-    #         assertions.extend([x for x in newAssertions if x not in assertions])
+    matches = en.sentence.find(s, "or (DT) NN")
+    #matches += 
+    ####R
+    #print(matches)
+    for match in matches:
+        name = match[2][0]
+        if name not in locations :
+            locations.append(name)
+            newAssertions = [
+                {"l":[name], "relation":"unknown","r":["location"]}
+            ]
+            assertions.extend([x for x in newAssertions if x not in assertions])
 
     return [locations, assertions]
 
@@ -237,6 +237,7 @@ def extract_questions(assertions, s, question_frame_list):
     for frame in question_frame_list:
         #print(type(frame))
         matches = []
+
         for sub_frame in frame["frame"]:
             #print(sub_frame)
             #print(type(sub_frame))
@@ -258,8 +259,18 @@ def extract_questions(assertions, s, question_frame_list):
                     location = [match[int(frame["location"])][0]]
                 else:
                     location = []
+                
+                if frame["attribute"] >=0:
+                    attribute = [match[int(frame["attribute"])][0]]
+                else:
+                    attribute = []
+                if frame["verb_type"] >=0:
+                    verb_type = [match[int(frame["verb_type"])][0]]
+                else:
+                    verb_type = []
+                
                 newAssertions = [
-                    {"target":name, "type":"question","location":location}
+                    {"target":name, "type":"question","location":location, "verb_type": verb_type, "attribute": attribute}
                 ]
                 assertions.extend([x for x in newAssertions if x not in assertions])
   

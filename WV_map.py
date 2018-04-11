@@ -19,3 +19,5 @@ def simple_verb_case():
     add_verb("discarded", "cut")
     add_verb("dropped", "cut")
     add_verb("left", "cut")
+
+    add_verb("carrying", "own")

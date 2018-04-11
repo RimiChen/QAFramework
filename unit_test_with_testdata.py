@@ -39,7 +39,9 @@ if __name__ == "__main__":
 
     #print(semantic_map)
     initial_testcase()
-    initial_question_type()
+    initial_question_frame()
+    initail_question_type()    
+    SYS_initialize_function()
     
     ####R get input test data
     testcase_path = test_case_map[sys.argv[1]]
@@ -155,7 +157,7 @@ if __name__ == "__main__":
             #question_assertions = []
             #[question_assertions] = extract_where_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
             question_assertions = []
-            [question_assertions] = extract_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text, question_type_map[sys.argv[1]])
+            [question_assertions] = extract_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text, question_frame_map[sys.argv[1]])
             #print(question_assertions)
             #[question_assertions] = extract_yes_no_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
             if len(question_assertions) > 0:
@@ -177,66 +179,116 @@ if __name__ == "__main__":
                 
                 new_sentence_scene.isQuestion = True
                 ####R answer those question here
-                target_name = question_assertions[0]["target"][0]
-                if target_name in entity_map.keys():
-                    if len(question_assertions[0]["location"]) > 0:
-                        print(entity_map[target_name].path)
-                        #print("ask previous")
-                        now_index = len(entity_map[target_name].path) -1
-                        while now_index >= 0 and entity_map[target_name].path[now_index] != question_assertions[0]["location"][0]:
-                            ####R first to find the last time which mention target location
-                            now_index = now_index -1
+                ####R get question type
+                question_type = question_type_test(question_assertions[0], sys.argv[1])
+                #print(question_type)
 
-                        if now_index < 0:
-                            "Unknown"
-                        else:
-                            while now_index >= 0 and entity_map[target_name].path[now_index] == question_assertions[0]["location"][0]:
-                                #print(entity_map[target_name].path[now_index])
+
+                if question_type == "location":
+                    target_name = question_assertions[0]["target"][0]
+                    if target_name in entity_map.keys():
+                        if len(question_assertions[0]["location"]) > 0:
+                            print(entity_map[target_name].path)
+                            #print("ask previous")
+                            now_index = len(entity_map[target_name].path) -1
+                            while now_index >= 0 and entity_map[target_name].path[now_index] != question_assertions[0]["location"][0]:
+                                ####R first to find the last time which mention target location
                                 now_index = now_index -1
-                            
-                            if now_index < 0 :
-                                #print("Unknown")
-                                new_sentence_scene.answer_text = "Unknown"
-                            else:
-                                #print(entity_map[target_name].path[now_index])
-                                new_sentence_scene.answer_text = entity_map[target_name].path[now_index]
 
-                    else:
-                        for relation in entity_map[target_name].relation_group:
-                            if relation.type == "at":
-                                #print(str(relation.type) +"( "+str(relation.main_entity) +", "+str(relation.related_item)+")")
-                                #new_sentence_scene.isQuestion = True
-                                new_sentence_scene.answer_text =  str(relation.related_item)
+                            if now_index < 0:
+                                "Unknown"
+                            else:
+                                while now_index >= 0 and entity_map[target_name].path[now_index] == question_assertions[0]["location"][0]:
+                                    #print(entity_map[target_name].path[now_index])
+                                    now_index = now_index -1
                                 
-                                ## if we have a certain place
-                                if not relation.related_item == "Unknown":
-                                    #print("### "+str(relation.main_entity)+" is in "+ relation.related_item)
+                                if now_index < 0 :
+                                    #print("Unknown")
+                                    new_sentence_scene.answer_text = "Unknown"
+                                else:
+                                    #print(entity_map[target_name].path[now_index])
+                                    new_sentence_scene.answer_text = entity_map[target_name].path[now_index]
+
+                        else:
+                            for relation in entity_map[target_name].relation_group:
+                                if relation.type == "at":
+                                    #print(str(relation.type) +"( "+str(relation.main_entity) +", "+str(relation.related_item)+")")
                                     #new_sentence_scene.isQuestion = True
                                     new_sentence_scene.answer_text =  str(relation.related_item)
-                                
-                                else:
-                                    ####R we current don't have enough information to answer this
-                                    # trace back to find and answer
-                                    #print("###### we don't know but possible solutions are " )
-                                    #print(entity_category["location"])
-                                    if len(entity_map[target_name].owned_history) > 0:
-                                        # trace location according to what this actor owned
-                                        #print("reference: " )
-                                        #print(entity_map[target_name].owned_history)
-                                        possible_list = []
-                                        for item in entity_map[target_name].owned_history:
-                                            if not entity_map[item].current_location == "Unknown":
-                                                possible_list.append(entity_map[item].current_location)
+                                    
+                                    ## if we have a certain place
+                                    if not relation.related_item == "Unknown":
+                                        #print("### "+str(relation.main_entity)+" is in "+ relation.related_item)
+                                        #new_sentence_scene.isQuestion = True
+                                        new_sentence_scene.answer_text =  str(relation.related_item)
+                                    
+                                    else:
+                                        ####R we current don't have enough information to answer this
+                                        # trace back to find and answer
+                                        #print("###### we don't know but possible solutions are " )
+                                        #print(entity_category["location"])
+                                        if len(entity_map[target_name].owned_history) > 0:
+                                            # trace location according to what this actor owned
+                                            #print("reference: " )
+                                            #print(entity_map[target_name].owned_history)
+                                            possible_list = []
+                                            for item in entity_map[target_name].owned_history:
+                                                if not entity_map[item].current_location == "Unknown":
+                                                    possible_list.append(entity_map[item].current_location)
 
-                                        if len(possible_list) > 0:
-                                            #print(possible_list)
-                                            #new_sentence_scene.isQuestion = True
-                                            new_sentence_scene.answer_text =  str(possible_list[0])
-                                
-                                        else:
-                                            #print(entity_category["location"])
-                                            #new_sentence_scene.isQuestion = True
-                                            new_sentence_scene.answer_text =  str(relation.related_item)
+                                            if len(possible_list) > 0:
+                                                #print(possible_list)
+                                                #new_sentence_scene.isQuestion = True
+                                                new_sentence_scene.answer_text =  str(possible_list[0])
+                                    
+                                            else:
+                                                #print(entity_category["location"])
+                                                #new_sentence_scene.isQuestion = True
+                                                new_sentence_scene.answer_text =  str(relation.related_item)
+                elif question_type == "binary":
+                    ####R yes/no questions
+                    #print(question_assertions)
+                    target_name = question_assertions[0]["target"][0]
+                    location_name = question_assertions[0]["location"][0]
+                    posssible_location_list = []
+                    for relation in entity_map[target_name].relation_group:
+
+                        if relation.type == "at":
+                            #print(str(relation.type) +"( "+str(relation.main_entity) +", "+str(relation.related_item)+")")
+                            #new_sentence_scene.isQuestion = True
+                            if str(relation.related_item) == location_name:
+                                new_sentence_scene.answer_text =  "yes"
+                            else:
+                                new_sentence_scene.answer_text =  "no" 
+                        elif relation.type == "poss_at":
+                            posssible_location_list.append(str(relation.related_item))
+                        
+                    if len(posssible_location_list) > 0 :
+                        ####R not sure the location
+                        if location_name in posssible_location_list:
+                            new_sentence_scene.answer_text = "maybe"
+                        else:
+                            new_sentence_scene.answer_text = "no"
+
+
+                elif question_type == "attribute":
+                    #print(question_assertions)
+                    target_name = question_assertions[0]["target"][0]
+                    verb_name = question_assertions[0]["verb_type"][0]
+                    if verb_categories[verb_name] == "own":
+                        answer_set = []
+                        new_sentence_scene.answer_text = ""
+                    for relation in entity_map[target_name].relation_group:
+                        if relation.type == "has":
+                            answer_set.append(str(relation.related_item))
+                    new_sentence_scene.answer_text = answer_set
+
+                    if len(answer_set) == 0:
+                        new_sentence_scene.answer_text = ["nothing"]
+
+                else:
+                    print("SYS: We cannot answer this question now")
+                    new_sentence_scene.answer_text = "NULL"
                                 
 
             
@@ -258,6 +310,7 @@ if __name__ == "__main__":
             #         for relation in entity_map[name].relation_group:
             #             print("    type: "+str(relation.type) +", Aug1: "+str(relation.main_entity) +", Aug2: "+str(relation.related_item))                
             # print("\n----------------------------------------\n")
+            # print("Origianl text = "+whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
             # for name in entity_map:
             #     ####R print relations
             #     for relation in entity_map[name].relation_group:

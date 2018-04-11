@@ -1,5 +1,8 @@
 test_case_map = {}
 question_type_map = {}
+question_frame_map = {}
+
+
 def initial_testcase():
     test_case_map["0"] = "./data/fail.txt"
     test_case_map["1_1"] = "./data/tasks_1-20_v1-2/en/qa1_single-supporting-fact_test.txt"
@@ -42,89 +45,167 @@ def initial_testcase():
     test_case_map["19_2"] = "./data/tasks_1-20_v1-2/en/qa19_path-finding_train.txt"
     test_case_map["20_1"] = "./data/tasks_1-20_v1-2/en/qa20_agents-motivations_test.txt"
     test_case_map["20_2"] = "./data/tasks_1-20_v1-2/en/qa20_agents-motivations_train.txt"
+def initail_question_type():
+    question_type_map["0"] = "attribute"
+    question_type_map["1_1"] = "location"
+    question_type_map["1_2"] = "location"
+    question_type_map["2_1"] = "location"
+    question_type_map["2_2"] = "location"
+    question_type_map["3_1"] = "location"
+    question_type_map["3_2"] = "location"
+    question_type_map["4_1"] = ""
+    question_type_map["4_2"] = ""
+    question_type_map["5_1"] = ""
+    question_type_map["5_2"] = ""
+    question_type_map["6_1"] = "binary"
+    question_type_map["6_2"] = "binary"
+    question_type_map["7_1"] = ""
+    question_type_map["7_2"] = ""
+    question_type_map["8_1"] = "attribute"
+    question_type_map["8_2"] = "attribute"
+    question_type_map["9_1"] = ""
+    question_type_map["9_2"] = ""
+    question_type_map["10_1"] = "binary"
+    question_type_map["10_2"] = "binary"
+    question_type_map["11_1"] = ""
+    question_type_map["11_2"] = ""
+    question_type_map["12_1"] = "location"
+    question_type_map["12_2"] = "location"
+    question_type_map["13_1"] = ""
+    question_type_map["13_2"] = ""
+    question_type_map["14_1"] = ""
+    question_type_map["14_2"] = ""
+    question_type_map["15_1"] = "attribute"
+    question_type_map["15_2"] = "attribute"
+    question_type_map["16_1"] = "attribute"
+    question_type_map["16_2"] = "attribute"
+    question_type_map["17_1"] = ""
+    question_type_map["17_2"] = ""
+    question_type_map["18_1"] = ""
+    question_type_map["18_2"] = ""
+    question_type_map["19_1"] = ""
+    question_type_map["19_2"] = ""
+    question_type_map["20_1"] = "motivation"
+    question_type_map["20_2"] = "motivation"   
 
-def initial_question_type():
-    question_type_map["0"]=\
+def initial_question_frame():
+    question_frame_map["0"]=\
+    [
+        {"name": 2, "location": -1, "verb_type": 3, "attribute": -1, "frame":["What is NNP carrying "]},
+        {"name": 2, "location": -1, "verb_type": 3, "attribute": -1, "frame":["What is NN carrying "]}
+    ]
+    question_frame_map["1_1"] =\
+    [
+        {"name": 2, "location": -1,"verb_type": -1, "attribute": -1, "frame":["Where VBZ NNP", "Where VBZ NN"]},
+        {"name": 3, "location": -1, "verb_type": -1, "attribute": -1,"frame":["Where VBZ DT NNP", "Where VBZ DT NNP"]}
+    ]
+    question_frame_map["1_2"] =\
+    [
+        {"name": 2, "location": -1,"verb_type": -1, "attribute": -1, "frame":["Where VBZ NNP", "Where VBZ NN"]},
+        {"name": 3, "location": -1,"verb_type": -1, "attribute": -1, "frame":["Where VBZ DT NNP", "Where VBZ DT NNP"]}
+    ]    
+    question_frame_map["2_1"] =\
+    [
+        {"name": 2, "location": -1,"verb_type": -1, "attribute": -1, "frame":["Where VBZ NNP", "Where VBZ NN"]},
+        {"name": 3, "location": -1,"verb_type": -1, "attribute": -1, "frame":["Where VBZ DT NN", "Where VBZ DT NN"]}
+    ]    
+    question_frame_map["2_2"] =\
+    [
+        {"name": 2, "location": -1,"verb_type": -1, "attribute": -1, "frame":["Where VBZ NNP", "Where VBZ NN"]},
+        {"name": 3, "location": -1,"verb_type": -1, "attribute": -1, "frame":["Where VBZ DT NN", "Where VBZ DT NN"]}
+    ]    
+    question_frame_map["3_1"] =\
     [
         #129/NN Where/WRB was/VBD the/DT football/NN before/IN the/DT garden/NN ?/.
-        {"name": 3, "location": 6, "frame":["Where VBD DT NN before DT NN "]}
-    ]   
-    question_type_map["1_1"] =\
-    [
-        {"name": 2, "location": -1, "frame":["Where VBZ NNP", "Where VBZ NN"]},
-        {"name": 3, "location": -1, "frame":["Where VBZ DT NNP", "Where VBZ DT NNP"]}
-    ]
-    question_type_map["1_2"] =\
-    [
-        {"name": 2, "location": -1, "frame":["Where VBZ NNP", "Where VBZ NN"]},
-        {"name": 3, "location": -1, "frame":["Where VBZ DT NNP", "Where VBZ DT NNP"]}
-    ]    
-    question_type_map["2_1"] =\
-    [
-        {"name": 2, "location": -1, "frame":["Where VBZ NNP", "Where VBZ NN"]},
-        {"name": 3, "location": -1, "frame":["Where VBZ DT NN", "Where VBZ DT NN"]}
-    ]    
-    question_type_map["2_2"] =\
-    [
-        {"name": 2, "location": -1, "frame":["Where VBZ NNP", "Where VBZ NN"]},
-        {"name": 3, "location": -1, "frame":["Where VBZ DT NN", "Where VBZ DT NN"]}
-    ]    
-    question_type_map["3_1"] =\
-    [
-        #129/NN Where/WRB was/VBD the/DT football/NN before/IN the/DT garden/NN ?/.
-        {"name": 3, "location": 6, "frame":["Where VBD DT NN before DT NN "]}
+        {"name": 3, "location": 6, "verb_type": -1, "attribute": -1,"frame":["Where VBD DT NN before DT NN "]}
     ]     
-    question_type_map["3_2"] =\
+    question_frame_map["3_2"] =\
     [
-        {"name": 3, "location": 6, "frame":["Where VBD DT NN before DT NN "]}
+        {"name": 3, "location": 6,"verb_type": -1, "attribute": -1, "frame":["Where VBD DT NN before DT NN "]}
     ]     
-    question_type_map["4_1"] =""
-    question_type_map["4_2"] =""
-    question_type_map["5_1"] =""
-    question_type_map["5_2"] =""
-    question_type_map["6_1"] =\
+    question_frame_map["4_1"] =""
+    question_frame_map["4_2"] =""
+    question_frame_map["5_1"] =""
+    question_frame_map["5_2"] =""
+    question_frame_map["6_1"] =\
     [
-        {"name": 1, "location": 4, "frame":["Is NNP in DT NN "]},
-        {"name": 1, "location": 4, "frame":["Is NN in DT NN "]}
+        {"name": 1, "location": 4, "verb_type": -1, "attribute": -1,"frame":["Is NNP in DT NN "]},
+        {"name": 1, "location": 4, "verb_type": -1, "attribute": -1,"frame":["Is NN in DT NN "]}
     ]
-    question_type_map["6_2"] =\
+    question_frame_map["6_2"] =\
     [
-        {"name": 1, "location": 4, "frame":["Is NNP in DT NN "]},
-        {"name": 1, "location": 4, "frame":["Is NN in DT NN "]}
+        {"name": 1, "location": 4, "verb_type": -1, "attribute": -1,"frame":["Is NNP in DT NN "]},
+        {"name": 1, "location": 4,"verb_type": -1, "attribute": -1, "frame":["Is NN in DT NN "]}
     ]
-    question_type_map["7_1"] =""
-    question_type_map["7_2"] =""
-    question_type_map["8_1"] =\
+    question_frame_map["7_1"] =""
+    question_frame_map["7_2"] =""
+    question_frame_map["8_1"] =\
     [
-        {"name": 2, "location": -1, "frame":["What is NNP carrying "]},
-        {"name": 2, "location": -1, "frame":["What is NN carrying "]}
+        {"name": 2, "location": -1, "verb_type": 3, "attribute": -1, "frame":["What is NNP carrying "]},
+        {"name": 2, "location": -1, "verb_type": 3, "attribute": -1, "frame":["What is NN carrying "]}
     ]
-    question_type_map["8_2"] =\
+    question_frame_map["8_2"] =\
     [
-        {"name": 2, "location": -1, "frame":["What is NNP carrying "]},
-        {"name": 2, "location": -1, "frame":["What is NN carrying "]}
+        {"name": 2, "location": -1, "verb_type": 3, "attribute": -1, "frame":["What is NNP carrying "]},
+        {"name": 2, "location": -1, "verb_type": 3, "attribute": -1, "frame":["What is NN carrying "]}
     ]
-    question_type_map["9_1"] =""
-    question_type_map["9_2"] =""
-    question_type_map["10_1"] =""
-    question_type_map["10_2"] =""
-    question_type_map["11_1"] =""
-    question_type_map["11_2"] =""
-    question_type_map["12_1"] =""
-    question_type_map["12_2"] =""
-    question_type_map["13_1"] =""
-    question_type_map["13_2"] =""
-    question_type_map["14_1"] =""
-    question_type_map["14_2"] =""
-    question_type_map["15_1"] =""
-    question_type_map["15_2"] =""
-    question_type_map["16_1"] =""
-    question_type_map["16_2"] =""
-    question_type_map["17_1"] =""
-    question_type_map["17_2"] =""
-    question_type_map["18_1"] =""
-    question_type_map["18_2"] =""
-    question_type_map["19_1"] =""
-    question_type_map["19_2"] =""
-    question_type_map["20_1"] =""
-    question_type_map["20_2"] =""
+    question_frame_map["9_1"] =""
+    question_frame_map["9_2"] =""
+    question_frame_map["10_1"] =\
+    [
+        {"name": 1, "location": 4,  "verb_type": -1, "attribute": -1,"frame":["Is NNP in DT NN "]},
+        {"name": 1, "location": 4,  "verb_type": -1, "attribute": -1,"frame":["Is NN in DT NN "]}      
+    ]
+    question_frame_map["10_2"] =\
+    [
+        {"name": 1, "location": 4,  "verb_type": -1, "attribute": -1,"frame":["Is NNP in DT NN "]},
+        {"name": 1, "location": 4,  "verb_type": -1, "attribute": -1,"frame":["Is NN in DT NN "]}      
+    ]
+    question_frame_map["11_1"] =""
+    question_frame_map["11_2"] =""
+    question_frame_map["12_1"] =\
+    [
+        {"name": 2, "location": -1,  "verb_type": -1, "attribute": -1,"frame":["Where VBZ NNP", "Where VBZ NN"]},
+        {"name": 3, "location": -1,  "verb_type": -1, "attribute": -1,"frame":["Where VBZ DT NNP", "Where VBZ DT NNP"]}
+    ]
+    question_frame_map["12_2"] =\
+    [
+        {"name": 2, "location": -1, "verb_type": -1, "attribute": -1,"frame":["Where VBZ NNP", "Where VBZ NN"]},
+        {"name": 3, "location": -1, "verb_type": -1, "attribute": -1,"frame":["Where VBZ DT NNP", "Where VBZ DT NNP"]}
+    ]
+    question_frame_map["13_1"] =""
+    question_frame_map["13_2"] =""
+    question_frame_map["14_1"] =""
+    question_frame_map["14_2"] =""
+    question_frame_map["15_1"] =\
+    [
+        {"name": 2, "location": -1, "verb_type": 3, "attribute": -1,"frame":["What is NN VBZ of", "What is NN VBD of", "What is NNP VBD of", "What is NNP VBZ of"]}
+    ]
+    question_frame_map["15_2"] =\
+    [
+        {"name": 2, "location": -1, "verb_type": 3, "attribute": -1,"frame":["What is NN VBZ of", "What is NN VBD of", "What is NNP VBD of", "What is NNP VBZ of"]}
+    ]
+    question_frame_map["16_1"] =\
+    [
+        {"name": 3, "location": -1, "verb_type": -1, "attribute": 1, "frame":["What NN is NNP", "What NN is NN"]}
+    ]
+    question_frame_map["16_2"] =\
+    [
+        {"name": 3, "location": -1, "verb_type": -1, "attribute": 1, "frame":["What NN is NNP", "What NN is NN"]}
+    ]
+    question_frame_map["17_1"] =""
+    question_frame_map["17_2"] =""
+    question_frame_map["18_1"] =""
+    question_frame_map["18_2"] =""
+    question_frame_map["19_1"] =""
+    question_frame_map["19_2"] =""
+    question_frame_map["20_1"] =\
+    [
+        {"name": 3, "location": -1, "verb_type": -1, "attribute": 1, "frame":["What NN is NNP", "What NN is NN"]}
+    ]
+    question_frame_map["20_2"] =\
+    [
+        {"name": 3, "location": -1, "verb_type": -1, "attribute": 1, "frame":["What NN is NNP", "What NN is NN"]}
+    ]
+
+  
