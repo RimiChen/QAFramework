@@ -1,54 +1,54 @@
 1 Mary moved to the bathroom.
 2 Sandra journeyed to the bedroom.
-3 Mary got the football there.
+2 Sandra journeyed to the bedroom.
 4 John went to the kitchen.
-5 Mary went back to the kitchen.
+4 John went to the kitchen.
 6 Mary went back to the garden.
-7 Where is the football? 	garden	3 6
+7 Where is the football? 
 8 Sandra went back to the office.
 9 John moved to the office.
-10 Sandra journeyed to the hallway.
+9 John moved to the office.
 11 Daniel went back to the kitchen.
-12 Mary dropped the football.
-13 John got the milk there.
-14 Where is the football? 	garden	12 6
+11 Daniel went back to the kitchen.
+11 Daniel went back to the kitchen.
+14 Where is the football? 
 15 Mary took the football there.
 16 Sandra picked up the apple there.
 17 Mary travelled to the hallway.
 18 John journeyed to the kitchen.
-19 Where is the football? 	hallway	15 17
+19 Where is the football? 
 20 John moved to the hallway.
-21 Sandra left the apple.
-22 Where is the apple? 	hallway	21 10
+20 John moved to the hallway.
+22 Where is the apple? 
 23 Mary got the apple there.
 24 John travelled to the garden.
-25 John went back to the hallway.
-26 John went back to the bedroom.
+24 John travelled to the garden.
+24 John travelled to the garden.
 27 Mary journeyed to the bedroom.
 28 John journeyed to the kitchen.
-29 John left the milk.
+28 John journeyed to the kitchen.
 30 Mary left the apple.
-31 Where is the milk? 	kitchen	29 28
+31 Where is the milk? 
 1 Daniel went to the kitchen.
 2 Daniel journeyed to the hallway.
 3 Mary went back to the garden.
 4 Daniel picked up the apple there.
 5 Sandra went to the office.
 6 Sandra travelled to the bedroom.
-7 Mary got the football there.
+6 Sandra travelled to the bedroom.
 8 Sandra grabbed the milk there.
 9 Mary left the football.
 10 Daniel left the apple.
-11 Where is the football? 	garden	9 3
+11 Where is the football? 
 12 Daniel got the apple there.
 13 Sandra dropped the milk.
-14 Where is the milk? 	bedroom	13 6
+14 Where is the milk? 
 15 Mary picked up the football there.
 16 John moved to the bathroom.
-17 Where is the milk? 	bedroom	13 6
+17 Where is the milk? 
 18 Mary moved to the bedroom.
 19 Sandra went to the garden.
-20 Where is the milk? 	bedroom	13 6
+20 Where is the milk? 
 21 Daniel discarded the apple.
 22 Daniel went to the bathroom.
-23 Where is the apple? 	hallway	21 2
+23 Where is the apple? 

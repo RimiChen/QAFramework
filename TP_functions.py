@@ -49,7 +49,7 @@ def separate_text(text_path, line_number):
                     new_sentence.isQuestion = True
 
                     
-                    print(question_answer_part[1])
+                    #print(question_answer_part[1])
                     if len(question_answer_part[1].split(",")) > 1:
 
                         answer_text = question_answer_part[1].split(",")
