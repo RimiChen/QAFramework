@@ -34,7 +34,7 @@ from SYS_initial_settings import *
 def modify_testdata(remove_style, remove_policy, testcase_path, remove_hint ):
     whole_text = separate_text(testcase_path, 0)
     print(type(whole_text))
-    f= open("./data/2_train_out3.txt","w+")
+    f= open("./data/2_valid_out4.txt","w+")
     if remove_style == 0:
        ####R remove the whole line
 
@@ -144,7 +144,19 @@ def modify_testdata(remove_style, remove_policy, testcase_path, remove_hint ):
                         f.write("\n")
                     else:
                         current_index = line_numbers.index(line_count)
-                        sentence.text = paragraph.sentence_list[add_inform[current_index]-1].text
+                        # process text to keep same line number
+                        temp_text = paragraph.sentence_list[add_inform[current_index]-1].text
+                        split_temp_text = temp_text.split(" ")
+                        ####R pop line number and first blank
+                        split_temp_text.pop(0)
+                        
+                        new_text = str(line_numbers[current_index])
+                        for sub_string in split_temp_text:
+                            new_text = new_text +" "+ sub_string 
+
+
+                        #sentence.text = paragraph.sentence_list[add_inform[current_index]-1].text
+                        sentence.text = new_text 
                         new_sentences.append(sentence)
                         ####
                         f.write(sentence.text)
@@ -166,5 +178,5 @@ if __name__ == "__main__":
         "numbers": -1,
         "keywords":[]
     }
-    modify_testdata(2, 0, "./data/tasks_1-20_v1-2/en-valid/qa2_train.txt", remove_hint)
+    modify_testdata(2, 0, "./data/tasks_1-20_v1-2/en-valid/qa2_valid.txt", remove_hint)
     #modify_testdata(2, 0, "./data/fail.txt", remove_hint)
