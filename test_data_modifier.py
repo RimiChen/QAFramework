@@ -31,10 +31,10 @@ from SYS_initial_settings import *
 
 
 
-def modify_testdata(remove_style, remove_policy, testcase_path, remove_hint ):
+def modify_testdata(remove_style, remove_policy, testcase_path, remove_hint, file_name):
     whole_text = separate_text(testcase_path, 0)
     print(type(whole_text))
-    f= open("./data/2_valid_out4.txt","w+")
+    f= open("./data/tasks_1-20_v1-2/en-valid_4/"+str(file_name),"w+")
     if remove_style == 0:
        ####R remove the whole line
 
@@ -178,5 +178,13 @@ if __name__ == "__main__":
         "numbers": -1,
         "keywords":[]
     }
-    modify_testdata(2, 0, "./data/tasks_1-20_v1-2/en-valid/qa2_valid.txt", remove_hint)
+    file_name = "qa2_valid.txt"
+    modify_testdata(2, 0, "./data/tasks_1-20_v1-2/en-valid/"+str(file_name), remove_hint, file_name)
+
+    file_name = "qa2_test.txt"
+    modify_testdata(2, 0, "./data/tasks_1-20_v1-2/en-valid/"+str(file_name), remove_hint, file_name)
+
+    file_name = "qa2_train.txt"
+    modify_testdata(2, 0, "./data/tasks_1-20_v1-2/en-valid/"+str(file_name), remove_hint, file_name)
+
     #modify_testdata(2, 0, "./data/fail.txt", remove_hint)
