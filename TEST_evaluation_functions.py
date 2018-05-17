@@ -27,6 +27,7 @@ def evaluate_paragraph_correctness(target_paragraph_sentences, generated_paragra
                 else:
                     wrong_list.append(scene.sentence_index)
             print("$$$$ ("+str(scene.answer_text)+"// "+str(target_paragraph_sentences[scene.sentence_index].answer_text)+")")
+            print("at least no in "+str(target_paragraph_sentences[scene.sentence_index].previous_location))
     return [question_count, correct_count, wrong_list]
 
 ####R temporary version, would like to change it to flexible version

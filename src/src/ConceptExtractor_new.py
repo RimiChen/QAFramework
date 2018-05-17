@@ -221,7 +221,9 @@ def extract_possibility(assertions, s, entities):
         assertions.extend([x for x in newAssertions if x not in assertions])
    
     return [assertions]
-
+def test_rensa_to_java:
+    print("Hello world from rensa to java")
+    
 def extract_questions(assertions, s, question_frame_list):
     #print(type(question_frame_list))
     # if s.find("?") > 0:

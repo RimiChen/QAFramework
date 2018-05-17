@@ -27,11 +27,13 @@ class S_relation:
 class S_sentence:
     def __init__(self, id):
         self.text = ""
+        # use id as time step
         self.id = id
         # to identify this sentence is a question
         self.isQuestion = False
         self.answer_related_line = []
         self.answer_text = ""
+        self.previous_location = ""
 
 class P_paragraph:
     def __init__(self, id):

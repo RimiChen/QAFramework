@@ -188,6 +188,7 @@ if __name__ == "__main__":
                     target_name = question_assertions[0]["target"][0]
                     if target_name in entity_map.keys():
                         if len(question_assertions[0]["location"]) > 0:
+                            print("Old path")
                             print(entity_map[target_name].path)
                             #print("ask previous")
                             now_index = len(entity_map[target_name].path) -1
@@ -205,9 +206,16 @@ if __name__ == "__main__":
                                 if now_index < 0 :
                                     #print("Unknown")
                                     new_sentence_scene.answer_text = "Unknown"
+                                    ####R no previous location
+                                    #new_sentence_scene.previous_location = "Unknown"
                                 else:
                                     #print(entity_map[target_name].path[now_index])
                                     new_sentence_scene.answer_text = entity_map[target_name].path[now_index]
+                                    ####R previous location
+                                    # if now_index > 1:
+                                    #     new_sentence_scene.previous_location = entity_map[target_name].path[now_index-1]
+                                    # else:
+                                    #     new_sentence_scene.previous_location = "Unknown"
 
                         else:
                             for relation in entity_map[target_name].relation_group:
@@ -221,6 +229,10 @@ if __name__ == "__main__":
                                         #print("### "+str(relation.main_entity)+" is in "+ relation.related_item)
                                         #new_sentence_scene.isQuestion = True
                                         new_sentence_scene.answer_text =  str(relation.related_item)
+                                        # if len(entity_map[target_name].path) > 1:
+                                        #     new_sentence_scene.previous_location = entity_map[target_name].path[-2]
+                                        # else:
+                                        #     new_sentence_scene.previous_location = "Unknown"
                                     
                                     else:
                                         ####R we current don't have enough information to answer this
