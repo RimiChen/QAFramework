@@ -34,7 +34,7 @@ from SYS_initial_settings import *
 def modify_testdata(remove_style, remove_policy, testcase_path, remove_hint, file_name):
     whole_text = separate_text(testcase_path, 0)
     print(type(whole_text))
-    f= open("./data/tasks_1-20_v1-2/en-valid_6/"+str(file_name),"w+")
+    f= open("./data/tasks_1-20_v1-2/en-valid_new/"+str(file_name),"w+")
     if remove_style == 0:
        ####R remove the whole line
 
@@ -366,6 +366,86 @@ def modify_testdata(remove_style, remove_policy, testcase_path, remove_hint, fil
                     
                 paragraph.sentence_list = new_sentences
 
+    elif remove_style == 4:
+       ####R remove the whole line
+
+        remove_number = int(remove_hint["numbers"])
+        print(remove_number)
+        remove_keys = int(len(remove_hint["verbs"]))+ int(len(remove_hint["actors"]))
+
+      
+        #if remove_number < 0 :
+            ## no assigned remove numbers
+
+        if remove_keys > 0:
+            #print("####")
+            #print(len(remove_hint["verbs"]))
+            #print(len(remove_hint["actors"]))  
+            for paragraph in whole_text.paragraph_list:
+
+                line_numbers = []
+                add_inform = []
+                #print("-------------------------")
+                #print("need :"+ str(random_number))
+
+                for sentence in paragraph.sentence_list:
+                    need_tag_number = len(remove_hint["verbs"]) 
+                    for verb in remove_hint["verbs"]:
+                        if not sentence.text.find(verb) < 0:
+                            #print(sentence.text)
+                            line_text = sentence.text.split(" ")
+                            line = int(line_text[0])
+                            if line <=2:
+                                down_line = line +1
+                                while paragraph.sentence_list[down_line -1].text.find("?") > 0 or paragraph.sentence_list[down_line -1].text.find(verb)>0:
+                                    down_line = down_line +1
+
+                                    if not down_line<= len(paragraph.sentence_list):
+                                        break
+
+                                #add_inform.append(down_line)  
+                                if down_line< len(paragraph.sentence_list):
+                                    add_inform.append(down_line)
+                                    line_numbers.append(line)  
+                            else:
+                                up_line = line -1
+                                while paragraph.sentence_list[up_line -1].text.find("?") > 0 or paragraph.sentence_list[up_line -1].text.find(verb)>0:
+                                    up_line = up_line -1
+                                    if not up_line>0:
+                                        break                                    
+                                #add_inform.append(up_line)  
+
+                                if up_line> 0:
+                                    add_inform.append(up_line)
+                                    line_numbers.append(line)                                     
+                                                       
+                    for actor in remove_hint["actors"]:
+                        if (not sentence.text.find(actor) < 0) and sentence.text.find("?") < 0:
+                            print(sentence.text)
+                            line_text = sentence.text.split(" ")
+                            line = int(line_text[0])-1
+
+                new_sentences = []
+                line_count = 1
+                new_count = 1
+                for sentence in paragraph.sentence_list:
+                    if not line_count in line_numbers:
+                        temp_text = sentence.text.split(" ")
+                        temp_text.pop(0)
+
+                        new_text = str(int(new_count))
+                        for text in temp_text:
+                            new_text = new_text + " " +text
+                        sentence.text = new_text
+                        new_sentences.append(sentence)
+                        ####
+                        f.write(sentence.text)
+                        f.write("\n")
+                        new_count = new_count+1
+
+                    line_count = line_count +1
+                    
+                paragraph.sentence_list = new_sentences
 
 
     f.close()
@@ -373,17 +453,18 @@ def modify_testdata(remove_style, remove_policy, testcase_path, remove_hint, fil
 if __name__ == "__main__":
     remove_hint =\
     {
-        "numbers": -1,
+        "numbers": 3,
         "actors":["John"],
-        "verbs":["moved"]
+        "verbs":["moved"],
+        "keywords":["moved"],
     }
-    file_name = "qa2_valid.txt"
-    modify_testdata(3, 0, "./data/tasks_1-20_v1-2/en-valid/"+str(file_name), remove_hint, file_name)
+    file_name = "qa3_test_new.txt"
+    modify_testdata(4, 0, "./data/tasks_1-20_v1-2/en-valid/"+str(file_name), remove_hint, file_name)
 
-    file_name = "qa2_test.txt"
-    modify_testdata(3, 0, "./data/tasks_1-20_v1-2/en-valid/"+str(file_name), remove_hint, file_name)
+    # file_name = "qa2_test.txt"
+    # modify_testdata(3, 0, "./data/tasks_1-20_v1-2/en-valid/"+str(file_name), remove_hint, file_name)
 
-    file_name = "qa2_train.txt"
-    modify_testdata(3, 0, "./data/tasks_1-20_v1-2/en-valid/"+str(file_name), remove_hint, file_name)
+    # file_name = "qa2_train.txt"
+    # modify_testdata(3, 0, "./data/tasks_1-20_v1-2/en-valid/"+str(file_name), remove_hint, file_name)
 
     #modify_testdata(2, 0, "./data/fail.txt", remove_hint)

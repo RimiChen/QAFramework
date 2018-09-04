@@ -206,13 +206,35 @@ def update_entity_with_information(new_sentence_scene, scene_list, entity_map):
                                         new_relation = R_relation("has", entity, thing)
                                         new_relation_list.append(new_relation)
                                         # add "at" relation to thing
-                                        new_location_relation = R_relation("at", thing, entity_map[entity].current_location)
-                                        # remove old
-                                        entity_map[thing].relation_group = del_type_of_relations(entity_map[thing].relation_group, ["at"])
-                                        # add new
-                                        entity_map[thing].current_location = entity_map[entity].current_location
-                                        entity_map[thing].relation_group.append(new_location_relation)
-                                        entity_map[thing].path.append(entity_map[entity].current_location)
+
+                                        #### if the location is different
+                                        print("???")
+                                        print(entity_map[thing].current_location)
+                                        print("???")
+                                        print(entity_map[entity].current_location)
+                                        if not entity_map[thing].current_location ==  entity_map[entity].current_location:
+                                            new_location_relation = R_relation("at", entity, entity_map[thing].current_location)
+                                            # remove old
+                                            entity_map[entity].relation_group = del_type_of_relations(entity_map[entity].relation_group, ["at"])
+                                            # add new
+                                            entity_map[entity].current_location = entity_map[thing].current_location
+                                            #entity_map[thing].current_location = entity_map[entity].current_location
+                                            #entity_map[thing].relation_group.append(new_location_relation)
+                                            #entity_map[thing].path.append(entity_map[entity].current_location)
+                                            entity_map[entity].relation_group.append(new_location_relation)
+                                            entity_map[entity].path.append(entity_map[thing].current_location)                                            
+                                        else:     
+                                            new_location_relation = R_relation("at", thing, entity_map[entity].current_location)
+                                            # remove old
+                                            entity_map[thing].relation_group = del_type_of_relations(entity_map[thing].relation_group, ["at"])
+                                            # add new
+                                            #entity_map[entity].current_location = entity_map[thing].current_location
+                                            entity_map[thing].current_location = entity_map[entity].current_location
+                                            entity_map[thing].relation_group.append(new_location_relation)
+                                            entity_map[thing].path.append(entity_map[entity].current_location)
+                                            #entity_map[entity].relation_group.append(new_location_relation)
+                                            #entity_map[entity].path.append(entity_map[thing].current_location)
+                                        
                                         #print("$$$$$ "+ entity+", with "+thing+" in "+entity_map[thing].current_location)
 
                                 entity_map[entity].relation_group.extend(new_relation_list)
