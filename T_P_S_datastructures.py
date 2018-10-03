@@ -6,6 +6,7 @@ class S_scene:
         self.location = ""
         self.time = ""
         self.entity_list = [] 
+        self.entity_map = {}
         self.relation_list = []
         ## some actions happen in this scene
         self.action_list = []
@@ -34,6 +35,7 @@ class S_sentence:
         self.answer_related_line = []
         self.answer_text = ""
         self.previous_location = ""
+        
 
 class P_paragraph:
     def __init__(self, id):

@@ -1,3 +1,4 @@
+from random import randint
 from SYS_initial_settings import *
 # remove the whole line
 # left the number index
@@ -450,21 +451,126 @@ def modify_testdata(remove_style, remove_policy, testcase_path, remove_hint, fil
 
     f.close()
 
+
+def modify_testdata(task_id, input_file_path):
+    
+    print("Generate test cases")
+
+    initial_entity_category()
+    initial_preserved_locaiton_words()
+
+    ####R get input test data
+    whole_text = separate_text(input_file_path, 15)
+
+
+    #### apply Rensa to input data
+    # feed input text, and get assertions
+
+    ####R analyze assertions, add information to sentence scene
+    paragraph_index = 1
+    sentence_index = 0
+
+    scene_list = []
+
+    for sentence_text in  whole_text.paragraph_list[paragraph_index].sentence_list:
+
+        sentence_index = sentence_text.id
+
+        new_sentence_scene = S_scene(paragraph_index, sentence_index)
+
+        print(sentence_text.text)
+
+        # analyze actors
+        actor_assertions = []
+        [actors, actor_assertions] = extract_actors(actor_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+        if "actor" not in new_sentence_scene.entity_map.keys():
+            new_sentence_scene.entity_map["actor"] = []
+        for item in actors:
+            entity_category[item] = "actor"
+            new_sentence_scene.entity_map["actor"].extend(actors)
+            
+            if item not in  entity_category["actor"]:
+                entity_category["actor"].append(item)
+
+        # if "actor" in new_sentence_scene.entity_map.keys():
+        #     if len(new_sentence_scene.entity_map["actor"]) > 0:
+        #         print(new_sentence_scene.entity_map["actor"][0]) 
+        
+        # analyze locations
+        location_assertions =[]
+        [locations, location_assertions] = extract_location(location_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+        new_sentence_scene.location = locations
+        if "location" not in new_sentence_scene.entity_map.keys():
+            new_sentence_scene.entity_map["location"] = [] 
+
+        for location in locations:
+            entity_category[location] = "location"
+            new_sentence_scene.entity_map["location"].append(location)
+            if location not in  entity_category["location"]:
+                entity_category["location"].append(location)
+                    
+        # if "location" in new_sentence_scene.entity_map.keys():
+        #     if len(new_sentence_scene.entity_map["location"]) > 0:
+        #         print(new_sentence_scene.entity_map["location"][0])        
+
+        # analyze items
+        noun_assertions =[]
+        [entities, noun_assertions] = extract_entities(noun_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+        new_sentence_scene.entity_list.extend(entities)
+        
+        if "item" not in new_sentence_scene.entity_map.keys():
+            new_sentence_scene.entity_map["item"] = [] 
+
+        for item in entities:
+            if (item not in (entity_category["actor"] and entity_category["location"])):
+                entity_category[item] = "item"
+                new_sentence_scene.entity_map["item"].append(item)
+                if item not in  entity_category["item"]:
+                    entity_category["item"].append(item)
+                    
+        # if "item" in new_sentence_scene.entity_map.keys():
+        #     if len(new_sentence_scene.entity_map["item"]) > 0:
+        #         print(new_sentence_scene.entity_map["item"][0])  
+
+ 
+
+        action_assertions =[]
+        [entity_actions, action_assertions] = extract_actions(action_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text, entities)
+        new_sentence_scene.action_list.extend(entity_actions)
+        #print(new_sentence_scene.action_list)        
+        if "action" not in new_sentence_scene.entity_map.keys():
+            new_sentence_scene.entity_map["action"] = [] 
+
+        for action in entity_actions:
+            new_sentence_scene.entity_map["action"].append(action["action"])
+               
+                #if action_part not in new_sentence_scene.entity_map["action"]:  
+                #    new_sentence_scene.entity_map["action"].append(action["action"])
+                    
+        # if "action" in new_sentence_scene.entity_map.keys():
+        #     if len(new_sentence_scene.entity_map["action"]) > 0:
+        #         print(new_sentence_scene.entity_map["action"][0])            
+        
+        scene_list.append(new_sentence_scene)
+
+    print_location()
+    print_actor()
+    print_item()
+
+
+       
+
+    ## random choose one from dict
+    print("actor number = "+str(len(entity_category["actor"])))
+    if len(entity_category["actor"])>1:
+        random_index = randint(0, len(entity_category["actor"])-1)
+        print(entity_category["actor"][random_index])
+    else:
+        print(len(entity_category["actor"]))
+
+    
+       
+
 if __name__ == "__main__":
-    remove_hint =\
-    {
-        "numbers": 3,
-        "actors":["John"],
-        "verbs":["moved"],
-        "keywords":["moved"],
-    }
-    file_name = "qa3_test_new.txt"
-    modify_testdata(4, 0, "./data/tasks_1-20_v1-2/en-valid/"+str(file_name), remove_hint, file_name)
-
-    # file_name = "qa2_test.txt"
-    # modify_testdata(3, 0, "./data/tasks_1-20_v1-2/en-valid/"+str(file_name), remove_hint, file_name)
-
-    # file_name = "qa2_train.txt"
-    # modify_testdata(3, 0, "./data/tasks_1-20_v1-2/en-valid/"+str(file_name), remove_hint, file_name)
-
-    #modify_testdata(2, 0, "./data/fail.txt", remove_hint)
+    file_name = "qa2_test.txt"
+    modify_testdata(1,"./data/tasks_1-20_v1-2/en-valid/"+str(file_name))
