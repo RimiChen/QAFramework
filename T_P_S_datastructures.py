@@ -17,6 +17,7 @@ class S_scene:
         self.isQuestion = False
         self.answer_text = ""
         self.line_number = []
+        
 
 
 class S_relation:
@@ -32,10 +33,11 @@ class S_sentence:
         self.id = id
         # to identify this sentence is a question
         self.isQuestion = False
+        self.isClue = False
         self.answer_related_line = []
         self.answer_text = ""
         self.previous_location = ""
-        
+        self.entity_map = {}
 
 class P_paragraph:
     def __init__(self, id):
