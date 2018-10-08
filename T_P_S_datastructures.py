@@ -14,7 +14,9 @@ class S_scene:
         self.indefinite_flag = False
 
         self.original_text = ""
+        self.modified_text = ""
         self.isQuestion = False
+        self.isClue = False
         self.answer_text = ""
         self.line_number = []
         

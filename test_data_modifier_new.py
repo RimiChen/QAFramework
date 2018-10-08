@@ -458,6 +458,7 @@ def modify_testdata(task_id, input_file_path):
 
     initial_entity_category()
     initial_preserved_locaiton_words()
+    simple_verb_case()
 
     ####R get input test data
     whole_text = separate_text(input_file_path, 15)
@@ -477,7 +478,7 @@ def modify_testdata(task_id, input_file_path):
         sentence_index = sentence_text.id
 
         new_sentence_scene = S_scene(paragraph_index, sentence_index)
-
+        new_sentence_scene.original_text = sentence_text.text
         print(sentence_text.text)
 
         # analyze actors
@@ -558,19 +559,107 @@ def modify_testdata(task_id, input_file_path):
     print_item()
 
 
-       
+        
+
 
     ## random choose one from dict
     print("actor number = "+str(len(entity_category["actor"])))
+ 
+    sentence_count = 0
+    for part_sentence in scene_list:
+        # print(part_sentence.original_text)
+        # print(part_sentence.entity_map["actor"])
+        # print(part_sentence.entity_map["action"])
+        # print(part_sentence.entity_map["item"])
+        # print(part_sentence.entity_map["location"])
+        scene_list[sentence_count].modified_text = scene_list[sentence_count].original_text
+
+        if len(entity_category["actor"])>1:
+                random_index = randint(0, len(entity_category["actor"])-1)
+        #         print(entity_category["actor"][random_index])
+        # else:
+        #     print(len(entity_category["actor"]))
+
+        if len(part_sentence.entity_map["actor"]) > 0 and len(part_sentence.entity_map["item"]) >0:
+            # this sentence have clue
+            scene_list[sentence_count].isClue = True
+        sentence_count = sentence_count +1
+
+    
+    # decide a target actor
     if len(entity_category["actor"])>1:
         random_index = randint(0, len(entity_category["actor"])-1)
-        print(entity_category["actor"][random_index])
-    else:
-        print(len(entity_category["actor"]))
 
+    current_actor = entity_category["actor"][random_index]
+    print("target: " + current_actor)
+
+
+    max_sentence_index = len(scene_list)
+    
+    sentence_count = 0
+    for part_sentence in scene_list:
+
+        if  part_sentence.isClue == True and part_sentence.entity_map["actor"][0] == current_actor:
+            current_item = part_sentence.entity_map["item"][0]
+            print("--first_possible_clue: line "+str(sentence_count)+". "+part_sentence.original_text)
+            # this sentence have clue
+
+
+            ## map the action
+            #print(part_sentence.entity_map["action"][0])
+            #print(verb_categories[part_sentence.entity_map["action"][0]])
+            # if part_sentence.entity_map["action"][0] in verb_categories.keys():
+            #     current_action = part_sentence.entity_map["action"][0]
+            #     print(verb_categories[current_action])
+            
+            
+            current_sentence_index = 0
+            #check for the clue (not only the chosen actor related to this item)
+            while current_sentence_index < max_sentence_index:
+                if scene_list[current_sentence_index].isClue == True:
+                    if scene_list[current_sentence_index].entity_map["item"][0] == current_item and not scene_list[current_sentence_index].entity_map["actor"][0] == current_actor: 
+                        # same item, different actor means the clue for chosen sentence
+                        print("--support_clue: line "+str(current_sentence_index)+". "+scene_list[current_sentence_index].original_text)
+                        break
+
+                current_sentence_index = current_sentence_index +1
+            
+            if current_sentence_index < max_sentence_index:
+                current_count = sentence_count
+                while current_count > 0:
+                    #print("$$$"+str(scene_list[current_count].original_text))
+
+                    if len(scene_list[current_count].entity_map["actor"]) >0:
+                        if (scene_list[current_count].entity_map["actor"][0] == current_actor) and (len(scene_list[current_count].entity_map["location"])>0) and scene_list[current_count].isClue == False:
+                            # the actor is correct and has a location, remove this one
+                            scene_list[current_count].modified_text = ""
+
+                            break
+                    current_count = current_count -1
+
+
+
+        sentence_count = sentence_count +1
+
+    #check text
+    for each_sentence in scene_list:
+        #print("story text")
+        if each_sentence.modified_text == "":
+            #print(each_sentence.entity_map["actor"][0]+":  "+ each_sentence.original_text)
+            #print(each_sentence.entity_map["actor"][0]+":  ####")
+            print("line:"+str(each_sentence.sentence_index)+". "+ each_sentence.original_text)
+            print(each_sentence.entity_map["actor"][0]+":  ####")            
+        else:
+            if len(each_sentence.entity_map["actor"]) > 0:
+                #print(each_sentence.entity_map["actor"][0]+":  "+ each_sentence.original_text)
+                #print(each_sentence.entity_map["actor"][0]+":  "+ each_sentence.modified_text)
+                print("line:"+str(each_sentence.sentence_index)+". "+ each_sentence.original_text)
+             
+            else:
+                print("??" + each_sentence.original_text)
     
        
 
 if __name__ == "__main__":
-    file_name = "qa2_test.txt"
+    file_name = "qa3_test.txt"
     modify_testdata(1,"./data/tasks_1-20_v1-2/en-valid/"+str(file_name))
