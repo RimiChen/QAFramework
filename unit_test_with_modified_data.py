@@ -47,10 +47,10 @@ if __name__ == "__main__":
     testcase_path = test_case_map[sys.argv[1]]
     #testcase_path = ""
     print(testcase_path)
-    #whole_text = separate_text(testcase_path, 0)
+    whole_text = separate_text(testcase_path, 0)
     #whole_text = separate_text("./data/fail.txt", 0)
     #whole_text = separate_text("./data/tasks_1-20_v1-2/en/qa10_indefinite-knowledge_train.txt", 0)
-    whole_text = separate_text("./data/tasks_1-20_v1-2/en-valid_new/qa3_test_new_1.txt", 0)
+    #whole_text = separate_text("./data/tasks_1-20_v1-2/en-valid_new/qa3_test_new_1.txt", 0)
     
     #### apply Rensa to input data
     # feed input text, and get assertions

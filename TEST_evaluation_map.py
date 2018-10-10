@@ -5,6 +5,7 @@ question_frame_map = {}
 
 def initial_testcase():
     test_case_map["0"] = "./data/fail.txt"
+    test_case_map["0_1"] = "./data/out.txt"
     test_case_map["1_1"] = "./data/tasks_1-20_v1-2/en/qa1_single-supporting-fact_test.txt"
     test_case_map["1_2"] = "./data/tasks_1-20_v1-2/en/qa1_single-supporting-fact_train.txt"
     test_case_map["2_1"] = "./data/tasks_1-20_v1-2/en/qa2_two-supporting-facts_test.txt"
