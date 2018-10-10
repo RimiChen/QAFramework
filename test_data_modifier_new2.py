@@ -53,8 +53,10 @@ def modify_testdata(task_id, input_file_path, out_path):
     paragraph_index = 0
     sentence_index = 0
 
-    scene_list = []
+
+
     for each_paragraph in whole_text.paragraph_list:
+        scene_list = []
         for sentence_text in  whole_text.paragraph_list[paragraph_index].sentence_list:
 
             sentence_index = sentence_text.id
@@ -173,7 +175,7 @@ def modify_testdata(task_id, input_file_path, out_path):
             random_index = randint(0, len(entity_category["actor"])-1)
 
         current_actor = entity_category["actor"][random_index]
-        print("target: " + current_actor)
+        #print("target: " + current_actor)
 
 
         max_sentence_index = len(scene_list)
@@ -261,7 +263,8 @@ def modify_testdata(task_id, input_file_path, out_path):
                 #print(each_sentence.entity_map["actor"][0]+":  ####")
                 #print("line:"+str(each_sentence.sentence_index)+". "+ each_sentence.original_text)
                 #print(each_sentence.entity_map["actor"][0]+":  ####")
-                f.write("\n")            
+                print("remove this line")
+                #f.write("\n")            
             else:
                 if len(each_sentence.entity_map["actor"]) > 0:
                     #print(each_sentence.entity_map["actor"][0]+":  "+ each_sentence.original_text)
@@ -271,13 +274,13 @@ def modify_testdata(task_id, input_file_path, out_path):
                 
                 else:
                     #print("??" + each_sentence.original_text)
-                    f.write("Where is "+current_actor+"?\n")
+                    f.write(str(each_sentence.sentence_index+1) + " Where is "+current_actor+"?"+"\thallway\t9 7"+"\n")
     
         paragraph_index = paragraph_index +1
     
     f.close()
 
 if __name__ == "__main__":
-    file_name = "qa3_test.txt"
+    file_name = "qa3_three-supporting-facts_test.txt"
     out_file = "qa3_test_out.txt"
-    modify_testdata(1,"./data/tasks_1-20_v1-2/en-valid/"+str(file_name), "./data/tasks_1-20_v1-2/en-valid/"+str(out_file))
+    modify_testdata(1,"./data/tasks_1-20_v1-2/en/"+str(file_name), "./data/tasks_1-20_v1-2/en/"+str(out_file))
