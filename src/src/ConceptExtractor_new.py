@@ -286,6 +286,7 @@ def extract_where_questions(assertions, s):
     
     ####R name is in NNP
     matches = en.sentence.find(s, "Where VBZ DT NN")
+    matches += en.sentence.find(s, "Where VBD DT NN")
     ####R
     #print(matches)
     for match in matches:
@@ -296,6 +297,7 @@ def extract_where_questions(assertions, s):
         assertions.extend([x for x in newAssertions if x not in assertions])
 
     matches = en.sentence.find(s, "Where VBZ NNP")
+    matches += en.sentence.find(s, "Where VBD NNP")
     ####R
     #print(matches)
     for match in matches:
@@ -304,6 +306,39 @@ def extract_where_questions(assertions, s):
             {"target":[name], "type":"where","r":[""]}
         ]
         assertions.extend([x for x in newAssertions if x not in assertions])
+
+    return [assertions]
+def extract_where_questions2(assertions, s):
+    #print(en.sentence.tag(s))
+
+    # Check for general nouns that are known names.
+    #matches = en.sentence.find(s, "NN")
+    
+    ####R name is in NNP
+    matches = en.sentence.find(s, "Where VBD DT NN IN (DT) NN")
+    matches += en.sentence.find(s, "Where VBD DT NN TO (DT) NN")
+    ####R
+    #print(matches)
+    for match in matches:
+        name = match[3][0]
+        before = match[6][0]
+        newAssertions = [
+            #{"target":[name], "type":"where","r":[""]}
+            {"target":[name], "type":"where","r":[""], "location":[before]}
+        ]
+        assertions.extend([x for x in newAssertions if x not in assertions])
+
+    # matches = en.sentence.find(s, "Where VBD NNP IN (DT) NN")
+    # matches += en.sentence.find(s, "Where VBD NNP TO (DT) NN")
+    # ####R
+    # #print(matches)
+    # for match in matches:
+    #     name = match[2][0]
+    #     before = match[5][0]
+    #     newAssertions = [
+    #         {"target":[name], "type":"where","r":[""], "past":[before]}
+    #     ]
+    #     assertions.extend([x for x in newAssertions if x not in assertions])
 
     return [assertions]
 ####R get entities in the story.

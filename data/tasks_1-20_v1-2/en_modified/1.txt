@@ -1,0 +1,31 @@
+1 Mary took the milk.
+2 Mary moved to the hallway.
+3 John went to the bathroom.
+4 John got the apple.
+5 Daniel got the football.
+6 Daniel let go of the football.
+7 Where is Daniel?      garden  1
+8 Mary grabbed the football.
+9 Mary went to the hallway.
+10 John dropped the apple.
+11 Mary dropped the milk.
+12 Where is Daniel?     garden  8
+13 Daniel grabbed the apple.
+14 Sandra went to the kitchen.
+15 Mary dropped the football.
+16 Daniel took the football.
+17 John grabbed the milk.
+18 Where is Daniel?     hallway 17
+19 Daniel put down the football.
+20 Mary grabbed the football.
+21 John let go of the milk.
+22 Where is Daniel?     hallway 20
+23 John grabbed the milk.
+24 John dropped the milk.
+25 Mary put down the football.
+26 Sandra travelled to the garden.
+27 Sandra got the football.
+28 Sandra moved to the bathroom.
+29 Mary travelled to the office.
+30 Sandra journeyed to the hallway.
+31 Where is Daniel?     hallway 27

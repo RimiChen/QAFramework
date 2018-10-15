@@ -18,6 +18,7 @@ class S_scene:
         self.isQuestion = False
         self.isClue = False
         self.answer_text = ""
+        self.possible_action_list = []
         self.line_number = []
         
 
