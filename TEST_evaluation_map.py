@@ -6,6 +6,7 @@ question_frame_map = {}
 def initial_testcase():
     test_case_map["0"] = "./data/fail.txt"
     test_case_map["0_1"] = "./data/tasks_1-20_v1-2/en_modified/out.txt"
+    test_case_map["0_2"] = "./data/tasks_1-20_v1-2/en_modified/1_qa3_new.txt"
     test_case_map["1_1"] = "./data/tasks_1-20_v1-2/en/qa1_single-supporting-fact_test.txt"
     test_case_map["1_2"] = "./data/tasks_1-20_v1-2/en/qa1_single-supporting-fact_train.txt"
     test_case_map["2_1"] = "./data/tasks_1-20_v1-2/en/qa2_two-supporting-facts_test.txt"
@@ -49,6 +50,7 @@ def initial_testcase():
 def initail_question_type():
     question_type_map["0"] = "location"
     question_type_map["0_1"] = "locaiton"
+    question_type_map["0_2"] = "location"
     question_type_map["1_1"] = "location"
     question_type_map["1_2"] = "location"
     question_type_map["2_1"] = "location"

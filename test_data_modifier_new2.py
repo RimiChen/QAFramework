@@ -256,6 +256,7 @@ def modify_testdata(task_id, input_file_path, out_path):
             sentence_count = sentence_count +1
 
         #check text
+        line_count = 1
         for each_sentence in scene_list:
             #print("story text")
             if each_sentence.modified_text == "":
@@ -270,17 +271,27 @@ def modify_testdata(task_id, input_file_path, out_path):
                     #print(each_sentence.entity_map["actor"][0]+":  "+ each_sentence.original_text)
                     #print(each_sentence.entity_map["actor"][0]+":  "+ each_sentence.modified_text)
                     #print("line:"+str(each_sentence.sentence_index)+". "+ each_sentence.original_text)
-                    f.write(each_sentence.original_text+"\n")
+                    new_text_split = each_sentence.original_text.split()
+                    new_text_split[0] = str(line_count)
+                    new_text = ""
+                    for word in new_text_split:
+                        new_text = new_text + " "+word
+                    new_text = new_text.rstrip()
+                    new_text = new_text.lstrip()
+
+                    f.write(new_text+"\n")
                 
                 else:
                     #print("??" + each_sentence.original_text)
-                    f.write(str(each_sentence.sentence_index+1) + " Where is "+current_actor+"?"+"\thallway\t9 7"+"\n")
+                    #f.write(str(each_sentence.sentence_index+1) + " Where is "+current_actor+"?"+"\thallway\t9 7"+"\n")
+                    f.write(str(line_count) + " Where is "+current_actor+"?\n")
+                line_count = line_count + 1
     
         paragraph_index = paragraph_index +1
     
     f.close()
 
 if __name__ == "__main__":
-    file_name = "qa3_three-supporting-facts_test.txt"
-    out_file = "qa3_test_out.txt"
-    modify_testdata(1,"./data/tasks_1-20_v1-2/en/"+str(file_name), "./data/tasks_1-20_v1-2/en/"+str(out_file))
+    file_name = "new_bAbI_task3_out.txt"
+    out_file = "1_qa3_new.txt"
+    modify_testdata(1,"./data/tasks_1-20_v1-2/en_modified/"+str(file_name), "./data/tasks_1-20_v1-2/en_modified/"+str(out_file))
