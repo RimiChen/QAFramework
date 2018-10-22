@@ -231,6 +231,7 @@ def update_entity_with_information(new_sentence_scene, scene_list, entity_map):
                                             if thing not in entity_map[entity].linked_group:
                                                 #print("we don't have : "+ thing)
                                                 entity_map[entity].linked_group[thing] = 1
+                                                entity_map[entity].owned_history.append(thing)
 
                                                 # add "has" relation to main entity
                                             entity_map[entity].relation_group = del_type_of_relations(entity_map[entity].relation_group, ["has"])
@@ -250,18 +251,29 @@ def update_entity_with_information(new_sentence_scene, scene_list, entity_map):
                                                 # remove old
                                                 #entity_map[entity].relation_group = del_type_of_relations(entity_map[entity].relation_group, ["at"])
                                                 # add new
-                                                if entity_map[thing].current_location == "Unknown":
-                                                    new_location_relation = R_relation("at", entity, entity_map[entity].current_location) 
-                                                    entity_map[thing].relation_group = del_type_of_relations(entity_map[thing].relation_group, ["at"])
-                                                    entity_map[thing].current_location = entity_map[entity].current_location
-                                                    entity_map[thing].relation_group.append(new_location_relation)
-                                                    entity_map[thing].path.append(entity_map[entity].current_location)
-                                                elif entity_map[entity].current_location == "Unknown":
-                                                    new_location_relation = R_relation("at", entity, entity_map[thing].current_location) 
-                                                    entity_map[entity].relation_group = del_type_of_relations(entity_map[entity].relation_group, ["at"])
-                                                    entity_map[entity].current_location = entity_map[thing].current_location
-                                                    entity_map[entity].relation_group.append(new_location_relation)
-                                                    entity_map[entity].path.append(entity_map[thing].current_location)                                            
+                                                # if entity_map[thing].current_location == "Unknown":
+                                                #     new_location_relation = R_relation("at", entity, entity_map[entity].current_location) 
+                                                #     entity_map[thing].relation_group = del_type_of_relations(entity_map[thing].relation_group, ["at"])
+                                                #     entity_map[thing].current_location = entity_map[entity].current_location
+                                                #     entity_map[thing].relation_group.append(new_location_relation)
+                                                #     entity_map[thing].path.append(entity_map[entity].current_location)
+                                                # elif entity_map[entity].current_location == "Unknown":
+                                                #     new_location_relation = R_relation("at", entity, entity_map[thing].current_location) 
+                                                #     entity_map[entity].relation_group = del_type_of_relations(entity_map[entity].relation_group, ["at"])
+                                                #     entity_map[entity].current_location = entity_map[thing].current_location
+                                                #     entity_map[entity].relation_group.append(new_location_relation)
+                                                #     entity_map[entity].path.append(entity_map[thing].current_location)                                            
+                                                # new_location_relation = R_relation("at", entity, entity_map[thing].current_location) 
+                                                # entity_map[entity].relation_group = del_type_of_relations(entity_map[entity].relation_group, ["at"])
+                                                # entity_map[entity].current_location = entity_map[thing].current_location
+                                                # entity_map[entity].relation_group.append(new_location_relation)
+                                                # entity_map[entity].path.append(entity_map[thing].current_location)    
+                                                new_location_relation = R_relation("at", entity, entity_map[entity].current_location) 
+                                                entity_map[thing].relation_group = del_type_of_relations(entity_map[thing].relation_group, ["at"])
+                                                entity_map[thing].current_location = entity_map[entity].current_location
+                                                entity_map[thing].relation_group.append(new_location_relation)
+                                                entity_map[thing].path.append(entity_map[entity].current_location)
+
                                             else:     
                                                 new_location_relation = R_relation("at", thing, entity_map[entity].current_location)
                                                 # remove old
@@ -342,6 +354,11 @@ def update_entity_with_information(new_sentence_scene, scene_list, entity_map):
                 for relation in entity_map[entity].relation_group:
                     print(str(relation.type) +"( "+str(relation.main_entity) +", "+str(relation.related_item)+")") 
                                   
+    for entity in entity_map:
+        new_sentence_scene.relation_list.extend(entity_map[entity].relation_group)
+        new_sentence_scene.owned_history[entity]=entity_map[entity].owned_history
+
+    
     scene_list.append(new_sentence_scene)
     return [scene_list, entity_map]
 

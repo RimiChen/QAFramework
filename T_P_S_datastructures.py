@@ -16,10 +16,12 @@ class S_scene:
         self.original_text = ""
         self.modified_text = ""
         self.isQuestion = False
+        self.question_type = ""
         self.isClue = False
         self.answer_text = ""
         self.possible_action_list = []
         self.line_number = []
+        self.owned_history = {}
         
 
 

@@ -38,7 +38,8 @@ def run_task(data_dir, task_id):
     else:
         train(train_story, train_questions, train_qstory, memory, model, loss, general_config)
 
-    test(test_story, test_questions, test_qstory, memory, model, loss, general_config)
+    # this line
+	test(test_story, test_questions, test_qstory, memory, model, loss, general_config)
 
 
 def run_all_tasks(data_dir):

@@ -59,9 +59,9 @@ def separate_text(text_path, line_number):
                         new_sentence.answer_text = [answer_text]
                     
 
-                    line_number_text = question_answer_part[2]
-                    line_number_array = line_number_text.split(" ")
-                    new_sentence.answer_related_line.extend(line_number_array)
+                    #line_number_text = question_answer_part[2]
+                    #line_number_array = line_number_text.split(" ")
+                    #new_sentence.answer_related_line.extend(line_number_array)
                     
                     #print("-----------------")
                     #print("//".join(new_sentence.answer_related_line))

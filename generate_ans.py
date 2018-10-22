@@ -43,7 +43,7 @@ if __name__ == "__main__":
     ####R get input test data
     testcase_path = test_case_map[sys.argv[1]]
     #testcase_path = ""
-    print(testcase_path)
+    #print(testcase_path)
     whole_text = separate_text(testcase_path, 0)
     #whole_text = separate_text("./data/fail.txt", 0)
     #whole_text = separate_text("./data/tasks_1-20_v1-2/en/qa10_indefinite-knowledge_train.txt", 0)
@@ -191,17 +191,69 @@ if __name__ == "__main__":
                 new_sentence_scene.isQuestion = True
                 ####R answer those question here
                 ####R get question type
-                question_type = question_type_test(question_assertions[0], sys.argv[1])
+                new_sentence_scene.question_type = question_type_test(question_assertions[0], sys.argv[1])
                 #print(question_type)
 
+            #scene_list.append(new_sentence_scene)
 
-                if question_type == "location":
+                                
+
+            
+            
+            
+            ####R save all scene information
+            [scene_list, entity_map] = update_entity_with_information(new_sentence_scene, scene_list, entity_map)  
+
+            #scene_list.append(new_sentence_scene)
+            #print(len(scene_list))
+            
+            # ####R DEBUG information
+
+
+            # if paragraph_index == 197:
+            #     print("\n----------------------------------------\n")
+            #     for name in entity_map:
+            #         ####R print relations
+            #         for relation in entity_map[name].relation_group:
+            #             print("    type: "+str(relation.type) +", Aug1: "+str(relation.main_entity) +", Aug2: "+str(relation.related_item))                
+            # print("\n----------------------------------------\n")
+            # print("Origianl text = "+whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+            # for name in entity_map:
+            #     ####R print relations
+            #     for relation in entity_map[name].relation_group:
+            #         print("    type: "+str(relation.type) +", Aug1: "+str(relation.main_entity) +", Aug2: "+str(relation.related_item))
+
+            # print("\n----------------------------------------\n")
+
+            # for name in entity_map:
+            #     ###R print relations
+            #     print("     Name: "+ name)
+            #     print(entity_map[name].owned_history)
+
+
+
+            # print("\n========================================\n")
+
+        
+        # for scene in scene_list:
+        #     if scene.isQuestion == True:
+        #         print("$$$$ ("+str(scene.answer_text)+", "+str(whole_text.paragraph_list[paragraph_index].sentence_list[scene.sentence_index].answer_text)+")")
+
+        sentence_count = 0
+        for scene in scene_list:
+            #print(scene.original_text)
+            question_assertions = []
+            [question_assertions] = extract_where_questions(question_assertions, whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
+            if scene.isQuestion == True:
+            #### get answers
+                if scene.question_type == "location":
                     target_name = question_assertions[0]["target"][0]
-                    #print("---ask about "+ target_name)
-
+                    print("---ask about "+ target_name)
                     if target_name in entity_map.keys():
+                        #print(entity_map[target_name].owned_history)
                         if question_assertions[0].get("location") == None:
                             #print("no location")
+                            #print("1_1 no location")
                             for relation in entity_map[target_name].relation_group:
                                 if relation.type == "at":
                                     #print("$$$$$")
@@ -210,7 +262,8 @@ if __name__ == "__main__":
                                     
                                     ## if we have a certain place
                                     if not relation.related_item == "Unknown":
-                                        new_sentence_scene.answer_text =  str(relation.related_item)
+                                        scene.answer_text =  str(relation.related_item)
+                                        
                                         # if len(entity_map[target_name].path) > 1:
                                         #     new_sentence_scene.previous_location = entity_map[target_name].path[-2]
                                         # else:
@@ -221,31 +274,75 @@ if __name__ == "__main__":
                                         # trace back to find and answer
                                         #print("###### we don't know but possible solutions are " )
                                         #print(entity_category["location"])
-                                        if len(entity_map[target_name].owned_history) > 0:
-                                            # trace location according to what this actor owned
-                                            #print("reference: " )
-                                            #print(entity_map[target_name].owned_history)
-                                            possible_list = []
-                                            for item in entity_map[target_name].owned_history:
-                                                # trace from the owned things
-                                                if not entity_map[item].current_location == "Unknown":
-                                                    possible_list.append(entity_map[item].current_location)
-                                                    plan_possible_act(entity_map[target_name].relation_group, entity_map[item].relation_group)
-                                                    new_sentence_scene.possible_action_list.append(plan_possible_act(entity_map[target_name].relation_group, entity_map[item].relation_group))
+                                        if target_name in scene.owned_history.keys():
 
-                                            if len(possible_list) > 0:
-                                                #print(possible_list)
-                                                new_sentence_scene.isQuestion = True
-                                                new_sentence_scene.answer_text =  str(possible_list)
-                                                    
+                                        
+                                            if len(scene.owned_history[target_name]) > 0:
+                                                # trace location according to what this actor owned
+                                                #print("reference: " )
+                                                #print(entity_map[target_name].owned_history)
+                                                possible_list = []
+                                                
+                                                reference_item = scene.owned_history[target_name][-1]
+                                                print("reference_item = "+reference_item)
+
+                                                # for relation in scene.relation_list:
+                                                #     if relation.type == "at":
+                                                #         print(relation.main_entity +", "+relation.related_item)
+                                                current_line = sentence_count
+                                                iter_line = current_line
+                                                #print("start from line :"+str(iter_line))
+
+                                                while iter_line >= 0:
+                                                    #print("check line: "+str(iter_line))
+                                                    for rela in scene_list[iter_line].relation_list:
+                                                        if rela.type == "at":
+                                                            if rela.main_entity == reference_item and not rela.related_item == "Unknown":
+                                                                print("check line: "+str(iter_line)+" at "+rela.related_item)
+                                                                possible_list.append(rela.related_item)
+                                                                break
+
+                                                    iter_line = iter_line -1
+                                                
+                                                iter_line = current_line
+                                                #print("start from line :"+str(iter_line))
+                                                while iter_line < len(scene_list):
+                                                    #print("check line: "+str(iter_line))
+                                                    for rela in scene_list[iter_line].relation_list:
+                                                        if rela.type == "at":
+                                                            if rela.main_entity == reference_item and not rela.related_item == "Unknown":
+                                                                print("check line: "+str(iter_line)+" at "+rela.related_item)
+                                                                possible_list.append(rela.related_item)
+                                                                break
+
+                                                    iter_line = iter_line +1
+
+                                                # for item in entity_map[target_name].owned_history:
+                                                #     # trace from the owned things
+                                                #     if not entity_map[item].current_location == "Unknown":
+                                                #         possible_list.append(entity_map[item].current_location)
+                                                #         plan_possible_act(entity_map[target_name].relation_group, entity_map[item].relation_group)
+                                                #         new_sentence_scene.possible_action_list.append(plan_possible_act(entity_map[target_name].relation_group, entity_map[item].relation_group))
+
+                                                if len(possible_list) > 0:
+                                                    #print("possible")
+                                                    #print(possible_list)
+                                                    #scene.isQuestion = True
+                                                    scene.answer_text =  str(possible_list[0])
+                                                        
+                                                else:
+                                                    #print(entity_category["location"])
+                                                    #new_sentence_scene.isQuestion = True
+                                                    #new_sentence_scene.answer_text =  str(relation.related_item)
+                                                    print("no information for reference item")
+                                                    scene.answer_text =  ["no_info"]
                                             else:
-                                                #print(entity_category["location"])
-                                                new_sentence_scene.isQuestion = True
-                                                #new_sentence_scene.answer_text =  str(relation.related_item)
-                                                new_sentence_scene.answer_text =  ["no_info"]
+                                                #### R: never linked to a thing
+                                                print("not reference item")
+                                                scene.answer_text =  ["no_clue"]  
                                         else:
-                                            #### R: never linked to a thing
-                                            new_sentence_scene.answer_text =  ["no_clue"]                           
+                                            print("this actor not exist")
+                                            scene.answer_text =  ["not_show"]                        
 
 
 
@@ -326,94 +423,12 @@ if __name__ == "__main__":
                                                     new_sentence_scene.answer_text =  str(relation.related_item)
                     #### R: don't have any clue yet
                     else:
-                        new_sentence_scene.answer_text =  ["not_show"]
-                            
-                elif question_type == "binary":
-                    ####R yes/no questions
-                    #print(question_assertions)
-                    target_name = question_assertions[0]["target"][0]
-                    location_name = question_assertions[0]["location"][0]
-                    posssible_location_list = []
-                    for relation in entity_map[target_name].relation_group:
-
-                        if relation.type == "at":
-                            #print(str(relation.type) +"( "+str(relation.main_entity) +", "+str(relation.related_item)+")")
-                            new_sentence_scene.isQuestion = True
-                            if str(relation.related_item) == location_name:
-                                new_sentence_scene.answer_text =  "yes"
-                            else:
-                                new_sentence_scene.answer_text =  "no" 
-                        elif relation.type == "poss_at":
-                            posssible_location_list.append(str(relation.related_item))
-                        
-                    if len(posssible_location_list) > 0 :
-                        ####R not sure the location
-                        if location_name in posssible_location_list:
-                            new_sentence_scene.answer_text = "maybe"
-                        else:
-                            new_sentence_scene.answer_text = "no"
-
-
-                elif question_type == "attribute":
-                    #print(question_assertions)
-                    target_name = question_assertions[0]["target"][0]
-                    verb_name = question_assertions[0]["verb_type"][0]
-                    if verb_categories[verb_name] == "own":
-                        answer_set = []
-                        new_sentence_scene.answer_text = ""
-                    for relation in entity_map[target_name].relation_group:
-                        if relation.type == "has":
-                            answer_set.append(str(relation.related_item))
-                    new_sentence_scene.answer_text = answer_set
-
-                    if len(answer_set) == 0:
-                        new_sentence_scene.answer_text = ["nothing"]
-
+                        scene.answer_text =  ["not_show"]
                 else:
                     print("SYS: We cannot answer this question now")
-                    new_sentence_scene.answer_text = "NULL"
-                                
+                    scene.answer_text = "NULL"
+            sentence_count = sentence_count +1
 
-            
-            
-            
-            ####R save all scene information
-            [scene_list, entity_map] = update_entity_with_information(new_sentence_scene, scene_list, entity_map)  
-
-            #scene_list.append(new_sentence_scene)
-            #print(len(scene_list))
-            
-            # ####R DEBUG information
-
-
-            # if paragraph_index == 197:
-            #     print("\n----------------------------------------\n")
-            #     for name in entity_map:
-            #         ####R print relations
-            #         for relation in entity_map[name].relation_group:
-            #             print("    type: "+str(relation.type) +", Aug1: "+str(relation.main_entity) +", Aug2: "+str(relation.related_item))                
-            # print("\n----------------------------------------\n")
-            # print("Origianl text = "+whole_text.paragraph_list[paragraph_index].sentence_list[sentence_index].text)
-            # for name in entity_map:
-            #     ####R print relations
-            #     for relation in entity_map[name].relation_group:
-            #         print("    type: "+str(relation.type) +", Aug1: "+str(relation.main_entity) +", Aug2: "+str(relation.related_item))
-
-            # print("\n----------------------------------------\n")
-
-            # for name in entity_map:
-            #     ###R print relations
-            #     print("     Name: "+ name)
-            #     print(entity_map[name].owned_history)
-
-
-
-            # print("\n========================================\n")
-
-        
-        # for scene in scene_list:
-        #     if scene.isQuestion == True:
-        #         print("$$$$ ("+str(scene.answer_text)+", "+str(whole_text.paragraph_list[paragraph_index].sentence_list[scene.sentence_index].answer_text)+")")
 
         for scene in scene_list:
             if scene.isQuestion == True:
@@ -426,30 +441,33 @@ if __name__ == "__main__":
                 #print(scene.original_text)
                 f.write(scene.original_text+"\n")
 
+        # [question_count, correct_count, wrong_list, no_clue_count, no_show_count, no_info_count] = evaluate_paragraph_correctness2(whole_text.paragraph_list[paragraph_index].sentence_list, scene_list)
+        # print(paragraph_index )
+        # print("correct: "+str(correct_count)+", total: "+str(question_count))
+        # print("not-show-yet: "+str(no_show_count))
+        # print("no_clue_count: "+str(no_clue_count))
+        # print("no_info_count: "+str(no_info_count))
+        # print("Wrong: -------------------")
+        # print(str(wrong_list))
+
+        # if correct_count != question_count:
+        #     wrong_paragraph.append(paragraph_index)
+
+        # total_question = total_question + question_count
+        # total_correct = total_correct + correct_count
+        # total_no_clue = total_no_clue  +no_clue_count
+        # total_no_show = total_no_show +no_show_count
+        # total_no_info_count = total_no_info_count+no_info_count
+        #print_location()
+        #print_actor()
+        #print_item()
+
+
         paragraph_index = paragraph_index +1
         sentence_index = 0
 
     f.close()
-    #     [question_count, correct_count, wrong_list, no_clue_count, no_show_count, no_info_count] = evaluate_paragraph_correctness2(whole_text.paragraph_list[paragraph_index].sentence_list, scene_list)
-    #     print(paragraph_index )
-    #     print("correct: "+str(correct_count)+", total: "+str(question_count))
-    #     print("not-show-yet: "+str(no_show_count))
-    #     print("no_clue_count: "+str(no_clue_count))
-    #     print("no_info_count: "+str(no_info_count))
-    #     print("Wrong: -------------------")
-    #     print(str(wrong_list))
 
-    #     if correct_count != question_count:
-    #         wrong_paragraph.append(paragraph_index)
-
-    #     total_question = total_question + question_count
-    #     total_correct = total_correct + correct_count
-    #     total_no_clue = total_no_clue  +no_clue_count
-    #     total_no_show = total_no_show +no_show_count
-    #     total_no_info_count = total_no_info_count+no_info_count
-    #     #print_location()
-    #     #print_actor()
-    #     #print_item()
 
     
     # print("total correct: "+ str(total_correct)+", total question: "+str(total_question)+", no_clue: "+str(total_no_clue)+", no_show_up: "+ str(total_no_show)+", no_info: "+str(total_no_info_count))
