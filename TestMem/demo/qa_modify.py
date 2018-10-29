@@ -40,41 +40,9 @@ class MemN2N(object):
             print("Loading model from file %s ..." % self.model_file)
             with gzip.open(self.model_file, "rb") as f:
                 self.reversed_dict, self.memory, self.model, self.loss, self.general_config = pickle.load(f)
+            #print(self.reversed_dict)
+            #print(self.general_config.train)
 
-    def train(self):
-        """
-        Train MemN2N model using training data for tasks.
-        """
-        np.random.seed(42)  # for reproducing
-        assert self.data_dir is not None, "data_dir is not specified."
-        print("Reading data from %s ..." % self.data_dir)
-
-        # Parse training data
-        train_data_path = glob.glob('%s/qa*_*_train.txt' % self.data_dir)
-        dictionary = {"nil": 0}
-        train_story, train_questions, train_qstory = parse_babi_task(train_data_path, dictionary, False)
-
-        # Parse test data just to expand the dictionary so that it covers all words in the test data too
-        test_data_path = glob.glob('%s/qa*_*_test.txt' % self.data_dir)
-        parse_babi_task(test_data_path, dictionary, False)
-
-        # Get reversed dictionary mapping index to word
-        self.reversed_dict = dict((ix, w) for w, ix in dictionary.items())
-
-        # Construct model
-        self.general_config = BabiConfigJoint(train_story, train_questions, dictionary)
-        self.memory, self.model, self.loss = build_model(self.general_config)
-
-        # Train model
-        if self.general_config.linear_start:
-            train_linear_start(train_story, train_questions, train_qstory,
-                               self.memory, self.model, self.loss, self.general_config)
-        else:
-            train(train_story, train_questions, train_qstory,
-                  self.memory, self.model, self.loss, self.general_config)
-
-        # Save model
-        self.save_model()
 
     def get_story_texts(self, test_story, test_questions, test_qstory,
                         question_idx, story_idx, last_sentence_idx):
@@ -83,12 +51,20 @@ class MemN2N(object):
         """
         train_config = self.general_config.train_config
         enable_time = self.general_config.enable_time
+        #max_words = 5
+
         max_words = train_config["max_words"] \
             if not enable_time else train_config["max_words"] - 1
 
+        #print(self.reversed_dict)   
+        #print(max_words)
+        #print(last_sentence_idx)
         story = [[self.reversed_dict[test_story[word_pos, sent_idx, story_idx]]
                   for word_pos in range(max_words)]
                  for sent_idx in range(last_sentence_idx + 1)]
+        #print(self.reversed_dict)
+
+
 
         question = [self.reversed_dict[test_qstory[word_pos, question_idx]]
                     for word_pos in range(max_words)]
@@ -109,6 +85,7 @@ class MemN2N(object):
         dictionary   = self.general_config.dictionary
         enable_time  = self.general_config.enable_time
 
+        #max_words = 5
         max_words = train_config["max_words"] \
             if not enable_time else train_config["max_words"] - 1
 
@@ -193,6 +170,8 @@ def run_console_demo(data_dir, model_file):
     test_story, test_questions, test_qstory = \
         parse_babi_task(test_data_path, memn2n.general_config.dictionary, False)
 
+    #print("Test question number")
+    #print(test_questions.shape[1])
     while True:
         # Pick a random question
         question_idx      = np.random.randint(test_questions.shape[1])
@@ -263,19 +242,19 @@ if __name__ == "__main__":
         print("The data directory '%s' does not exist. Please download it first." % args.data_dir)
         sys.exit(1)
 
-    #memn2n = MemN2N(args.data_dir, args.model_file)
+    # memn2n = MemN2N(args.data_dir, args.model_file)
 
-    # Try to load model
-    #memn2n.load_model()    
+    # #Try to load model
+    # memn2n.load_model()    
 
-    if args.console_demo:
-        run_console_demo(args.data_dir, args.model_file)
+    # if args.console_demo:
+    #     run_console_demo(args.data_dir, args.model_file)
 
     
 
     # if args.train:
     #     train_model(args.data_dir, args.model_file)
     # elif args.console_demo:
-    #     run_console_demo(args.data_dir, args.model_file)
+    run_console_demo(args.data_dir, args.model_file)
     # else:
     #     run_web_demo(args.data_dir, args.model_file)
