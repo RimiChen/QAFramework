@@ -173,10 +173,16 @@ def test(test_story, test_questions, test_qstory, memory, model, loss, general_c
     train_config = general_config.train_config
     batch_size   = general_config.batch_size
     dictionary   = general_config.dictionary
+    #print("@@@@@@@@@ trained dictionary")
+    #print(dictionary)
     enable_time  = general_config.enable_time
 
     max_words = train_config["max_words"] \
         if not enable_time else train_config["max_words"] - 1
+
+    #### number of questions
+    #print("####number of questions")
+    #print(test_questions.shape[1])
 
     for k in range(int(math.floor(test_questions.shape[1] / batch_size))):
         batch = np.arange(k * batch_size, (k + 1) * batch_size)
@@ -187,7 +193,21 @@ def test(test_story, test_questions, test_qstory, memory, model, loss, general_c
         input_data[:]     = dictionary["nil"]
         memory[0].data[:] = dictionary["nil"]
 
+        #print(batch)
+
         for b in range(batch_size):
+            # print("##### b")
+            # print(b)
+            # print("##### batch b")
+            # print(batch[b])
+            # print("##### sentence index")
+            # print(test_questions[1, batch[b]])
+            # print("##### story index")
+            # print(test_questions[0, batch[b]])
+            # print("##### test batch")
+            # print(test_questions[2, batch[b]])
+
+            #### last sentence index, story index
             d = test_story[:, :(1 + test_questions[1, batch[b]]), test_questions[0, batch[b]]]
 
             offset = max(0, d.shape[1] - train_config["sz"])
@@ -205,8 +225,58 @@ def test(test_story, test_questions, test_qstory, memory, model, loss, general_c
 
         out = model.fprop(input_data)
         # cost = loss.fprop(out, target_data)
+
+######################copied from demo
+        # Input data and data for the 1st memory cell
+        # Here we duplicate input_data to fill the whole batch
+        # for b in range(batch_size):
+        #     d = test_story[:, :(1 + last_sentence_idx), story_idx]
+
+        #     offset = max(0, d.shape[1] - train_config["sz"])
+        #     d = d[:, offset:]
+
+        #     self.memory[0].data[:d.shape[0], :d.shape[1], b] = d
+
+        #     if enable_time:
+        #         self.memory[0].data[-1, :d.shape[1], b] = \
+        #             np.arange(d.shape[1])[::-1] + len(dictionary) # time words
+
+        #     if user_question_provided:
+        #         input_data[:test_qstory.shape[0], b] = encoded_user_question
+        #     else:
+        #         input_data[:test_qstory.shape[0], b] = test_qstory[:, question_idx]
+
+        # # Data for the rest memory cells
+        # for i in range(1, nhops):
+        #     self.memory[i].data = self.memory[0].data
+
+        # # Run model to predict answer
+        # out = self.model.fprop(input_data)
+        # memory_probs = np.array([self.memory[i].probs[:(last_sentence_idx + 1), 0] for i in range(nhops)])
+
+        # # Get answer for the 1st question since all are the same
+        # pred_answer_idx  = out[:, 0].argmax()
+        # pred_prob = out[pred_answer_idx, 0]
+#####################
+
+
+        #####R
+        # Get answer for the 1st question since all are the same
+        pred_answer_idx  = out[:, 0].argmax()
+        pred_prob = out[pred_answer_idx, 0]
+        #pred_answer = dictionary[pred_answer_idx]
+        #print("From trained: "+ pred_answer)
+        
+        
+        print(str(pred_answer_idx)+"   "+dictionary.keys()[dictionary.values().index(pred_answer_idx)])
+        #print(pred_prob)
+
+
         total_test_err += loss.get_error(out, target_data)
         total_test_num += batch_size
 
     test_error = total_test_err / total_test_num
     print("Test error: %f" % test_error)
+
+    ######R
+    return pred_answer_idx

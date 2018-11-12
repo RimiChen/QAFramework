@@ -191,22 +191,31 @@ def run_task(data_dir, task_id):
 
     general_config = BabiConfig(train_story, train_questions, dictionary)
 
-    # memory, model, loss = build_model(general_config)
+    memory, model, loss = build_model(general_config)
 
-    # if general_config.linear_start:
-    #     train_linear_start(train_story, train_questions, train_qstory, memory, model, loss, general_config)
-    # else:
-    #     train(train_story, train_questions, train_qstory, memory, model, loss, general_config)
-
+    if general_config.linear_start:
+        train_linear_start(train_story, train_questions, train_qstory, memory, model, loss, general_config)
+    else:
+        train(train_story, train_questions, train_qstory, memory, model, loss, general_config)
+    print("######## trained dictionary")
+    print(general_config.dictionary)
 
 
     # this line
     memn2n = MemN2N(args.data_dir, args.model_file)
     #Try to load model
     memn2n.load_model()  
+    print("???????? loaded dictionary")
+    print(memn2n.general_config.dictionary)
 
+    ans_index = test(test_story, test_questions, test_qstory, memn2n.memory, memn2n.model, memn2n.loss, memn2n.general_config)
+    #pred_answer = memn2n.reversed_dict[ans_index]
+    #print("From MemN2N: "+ pred_answer)
 
-    test(test_story, test_questions, test_qstory, memn2n.memory, memn2n.model, memn2n.loss, memn2n.general_config)
+    ans_index = test(test_story, test_questions, test_qstory, memory, model, loss, general_config)
+    #pred_answer = general_config.dictionary[ans_index]
+    #print("From config: "+ pred_answer)
+
 
 
 def run_all_tasks(data_dir):
