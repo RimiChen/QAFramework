@@ -11,6 +11,7 @@ from memn2n.nn import Identity, ReLU, Sequential, LookupTable, Sum, Parallel, So
 
 
 def parse_babi_task(data_files, dictionary, include_question):
+    #print("start parsing questions")
     """ Parse bAbI data.
 
     Args:
@@ -49,7 +50,11 @@ def parse_babi_task(data_files, dictionary, include_question):
             for line_idx, line in enumerate(f):
                 line = line.rstrip().lower()
                 words = line.split()
-
+                
+                #print("-------------")
+                #print(line)
+                
+                
                 # Story begins
                 if words[0] == '1':
                     story_idx += 1
@@ -61,6 +66,7 @@ def parse_babi_task(data_files, dictionary, include_question):
                     is_question = False
                     sentence_idx += 1
                 else:
+                    #print(line)
                     is_question = True
                     question_idx += 1
                     questions[0, question_idx] = story_idx

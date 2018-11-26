@@ -166,13 +166,13 @@ def train_linear_start(train_story, train_questions, train_qstory, memory, model
 
 
 def test(test_story, test_questions, test_qstory, memory, model, loss, general_config):
-    total_test_err = 0.
+    total_test_err = 0
     total_test_num = 0
 
     nhops        = general_config.nhops
     train_config = general_config.train_config
     batch_size   = general_config.batch_size
-    print("batch size = "+str(general_config.batch_size))
+    #print("batch size = "+str(general_config.batch_size))
     #batch_size = 16
     dictionary   = general_config.dictionary
     #print("@@@@@@@@@ trained dictionary")
@@ -186,6 +186,7 @@ def test(test_story, test_questions, test_qstory, memory, model, loss, general_c
     #print("####number of questions")
     #print(test_questions.shape[1])
 
+    #print(test_questions.shape[1])
     for k in range(int(math.floor(test_questions.shape[1] / batch_size))):
         batch = np.arange(k * batch_size, (k + 1) * batch_size)
 
@@ -213,10 +214,10 @@ def test(test_story, test_questions, test_qstory, memory, model, loss, general_c
             d = test_story[:, :(1 + test_questions[1, batch[b]]), test_questions[0, batch[b]]]
             #print("d shape = " +str(d.shape[1]))
             #print("train config [sz] = " +str(train_config["sz"]))
-            #offset = max(0, d.shape[1] - train_config["sz"])
-            #offset = max(0, d.shape[1] - 60)
+            offset = max(0, d.shape[1] - train_config["sz"])
+            #offset = max(0, d.shape[1] - 15)
             #offset = d.shape[1] - train_config["sz"]
-            offset = 3
+            #offset = 3
             #offset = -20
             # print("???old")
             # print(max(0, d.shape[1] - train_config["sz"]))

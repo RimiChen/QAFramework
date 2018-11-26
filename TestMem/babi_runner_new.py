@@ -184,31 +184,33 @@ def run_task(data_dir, task_id):
     # Parse data
     train_files = glob.glob('%s/qa%d_*_train.txt' % (data_dir, task_id))
     test_files  = glob.glob('%s/qa%d_*_test.txt' % (data_dir, task_id))
+    #train_files = glob.glob('%s/qa%d_*train.txt' % (data_dir, task_id))
+    #test_files  = glob.glob('%s/qa%d_*test.txt' % (data_dir, task_id))
 
     # #### empty dictionary
-    # dictionary = {"nil": 0}
-    # train_story, train_questions, train_qstory = parse_babi_task(train_files, dictionary, False)
-    # test_story, test_questions, test_qstory    = parse_babi_task(test_files, dictionary, False)
+    dictionary = {"nil": 0}
+    train_story, train_questions, train_qstory = parse_babi_task(train_files, dictionary, False)
+    test_story, test_questions, test_qstory    = parse_babi_task(test_files, dictionary, False)
     
 
-    # general_config = BabiConfig(train_story, train_questions, dictionary)
+    general_config = BabiConfig(train_story, train_questions, dictionary)
 
 
-    # memory, model, loss = build_model(general_config)
+    memory, model, loss = build_model(general_config)
 
-    # if general_config.linear_start:
-    #     train_linear_start(train_story, train_questions, train_qstory, memory, model, loss, general_config)
-    # else:
-    #     train(train_story, train_questions, train_qstory, memory, model, loss, general_config)
+    if general_config.linear_start:
+        train_linear_start(train_story, train_questions, train_qstory, memory, model, loss, general_config)
+    else:
+        train(train_story, train_questions, train_qstory, memory, model, loss, general_config)
     
-    # with open('R_trained.txt', 'a') as outfile:
-    #     json.dump(general_config.dictionary, outfile, indent=2)
+    with open('R_trained.txt', 'a') as outfile:
+        json.dump(general_config.dictionary, outfile, indent=2)
 
-    # print("######## trained dictionary")
-    # print(general_config.dictionary)
+    print("######## trained dictionary")
+    print(general_config.dictionary)
 
 
-    # ans_index = test(test_story, test_questions, test_qstory, memory, model, loss, general_config)
+    ans_index = test(test_story, test_questions, test_qstory, memory, model, loss, general_config)
 
 
 
@@ -223,6 +225,7 @@ def run_task(data_dir, task_id):
     train_story2, train_questions2, train_qstory2 = parse_babi_task(train_files, memn2n.general_config.dictionary, False)
     test_story2, test_questions2, test_qstory2    = parse_babi_task(test_files, memn2n.general_config.dictionary, False)
 
+    #print(len(test_questions2))
     #general_config2 = BabiConfig(train_story2, train_questions2,memn2n.general_config.dictionary)
 
 
