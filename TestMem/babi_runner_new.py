@@ -4,7 +4,7 @@ import random
 import sys
 import gzip
 import pickle
-
+import json
 
 
 import argparse
@@ -185,34 +185,60 @@ def run_task(data_dir, task_id):
     train_files = glob.glob('%s/qa%d_*_train.txt' % (data_dir, task_id))
     test_files  = glob.glob('%s/qa%d_*_test.txt' % (data_dir, task_id))
 
-    dictionary = {"nil": 0}
-    train_story, train_questions, train_qstory = parse_babi_task(train_files, dictionary, False)
-    test_story, test_questions, test_qstory    = parse_babi_task(test_files, dictionary, False)
+    # #### empty dictionary
+    # dictionary = {"nil": 0}
+    # train_story, train_questions, train_qstory = parse_babi_task(train_files, dictionary, False)
+    # test_story, test_questions, test_qstory    = parse_babi_task(test_files, dictionary, False)
+    
 
-    general_config = BabiConfig(train_story, train_questions, dictionary)
-
-    memory, model, loss = build_model(general_config)
-
-    if general_config.linear_start:
-        train_linear_start(train_story, train_questions, train_qstory, memory, model, loss, general_config)
-    else:
-        train(train_story, train_questions, train_qstory, memory, model, loss, general_config)
-    print("######## trained dictionary")
-    print(general_config.dictionary)
+    # general_config = BabiConfig(train_story, train_questions, dictionary)
 
 
-    # this line
+    # memory, model, loss = build_model(general_config)
+
+    # if general_config.linear_start:
+    #     train_linear_start(train_story, train_questions, train_qstory, memory, model, loss, general_config)
+    # else:
+    #     train(train_story, train_questions, train_qstory, memory, model, loss, general_config)
+    
+    # with open('R_trained.txt', 'a') as outfile:
+    #     json.dump(general_config.dictionary, outfile, indent=2)
+
+    # print("######## trained dictionary")
+    # print(general_config.dictionary)
+
+
+    # ans_index = test(test_story, test_questions, test_qstory, memory, model, loss, general_config)
+
+
+
+
+
+    ####R this line load model
     memn2n = MemN2N(args.data_dir, args.model_file)
     #Try to load model
     memn2n.load_model()  
+
+    dictionary2 = {"nil": 0}
+    train_story2, train_questions2, train_qstory2 = parse_babi_task(train_files, memn2n.general_config.dictionary, False)
+    test_story2, test_questions2, test_qstory2    = parse_babi_task(test_files, memn2n.general_config.dictionary, False)
+
+    #general_config2 = BabiConfig(train_story2, train_questions2,memn2n.general_config.dictionary)
+
+
+
+    with open('R_loaded.txt', 'a') as outfile2:
+        json.dump(memn2n.general_config.dictionary, outfile2, indent=2)
+
     print("???????? loaded dictionary")
     print(memn2n.general_config.dictionary)
 
-    ans_index = test(test_story, test_questions, test_qstory, memn2n.memory, memn2n.model, memn2n.loss, memn2n.general_config)
-    #pred_answer = memn2n.reversed_dict[ans_index]
+    ans_index = test(test_story2, test_questions2, test_qstory2, memn2n.memory, memn2n.model, memn2n.loss, memn2n.general_config)
+    #ans_index = test(test_story2, test_questions2, test_qstory2, memn2n.memory, memn2n.model, memn2n.loss, general_config2)
+
+    # #pred_answer = memn2n.reversed_dict[ans_index]
     #print("From MemN2N: "+ pred_answer)
 
-    ans_index = test(test_story, test_questions, test_qstory, memory, model, loss, general_config)
     #pred_answer = general_config.dictionary[ans_index]
     #print("From config: "+ pred_answer)
 

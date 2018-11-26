@@ -172,6 +172,8 @@ def test(test_story, test_questions, test_qstory, memory, model, loss, general_c
     nhops        = general_config.nhops
     train_config = general_config.train_config
     batch_size   = general_config.batch_size
+    print("batch size = "+str(general_config.batch_size))
+    #batch_size = 16
     dictionary   = general_config.dictionary
     #print("@@@@@@@@@ trained dictionary")
     #print(dictionary)
@@ -209,8 +211,18 @@ def test(test_story, test_questions, test_qstory, memory, model, loss, general_c
 
             #### last sentence index, story index
             d = test_story[:, :(1 + test_questions[1, batch[b]]), test_questions[0, batch[b]]]
+            #print("d shape = " +str(d.shape[1]))
+            #print("train config [sz] = " +str(train_config["sz"]))
+            #offset = max(0, d.shape[1] - train_config["sz"])
+            #offset = max(0, d.shape[1] - 60)
+            #offset = d.shape[1] - train_config["sz"]
+            offset = 3
+            #offset = -20
+            # print("???old")
+            # print(max(0, d.shape[1] - train_config["sz"]))
+            # print("???new")
+            # print(d.shape[1] - train_config["sz"])
 
-            offset = max(0, d.shape[1] - train_config["sz"])
             d = d[:, offset:]
 
             memory[0].data[:d.shape[0], :d.shape[1], b] = d
@@ -268,12 +280,14 @@ def test(test_story, test_questions, test_qstory, memory, model, loss, general_c
         #print("From trained: "+ pred_answer)
         
         
-        print(str(pred_answer_idx)+"   "+dictionary.keys()[dictionary.values().index(pred_answer_idx)])
+        #print(str(pred_answer_idx)+"   "+dictionary.keys()[dictionary.values().index(pred_answer_idx)])
         #print(pred_prob)
 
 
         total_test_err += loss.get_error(out, target_data)
         total_test_num += batch_size
+
+        #print("total test number = "+ str(total_test_num))
 
     test_error = total_test_err / total_test_num
     print("Test error: %f" % test_error)

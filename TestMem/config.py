@@ -6,7 +6,7 @@ class BabiConfig(object):
     """
     def __init__(self, train_story, train_questions, dictionary):
         self.dictionary       = dictionary
-        self.batch_size       = 32
+        self.batch_size       = 64
         self.nhops            = 3
         self.nepochs          = 100
         self.lrate_decay_step = 25   # reduce learning rate by half every 25 epochs
@@ -37,11 +37,14 @@ class BabiConfig(object):
             "in_dim"       : 20,
             "out_dim"      : 20,
             "sz"           : min(50, train_story.shape[1]),  # number of sentences
+            #"sz"           : min(3, train_story.shape[1]),  # number of sentences
             "voc_sz"       : len(self.dictionary),
             "bsz"          : self.batch_size,
             "max_words"    : len(train_story),
             "weight"       : None
         }
+        print("88888888")
+        print(self.train_config['sz'])
 
         if self.linear_start:
             self.train_config["init_lrate"] = 0.01 / 2
